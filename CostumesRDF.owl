@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Na4eed1a154d144f7a68957c5ff7742e2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#related"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#Сostume"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf40a1c911b2f4d4fae015ff65c0bb207">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#is_a_part_of"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#COMPONENTS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#product_length">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#COMPONENTS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#epic_fantasy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#fantasy_style"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#neckline">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#shoulder_product"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N74276b379d054d489ba2773ab94c2497">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_style"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#COMPONENTS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#japanese_style">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#asian_countries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#accessories">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#COMPONENTS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#waist_product">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#COMPONENTS"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N230a12ce00484506aae54cae66edb46a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_product_length"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#product_length"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#fantasy_style">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#STYLIZATION"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#is_a_part_of">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#related"/>
+    <rdfs:domain rdf:nodeID="Nf40a1c911b2f4d4fae015ff65c0bb207"/>
+    <rdfs:range rdf:nodeID="N33683165d76c4c0384abffab7788c01e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_shoulder_part">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_part"/>
+    <rdfs:range rdf:nodeID="N759b28c930b04b8280254dd1523fe192"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndd4bc2a053304a1399a6669e2c633c4d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_part"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#COMPONENTS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#bodice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#shoulder_product"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N33683165d76c4c0384abffab7788c01e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#is_a_part_of"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#COMPONENTS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#sleeves1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:nodeID="Ne720380c97314e0db054792b305530db"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N24b432d5c3314c3d985aa4b7a7e32861">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_decorative_elements"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#decorative_elements"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne720380c97314e0db054792b305530db">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#is_a_part_of"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#sleeves"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_style">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#related"/>
+    <rdfs:domain rdf:nodeID="N74276b379d054d489ba2773ab94c2497"/>
+    <rdfs:range rdf:nodeID="N893a904af6974f2f9c0ef98501f3d1f2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_product_length">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_part"/>
+    <rdfs:range rdf:nodeID="N230a12ce00484506aae54cae66edb46a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_fasteners">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_part"/>
+    <rdfs:range rdf:nodeID="N8a998eca3b494d87b2134cc935c43e8d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#dress1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:nodeID="N8ad95a874bc142be8659e9e2230490e9"/>
+    <has_a_part rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#bodice1"/>
+    <has_a_part rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#neckline1"/>
+    <has_a_part rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#skirt1"/>
+    <has_a_part rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#sleeves1"/>
+    <has_a_shoulder_part rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#bodice1"/>
+    <has_a_shoulder_part rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#neckline1"/>
+    <has_a_shoulder_part rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#sleeves1"/>
+    <has_a_waist_part rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#skirt1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#bodice1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:nodeID="N71625180ec2d40b7b348b2e2d33a60eb"/>
+    <is_a_part_of rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#dress1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#skirt1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:nodeID="N941c1a245e56419dbeb129d8ac50218d"/>
+    <is_a_part_of rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#dress1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#korean_style">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#asian_countries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#skirt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#waist_product"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#is_a_subclass_of">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#related"/>
+    <rdfs:domain rdf:nodeID="Na4eed1a154d144f7a68957c5ff7742e2"/>
+    <rdfs:range rdf:nodeID="Ne9f2b74684c44d658ba551a72ac723ea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_part">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#related"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#is_a_part_of"/>
+    <rdfs:domain rdf:nodeID="Ndd4bc2a053304a1399a6669e2c633c4d"/>
+    <rdfs:range rdf:nodeID="Nfe7b361d96a645e5af67bcc17c979071"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5a6705e9d999405e9c09353585d5dea7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_waist_part"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#waist_product"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8a998eca3b494d87b2134cc935c43e8d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_fasteners"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#fasteners"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#fairy_tales">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#fantasy_style"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_product_cut">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_part"/>
+    <rdfs:range rdf:nodeID="N93f002ad7e6d44cb86998a0bfe27e109"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_accessories">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_part"/>
+    <rdfs:range rdf:nodeID="N9f459905aaaf4478a3e35623abe661dd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N941c1a245e56419dbeb129d8ac50218d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#is_a_part_of"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#skirt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#asian_countries">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#historical_reconstruction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#historical_reconstruction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#STYLIZATION"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment>Costume anthology/cosplay</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#COMPONENTS">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#Сostume"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N893a904af6974f2f9c0ef98501f3d1f2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_style"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#STYLIZATION"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N93f002ad7e6d44cb86998a0bfe27e109">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_product_cut"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#product_cut"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#computer_games">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#fantasy_style"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N759b28c930b04b8280254dd1523fe192">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_shoulder_part"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#shoulder_product"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#sleeves">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#shoulder_product"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N71625180ec2d40b7b348b2e2d33a60eb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#is_a_part_of"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#bodice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#STYLIZATION">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#Сostume"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#european_countries">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#historical_reconstruction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_waist_part">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_part"/>
+    <rdfs:range rdf:nodeID="N5a6705e9d999405e9c09353585d5dea7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9f459905aaaf4478a3e35623abe661dd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_accessories"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#accessories"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#decorative_elements">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#COMPONENTS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#english_style">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#european_countries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#fasteners">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#COMPONENTS"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8ad95a874bc142be8659e9e2230490e9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_part"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#OUTFIT"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#Сostume">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#chinese_style">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#asian_countries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#scandinavian_style">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#european_countries"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne9f2b74684c44d658ba551a72ac723ea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#related"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#Сostume"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfe7b361d96a645e5af67bcc17c979071">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_part"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#COMPONENTS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#product_cut">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#COMPONENTS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#trousers">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#waist_product"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#neckline1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:nodeID="N768ed37fd8db458c91180222035d4c88"/>
+    <is_a_part_of rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#dress1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#OUTFIT">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#Сostume"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#shoulder_product">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#COMPONENTS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_decorative_elements">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#has_a_part"/>
+    <rdfs:range rdf:nodeID="N24b432d5c3314c3d985aa4b7a7e32861"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N768ed37fd8db458c91180222035d4c88">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#is_a_part_of"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#neckline"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#related">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

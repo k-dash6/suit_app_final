@@ -1,0 +1,26 @@
+{% extends "manage_ontology/manage_ontology_base.html" %}
+
+{% block content %}
+        <form action="{% url 'manage_ontology_del_all' %}" method="post">
+        {% csrf_token %}
+        {{ form_del.as_p }}
+        {{ form_del.path }}
+        <button type="submit">Delete</button>
+    </form>
+{% endblock %}
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    <h1>Delete new element  of clothing</h1>-->
+<!--</head>-->
+<!--<body>-->
+<!--        <form action="{% url 'manage_ontology_del' %}" method="post">-->
+<!--        {% csrf_token %}-->
+<!--        {{ form_del.as_p }}-->
+<!--        {{ form_del.path }}-->
+<!--        <button type="submit">Delete</button>-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->

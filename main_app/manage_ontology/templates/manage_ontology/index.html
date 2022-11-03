@@ -1,0 +1,27 @@
+{% extends "manage_ontology/manage_ontology_base.html" %}
+
+{% block content %}
+<form action="{% url 'manage_ontology_add' %}" method="post">
+        {% csrf_token %}
+        {{ form_add.as_p }}
+        {{ form_add.path }}
+        <button type="submit">Add</button>
+    </form>
+{% endblock %}
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Manage ontology</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Add new element  of clothing</h1>-->
+<!--    <form action="{% url 'manage_ontology_add' %}" method="post">-->
+<!--        {% csrf_token %}-->
+<!--        {{ form_add.as_p }}-->
+<!--        {{ form_add.path }}-->
+<!--        <button type="submit">Add</button>-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->

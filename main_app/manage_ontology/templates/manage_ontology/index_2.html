@@ -1,0 +1,10 @@
+{% extends "manage_ontology/manage_ontology_base.html" %}
+
+{% block content %}
+        <form action="{% url 'manage_ontology_del_one' %}" method="post">
+        {% csrf_token %}
+        {{ form_del_one.as_p }}
+        {{ form_del_one.path }}
+        <button type="submit">Delete</button>
+    </form>
+{% endblock %}
