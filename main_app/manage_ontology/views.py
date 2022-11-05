@@ -1,3 +1,5 @@
+import random
+
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import *
@@ -89,4 +91,33 @@ def test_delete_one_func(a):
     ontology.remove((s_uid, p_uid, o_uid))
     print('uhuuuuu')
     ontology.serialize(format="xml", destination="C:/Users/kdash/suit_app/CostumesRDF.owl")
-    
+
+
+def return_random_element(request):
+    sub_list = ''
+    if request.method == 'POST':
+        form_return_random = ReturnRandom(request.POST)
+        if form_return_random.is_valid():
+            sub_list = test_return_random(form_return_random.cleaned_data)
+        else:
+            return redirect('home')
+    else:
+        form_return_random = ReturnRandom()
+    return render(request, 'manage_ontology/return_random.html',
+                  {'form_return_random': form_return_random, 'subj': sub_list})
+
+
+def test_return_random(a):
+    ontology = Graph()
+    ontology.parse("C:/Users/kdash/suit_app/CostumesRDF.owl")
+    property_name = a['property']
+    object_name = a['obj']
+    property_uid = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + property_name)
+    object_uid = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + object_name)
+    sub_list = []
+    for s, p, o in ontology.triples((None, property_uid, object_uid)):
+        res = str(s).split('#')[1]
+        sub_list.append(res)
+
+    return random.choice(sub_list)
+

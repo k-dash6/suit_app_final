@@ -1,0 +1,11 @@
+{% extends "manage_ontology/manage_ontology_base.html" %}
+
+{% block content %}
+<form action="{% url 'manage_return_random' %}" method="post">
+        {% csrf_token %}
+        {{ form_return_random.as_p }}
+        {{ form_return_random.path }}
+        <button type="submit">Get element</button>
+        <p>{{ subj }}</p>
+    </form>
+{% endblock %}
