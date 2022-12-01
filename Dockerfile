@@ -8,6 +8,6 @@ COPY requirements.txt ./
 
 # RUN pip install
 
-CMD ["pip", "install"]
+CMD ["pip", "install", "requirements.txt"]
 COPY . .
 CMD ["python", "main_app/manage.py", "runserver"]
