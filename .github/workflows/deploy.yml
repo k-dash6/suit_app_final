@@ -25,7 +25,7 @@ jobs:
               images: dash6/suits_app.back
 
         - name: Build and push Docker image
-          uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+          uses: docker/build-push-action@v3
           with:
             context: .
             push: true
@@ -39,9 +39,8 @@ jobs:
             username: ${{ secrets.VPS_SSH_USERNAME }}
             key: ${{ secrets.key }}
             script: |
-                cd /root/backend
+                cd /root
                 docker stop ${{ secrets.CONTAINER_NAME }} || true
                 docker container rm ${{ secrets.CONTAINER_NAME }} || true
                 docker image rm -f ${{ secrets.IMAGE_NAME }} || true
                 docker run -d --name backend --publish 8000:8000 dash6/suits_app.back:master
-                docker exec backend npm run migrations:run --no-interaction
