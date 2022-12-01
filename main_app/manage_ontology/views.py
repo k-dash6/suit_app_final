@@ -109,7 +109,7 @@ def return_random_element(request):
 
 def test_return_random(a):
     ontology = Graph()
-    ontology.parse("../../../CostumesRDF.owl")
+    ontology.parse("../../CostumesRDF.owl")
     property_name = a['property']
     object_name = a['obj']
     property_uid = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + property_name)
