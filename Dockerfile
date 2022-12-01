@@ -6,7 +6,8 @@ EXPOSE 8000
 
 COPY requirements.txt ./
 
-RUN pip install
+# RUN pip install
 
+CMD ["pip", "install"]
 COPY . .
 CMD ["python", "main_app/manage.py", "runserver"]
