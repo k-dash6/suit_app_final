@@ -1,3 +1,4 @@
+import os
 import random
 
 from django.shortcuts import render, redirect
@@ -6,6 +7,8 @@ from .forms import *
 
 from rdflib import URIRef, BNode, Literal, Namespace, Graph, RDF
 from rdflib.namespace import FOAF, DCTERMS, XSD
+
+from ..main_app.settings import BASE_DIR
 
 
 def home(request):
@@ -109,7 +112,7 @@ def return_random_element(request):
 
 def test_return_random(a):
     ontology = Graph()
-    ontology.parse("../../CostumesRDF.owl")
+    ontology.parse(os.path.join(os.path.dirname(BASE_DIR), "deployment", "media"))
     property_name = a['property']
     object_name = a['obj']
     property_uid = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + property_name)
