@@ -7,7 +7,8 @@ from .forms import *
 
 from rdflib import URIRef, BNode, Literal, Namespace, Graph, RDF
 from rdflib.namespace import FOAF, DCTERMS, XSD
-from main_app.main_app.settings import BASE_DIR
+from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 def home(request):
