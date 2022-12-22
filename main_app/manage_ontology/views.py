@@ -33,7 +33,7 @@ def add_elements(request):
 
 def test_add_func(a):
     ontology = Graph()
-    ontology.parse("C:/Users/kdash/suit_app/CostumesRDF.owl")
+    ontology.parse(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
     object_name = a['object_name']
     predicat_name = a['predicat_name']
     subject_name = a['subject_name']
@@ -59,7 +59,7 @@ def delete_elements(request):
 
 def test_delete_func(a):
     ontology = Graph()
-    ontology.parse("C:/Users/kdash/suit_app/CostumesRDF.owl")
+    ontology.parse(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
     element_name = a['element_name']
     e_name = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + element_name)
     if (e_name, None, None) in ontology:
@@ -84,7 +84,7 @@ def delete_one_element(request):
 
 def test_delete_one_func(a):
     ontology = Graph()
-    ontology.parse("C:/Users/kdash/suit_app/CostumesRDF.owl")
+    ontology.parse(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
     object_name = a['object_name']
     predicat_name = a['predicat_name']
     subject_name = a['subject_name']
