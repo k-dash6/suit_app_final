@@ -9,5 +9,5 @@ urlpatterns = [
     path('manage-random/', return_random_element, name='manage_return_random'),
     path('manage-del_all/', delete_elements, name='manage_ontology_del_all'),
     path('manage-del_one/', delete_one_element, name='manage_ontology_del_one'),
-    path('ontology_visualization/', delete_one_element, name='ontology_visualization'),
+    path('ontology_visualization/', visual, name='ontology_visualization'),
 ]
