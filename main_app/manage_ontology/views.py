@@ -41,7 +41,7 @@ def test_add_func(a):
     p_uid = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + predicat_name)
     o_uid = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + object_name)
     ontology.add((s_uid, p_uid, o_uid))
-    ontology.serialize(format="xml", destination="C:/Users/kdash/suit_app/CostumesRDF.owl")
+    ontology.serialize(format="xml", destination=os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
 
 
 def delete_elements(request):
@@ -66,7 +66,7 @@ def test_delete_func(a):
         for s, p, o in ontology.triples((e_name, None, None)):
             ontology.remove((s, p, o))
 
-    ontology.serialize(format="xml", destination="C:/Users/kdash/suit_app/CostumesRDF.owl")
+    ontology.serialize(format="xml", destination=os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
 
 
 def delete_one_element(request):
@@ -93,7 +93,7 @@ def test_delete_one_func(a):
     o_uid = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + object_name)
     ontology.remove((s_uid, p_uid, o_uid))
     print('uhuuuuu')
-    ontology.serialize(format="xml", destination="C:/Users/kdash/suit_app/CostumesRDF.owl")
+    ontology.serialize(format="xml", destination=os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
 
 
 def return_random_element(request):
@@ -124,3 +124,6 @@ def test_return_random(a):
 
     return random.choice(sub_list)
 
+
+def visual(request):
+    return render(request, 'manage_ontology/ontology_visualization.html')
