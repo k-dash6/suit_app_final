@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from manage_ontology.views import *
+from main_app.manage_ontology.views import *
 from django.urls import path, include
 
 urlpatterns = [
