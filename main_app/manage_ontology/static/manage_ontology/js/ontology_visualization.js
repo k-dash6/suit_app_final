@@ -5,7 +5,7 @@ var nodes = [
   { id: 3, label: "Accessories" },
   { id: 4, label: "Decorative elements" },
   { id: 5, label: "Fasteners" },
-  { id: 6, label: "Prodect cut" },
+  { id: 6, label: "Product cut" },
 ];
 
 // create an array with edges
