@@ -5,7 +5,7 @@ var nodes = [
   { id: 3, label: "Accessories" },
   { id: 4, label: "Decorative elements" },
   { id: 5, label: "Fasteners" },
-  { id: 6, label: "Product cut" },
+  { id: 6, label: "Prodect cut" },
 ];
 
 // create an array with edges
@@ -27,11 +27,12 @@ var options = {edges:{
   arrows: {
       to: {
         enabled: true,
-        type: "normal"
+        type: "arrow",
       },
     },
 },
 };
+
 
 var network = new vis.Network(container, data, options);
 
