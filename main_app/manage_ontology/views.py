@@ -126,4 +126,5 @@ def test_return_random(a):
 
 
 def visual(request):
+
     return render(request, 'manage_ontology/ontology_visualization.html')
