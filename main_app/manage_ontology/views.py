@@ -128,64 +128,64 @@ def test_return_random(a):
     return random.choice(sub_list)
 
 
-def get_updated_nodes_and_edges():
-    ontor3 = ontor.OntoEditor("CostumesRDF.owl", "CostumesRDF.owl")
-    magic_list_0 = [p.name for p in ontor3.get_elems()[0]]
-    magic_list_1 = [p.name for p in ontor3.get_elems()[1]]
-    magic_list_3 = [p.name for p in ontor3.get_elems()[3]]
-
-    nodes = magic_list_0 + magic_list_3
-    edges = magic_list_1
-
-    data_nodes = []
-    for i in range(len(nodes)):
-        data_nodes.append({
-            'id': i,
-            'label': nodes[i]
-        })
-
-    nodes_dict = {}
-    for d in data_nodes:
-        nodes_dict[d['label']] = d['id']
-
-    g = Graph()
-    g.parse("CostumesRDFfromapp.owl")
-
-    magic_dict = {}
-    data_edges = []
-
-    for node_name in nodes:
-        sub = URIRef('http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#' + node_name)
-        for s, p, o in g.triples((sub, None, None)):
-            if '#type' in p or '#NamedIndividual' in o or '#' not in p or '#' not in o:
-                continue
-            from_node_name = s.split('#')[1]
-            to_node_name = o.split('#')[1]
-            edge_name = p.split('#')[1]
-            magic_dict = {'from': from_node_name, 'to': to_node_name, 'label': edge_name}
-            data_edges.append(magic_dict)
-
-    for d in data_edges:
-        for key, value in d.items():
-            if key == 'label':
-                continue
-            d[key] = nodes_dict[value]
-
-    return data_edges, data_nodes
+# def get_updated_nodes_and_edges():
+#     ontor3 = ontor.OntoEditor("CostumesRDF.owl", "CostumesRDF.owl")
+#     magic_list_0 = [p.name for p in ontor3.get_elems()[0]]
+#     magic_list_1 = [p.name for p in ontor3.get_elems()[1]]
+#     magic_list_3 = [p.name for p in ontor3.get_elems()[3]]
+#
+#     nodes = magic_list_0 + magic_list_3
+#     edges = magic_list_1
+#
+#     data_nodes = []
+#     for i in range(len(nodes)):
+#         data_nodes.append({
+#             'id': i,
+#             'label': nodes[i]
+#         })
+#
+#     nodes_dict = {}
+#     for d in data_nodes:
+#         nodes_dict[d['label']] = d['id']
+#
+#     g = Graph()
+#     g.parse("CostumesRDFfromapp.owl")
+#
+#     magic_dict = {}
+#     data_edges = []
+#
+#     for node_name in nodes:
+#         sub = URIRef('http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#' + node_name)
+#         for s, p, o in g.triples((sub, None, None)):
+#             if '#type' in p or '#NamedIndividual' in o or '#' not in p or '#' not in o:
+#                 continue
+#             from_node_name = s.split('#')[1]
+#             to_node_name = o.split('#')[1]
+#             edge_name = p.split('#')[1]
+#             magic_dict = {'from': from_node_name, 'to': to_node_name, 'label': edge_name}
+#             data_edges.append(magic_dict)
+#
+#     for d in data_edges:
+#         for key, value in d.items():
+#             if key == 'label':
+#                 continue
+#             d[key] = nodes_dict[value]
+#
+#     return data_edges, data_nodes
 
 
 # def visual(request):
 #     return render(request, 'manage_ontology/ontology_visualization.html')
 
-def nodes_request():
-    _, nodes = get_updated_nodes_and_edges()
-    response = JsonResponse(nodes)
-    return response
-
-def edges_request():
-    edges, _ = get_updated_nodes_and_edges()
-    response = JsonResponse(edges)
-    return response
+# def nodes_request():
+#     _, nodes = get_updated_nodes_and_edges()
+#     response = JsonResponse(nodes)
+#     return response
+#
+# def edges_request():
+#     edges, _ = get_updated_nodes_and_edges()
+#     response = JsonResponse(edges)
+#     return response
 
 def visual(request):
     return render(request, 'manage_ontology/ontology_visualization.html')
