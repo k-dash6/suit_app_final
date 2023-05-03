@@ -126,59 +126,45 @@ def test_return_random(a):
 
 from django.http import JsonResponse
 
-def update_nodes_edges():
-    ontor3 = ontor.OntoEditor("CostumesRDF.owl", "CostumesRDF.owl")
-    magic_list_0 = [p.name for p in ontor3.get_elems()[0]]
-    magic_list_1 = [p.name for p in ontor3.get_elems()[1]]
-    magic_list_3 = [p.name for p in ontor3.get_elems()[3]]
 
-    nodes = magic_list_0 + magic_list_3
-    edges = magic_list_1
-
-    # Получаем данные об узлах
-    data_nodes = []
-    for i in range(len(nodes)):
-        data_nodes.append({
-            'id': i,
-            'label': nodes[i]
-        })
-
-    nodes_dict = {}
-    for d in data_nodes:
-        nodes_dict[d['label']] = d['id']
-
-    g = Graph()
-    g.parse("CostumesRDFfromapp.owl")
-
-    magic_dict = {}
-    data_edges = []
-
-    for node_name in nodes:
-        sub = URIRef('http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#' + node_name)
-        for s, p, o in g.triples((sub, None, None)):
-            if '#type' in p or '#NamedIndividual' in o or '#' not in p or '#' not in o:
-                continue
-            from_node_name = s.split('#')[1]
-            to_node_name = o.split('#')[1]
-            edge_name = p.split('#')[1]
-            magic_dict = {'from': from_node_name, 'to': to_node_name, 'label': edge_name}
-            data_edges.append(magic_dict)
-
-    for d in data_edges:
-        for key, value in d.items():
-            if key == 'label':
-                continue
-            d[key] = nodes_dict[value]
-
-    updated_dict = {'edges': data_edges, 'nodes': data_nodes}
-    return updated_dict
 
 def my_view(request):
     # генерируем новые данные
-    data = update_nodes_edges()
-
+    nodes = {'nodes': [{'id': 0, 'label': 'decorative_elements'},
+      {'id': 1, 'label': 'product_length'},
+      {'id': 2, 'label': 'bodice'},
+      {'id': 3, 'label': 'shoulder_product'},
+      {'id': 4, 'label': 'sleeves'},
+      {'id': 5, 'label': 'fantasy_style'},
+      {'id': 6, 'label': 'STYLIZATION'},
+      {'id': 7, 'label': 'COMPONENTS'},
+      {'id': 8, 'label': 'product_cut'},
+      {'id': 9, 'label': 'waist_product'},
+      {'id': 10, 'label': 'skirt'},
+      {'id': 11, 'label': 'Сostume'},
+      {'id': 12, 'label': 'japanese_style'},
+      {'id': 13, 'label': 'asian_countries'},
+      {'id': 14, 'label': 'OUTFIT'},
+      {'id': 15, 'label': 'accessories'},
+      {'id': 16, 'label': 'chinese_style'},
+      {'id': 17, 'label': 'historical_reconstruction'},
+      {'id': 18, 'label': 'fairy_tales'},
+      {'id': 19, 'label': 'neckline'},
+      {'id': 20, 'label': 'fasteners'},
+      {'id': 21, 'label': 'computer_games'},
+      {'id': 22, 'label': 'epic_fantasy'},
+      {'id': 23, 'label': 'english_style'},
+      {'id': 24, 'label': 'european_countries'},
+      {'id': 25, 'label': 'scandinavian_style'},
+      {'id': 26, 'label': 'trousers'},
+      {'id': 27, 'label': 'korean_style'},
+      {'id': 28, 'label': 'dress1'},
+      {'id': 29, 'label': 'bodice1'},
+      {'id': 30, 'label': 'neckline1'},
+      {'id': 31, 'label': 'skirt1'},
+      {'id': 32, 'label': 'sleeves1'}]}
     # возвращаем данные в формате JSON
-    return JsonResponse(data)
+    return JsonResponse(nodes)
 
 
 def visual(request):
