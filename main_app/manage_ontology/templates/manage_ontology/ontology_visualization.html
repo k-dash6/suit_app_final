@@ -31,18 +31,18 @@ fetch('{{ url }}')
   });
 </script>
 
-        <script>
-var myData = {};
-{% url 'my_view_edges' as url %}
-fetch('{{ url }}')
-  .then(response => response.json())
-  .then(data => {
-    myData = data;
-    console.log(myData.edges);
-    // выводим данные на страницу
-    document.getElementById("result2").innerHTML = myData['edges'];
-  });
-</script>
+<!--        <script>-->
+<!--var myData = {};-->
+<!--{% url 'my_view_edges' as url %}-->
+<!--fetch('{{ url }}')-->
+<!--  .then(response => response.json())-->
+<!--  .then(data => {-->
+<!--    myData = data;-->
+<!--    console.log(myData.edges);-->
+<!--    // выводим данные на страницу-->
+<!--    document.getElementById("result2").innerHTML = myData['edges'];-->
+<!--  });-->
+<!--</script>-->
 
 
     <script>

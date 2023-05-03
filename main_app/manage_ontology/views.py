@@ -186,12 +186,12 @@ def my_view(request):
     return JsonResponse(nodes)
 
 
-def my_view_edges(request):
-    # генерируем новые данные
-    nodes, edges = update_nodes_edges()
-
-    # возвращаем данные в формате JSON
-    return JsonResponse(edges)
+# def my_view_edges(request):
+#     # генерируем новые данные
+#     nodes, edges = update_nodes_edges()
+#
+#     # возвращаем данные в формате JSON
+#     return JsonResponse(edges)
 
 
 def visual(request):
