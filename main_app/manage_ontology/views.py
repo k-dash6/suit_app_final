@@ -159,9 +159,9 @@ def update_nodes_edges():
         for s, p, o in g.triples((sub, None, None)):
             if '#type' in p or '#NamedIndividual' in o or '#' not in p or '#' not in o:
                 continue
-            from_node_name = s.split('#')[1]
-            to_node_name = o.split('#')[1]
-            edge_name = p.split('#')[1]
+            from_node_name = str(s).split('#')[1]
+            to_node_name = str(o).split('#')[1]
+            edge_name = str(p).split('#')[1]
             magic_dict = {'from': from_node_name, 'to': to_node_name, 'label': edge_name}
             data_edges.append(magic_dict)
 
