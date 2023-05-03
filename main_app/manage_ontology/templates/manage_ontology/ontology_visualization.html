@@ -20,45 +20,45 @@
     <script>
 
 
-var nodes = [{"id": 0, "label": "decorative_elements"}, {"id": 1, "label": "product_length"}, {"id": 2, "label": "bodice"}, {"id": 3, "label": "shoulder_product"}, {"id": 4, "label": "sleeves"}, {"id": 5, "label": "fantasy_style"}, {"id": 6, "label": "STYLIZATION"}, {"id": 7, "label": "COMPONENTS"}, {"id": 8, "label": "product_cut"}, {"id": 9, "label": "waist_product"}, {"id": 10, "label": "skirt"}, {"id": 11, "label": "\u0421ostume"}, {"id": 12, "label": "japanese_style"}, {"id": 13, "label": "asian_countries"}, {"id": 14, "label": "OUTFIT"}, {"id": 15, "label": "accessories"}, {"id": 16, "label": "chinese_style"}, {"id": 17, "label": "historical_reconstruction"}, {"id": 18, "label": "fairy_tales"}, {"id": 19, "label": "neckline"}, {"id": 20, "label": "fasteners"}, {"id": 21, "label": "computer_games"}, {"id": 22, "label": "epic_fantasy"}, {"id": 23, "label": "english_style"}, {"id": 24, "label": "european_countries"}, {"id": 25, "label": "scandinavian_style"}, {"id": 26, "label": "trousers"}, {"id": 27, "label": "korean_style"}, {"id": 28, "label": "dress1"}, {"id": 29, "label": "bodice1"}, {"id": 30, "label": "neckline1"}, {"id": 31, "label": "skirt1"}, {"id": 32, "label": "sleeves1"}];
-var edges = [{"from": 0, "to": 7, "label": "subClassOf"}, {"from": 1, "to": 7, "label": "subClassOf"}, {"from": 2, "to": 3, "label": "subClassOf"}, {"from": 3, "to": 7, "label": "subClassOf"}, {"from": 4, "to": 3, "label": "subClassOf"}, {"from": 5, "to": 6, "label": "subClassOf"}, {"from": 6, "to": 11, "label": "subClassOf"}, {"from": 7, "to": 11, "label": "subClassOf"}, {"from": 8, "to": 7, "label": "subClassOf"}, {"from": 9, "to": 7, "label": "subClassOf"}, {"from": 10, "to": 9, "label": "subClassOf"}, {"from": 12, "to": 13, "label": "subClassOf"}, {"from": 13, "to": 17, "label": "subClassOf"}, {"from": 14, "to": 11, "label": "subClassOf"}, {"from": 15, "to": 7, "label": "subClassOf"}, {"from": 16, "to": 13, "label": "subClassOf"}, {"from": 17, "to": 6, "label": "subClassOf"}, {"from": 18, "to": 5, "label": "subClassOf"}, {"from": 19, "to": 3, "label": "subClassOf"}, {"from": 20, "to": 7, "label": "subClassOf"}, {"from": 21, "to": 5, "label": "subClassOf"}, {"from": 22, "to": 5, "label": "subClassOf"}, {"from": 23, "to": 24, "label": "subClassOf"}, {"from": 24, "to": 17, "label": "subClassOf"}, {"from": 25, "to": 24, "label": "subClassOf"}, {"from": 26, "to": 9, "label": "subClassOf"}, {"from": 27, "to": 13, "label": "subClassOf"}, {"from": 28, "to": 29, "label": "has_a_part"}, {"from": 28, "to": 30, "label": "has_a_part"}, {"from": 28, "to": 31, "label": "has_a_part"}, {"from": 28, "to": 32, "label": "has_a_part"}, {"from": 28, "to": 29, "label": "has_a_shoulder_part"}, {"from": 28, "to": 30, "label": "has_a_shoulder_part"}, {"from": 28, "to": 32, "label": "has_a_shoulder_part"}, {"from": 28, "to": 31, "label": "has_a_waist_part"}, {"from": 29, "to": 28, "label": "is_a_part_of"}, {"from": 30, "to": 28, "label": "is_a_part_of"}, {"from": 31, "to": 28, "label": "is_a_part_of"}];
+<!--var nodes = [{"id": 0, "label": "decorative_elements"}, {"id": 1, "label": "product_length"}, {"id": 2, "label": "bodice"}, {"id": 3, "label": "shoulder_product"}, {"id": 4, "label": "sleeves"}, {"id": 5, "label": "fantasy_style"}, {"id": 6, "label": "STYLIZATION"}, {"id": 7, "label": "COMPONENTS"}, {"id": 8, "label": "product_cut"}, {"id": 9, "label": "waist_product"}, {"id": 10, "label": "skirt"}, {"id": 11, "label": "\u0421ostume"}, {"id": 12, "label": "japanese_style"}, {"id": 13, "label": "asian_countries"}, {"id": 14, "label": "OUTFIT"}, {"id": 15, "label": "accessories"}, {"id": 16, "label": "chinese_style"}, {"id": 17, "label": "historical_reconstruction"}, {"id": 18, "label": "fairy_tales"}, {"id": 19, "label": "neckline"}, {"id": 20, "label": "fasteners"}, {"id": 21, "label": "computer_games"}, {"id": 22, "label": "epic_fantasy"}, {"id": 23, "label": "english_style"}, {"id": 24, "label": "european_countries"}, {"id": 25, "label": "scandinavian_style"}, {"id": 26, "label": "trousers"}, {"id": 27, "label": "korean_style"}, {"id": 28, "label": "dress1"}, {"id": 29, "label": "bodice1"}, {"id": 30, "label": "neckline1"}, {"id": 31, "label": "skirt1"}, {"id": 32, "label": "sleeves1"}];-->
+<!--var edges = [{"from": 0, "to": 7, "label": "subClassOf"}, {"from": 1, "to": 7, "label": "subClassOf"}, {"from": 2, "to": 3, "label": "subClassOf"}, {"from": 3, "to": 7, "label": "subClassOf"}, {"from": 4, "to": 3, "label": "subClassOf"}, {"from": 5, "to": 6, "label": "subClassOf"}, {"from": 6, "to": 11, "label": "subClassOf"}, {"from": 7, "to": 11, "label": "subClassOf"}, {"from": 8, "to": 7, "label": "subClassOf"}, {"from": 9, "to": 7, "label": "subClassOf"}, {"from": 10, "to": 9, "label": "subClassOf"}, {"from": 12, "to": 13, "label": "subClassOf"}, {"from": 13, "to": 17, "label": "subClassOf"}, {"from": 14, "to": 11, "label": "subClassOf"}, {"from": 15, "to": 7, "label": "subClassOf"}, {"from": 16, "to": 13, "label": "subClassOf"}, {"from": 17, "to": 6, "label": "subClassOf"}, {"from": 18, "to": 5, "label": "subClassOf"}, {"from": 19, "to": 3, "label": "subClassOf"}, {"from": 20, "to": 7, "label": "subClassOf"}, {"from": 21, "to": 5, "label": "subClassOf"}, {"from": 22, "to": 5, "label": "subClassOf"}, {"from": 23, "to": 24, "label": "subClassOf"}, {"from": 24, "to": 17, "label": "subClassOf"}, {"from": 25, "to": 24, "label": "subClassOf"}, {"from": 26, "to": 9, "label": "subClassOf"}, {"from": 27, "to": 13, "label": "subClassOf"}, {"from": 28, "to": 29, "label": "has_a_part"}, {"from": 28, "to": 30, "label": "has_a_part"}, {"from": 28, "to": 31, "label": "has_a_part"}, {"from": 28, "to": 32, "label": "has_a_part"}, {"from": 28, "to": 29, "label": "has_a_shoulder_part"}, {"from": 28, "to": 30, "label": "has_a_shoulder_part"}, {"from": 28, "to": 32, "label": "has_a_shoulder_part"}, {"from": 28, "to": 31, "label": "has_a_waist_part"}, {"from": 29, "to": 28, "label": "is_a_part_of"}, {"from": 30, "to": 28, "label": "is_a_part_of"}, {"from": 31, "to": 28, "label": "is_a_part_of"}];-->
 
-<!--const xhr1 = new XMLHttpRequest();-->
-<!--const url1 = "http://62.84.114.164:8000/updated_nodes_data";-->
+const xhr1 = new XMLHttpRequest();
+const url1 = "http://62.84.114.164:8000/updated_nodes_data";
 
-<!--let responseData; // объявляем переменную для хранения ответа-->
+let responseData; // объявляем переменную для хранения ответа
 
-<!--xhr1.onreadystatechange = function() {-->
-<!--  if (xhr1.readyState === XMLHttpRequest.DONE) {-->
-<!--    if (xhr1.status === 200) {-->
-<!--      nodes = JSON.parse(xhr1.responseText); // записываем ответ в переменную-->
-<!--    } else {-->
-<!--      console.log('Ошибка запроса');-->
-<!--    }-->
-<!--  }-->
-<!--};-->
+xhr1.onreadystatechange = function() {
+  if (xhr1.readyState === XMLHttpRequest.DONE) {
+    if (xhr1.status === 200) {
+      nodes = JSON.parse(xhr1.responseText); // записываем ответ в переменную
+    } else {
+      console.log('Ошибка запроса');
+    }
+  }
+};
 
-<!--xhr1.open("GET", url1);-->
-<!--xhr1.send();-->
+xhr1.open("GET", url1);
+xhr1.send();
 
 
-<!--const xhr2 = new XMLHttpRequest();-->
-<!--const url2 = "http://62.84.114.164:8000/updated_edges_data";-->
+const xhr2 = new XMLHttpRequest();
+const url2 = "http://62.84.114.164:8000/updated_edges_data";
 
-<!--let responseData; // объявляем переменную для хранения ответа-->
+let responseData; // объявляем переменную для хранения ответа
 
-<!--xhr2.onreadystatechange = function() {-->
-<!--  if (xhr2.readyState === XMLHttpRequest.DONE) {-->
-<!--    if (xhr2.status === 200) {-->
-<!--      edges = JSON.parse(xhr2.responseText); // записываем ответ в переменную-->
-<!--    } else {-->
-<!--      console.log('Ошибка запроса');-->
-<!--    }-->
-<!--  }-->
-<!--};-->
+xhr2.onreadystatechange = function() {
+  if (xhr2.readyState === XMLHttpRequest.DONE) {
+    if (xhr2.status === 200) {
+      edges = JSON.parse(xhr2.responseText); // записываем ответ в переменную
+    } else {
+      console.log('Ошибка запроса');
+    }
+  }
+};
 
-<!--xhr2.open("GET", url2);-->
-<!--xhr2.send();-->
+xhr2.open("GET", url2);
+xhr2.send();
 
 
   // create a network
