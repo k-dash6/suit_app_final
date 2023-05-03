@@ -124,6 +124,14 @@ def test_return_random(a):
 
     return random.choice(sub_list)
 
+from django.http import JsonResponse
+
+def my_view(request):
+    # генерируем новые данные
+    data = {'key': 'value'}
+    # возвращаем данные в формате JSON
+    return JsonResponse(data)
+
 
 def visual(request):
 

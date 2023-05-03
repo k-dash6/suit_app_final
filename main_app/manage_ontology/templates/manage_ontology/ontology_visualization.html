@@ -16,6 +16,23 @@
     <div id="mynetwork"></div>
     <h2>I am working fuck you a</h2>
 
+    <div id="result"></div>
+
+    <script>
+var myData = {};
+{% url 'my_view' as url %}
+fetch('{{ url }}')
+  .then(response => response.json())
+  .then(data => myData = data);
+</script>
+
+    <script>
+// используем данные, которые были переданы из питона
+console.log(myData.key);
+// выводим данные на страницу
+document.getElementById("result").innerHTML = myData.key;
+</script>
+
 
     <script>
 
