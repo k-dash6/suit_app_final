@@ -15,6 +15,7 @@
 
     <div id="mynetwork"></div>
     <h2>I am working fuck you a</h2>
+    <div id="result"></div>
 
     <script>
 var myData = {};
@@ -26,10 +27,8 @@ fetch('{{ url }}')
 // используем данные, которые были переданы из питона
 console.log(myData.key);
 // выводим данные на страницу
-document.getElementById("result").innerHTML = myData.key;
+document.getElementById("result").innerHTML = myData;
 </script>
-
-    <div id="result"></div>
 
 
     <script>
