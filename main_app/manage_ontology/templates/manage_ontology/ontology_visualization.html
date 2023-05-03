@@ -16,6 +16,7 @@
     <div id="mynetwork"></div>
     <h2>I am working fuck you a</h2>
     <div id="result"></div>
+    <div id="result2"></div>
 
     <script>
 var myData = {};
@@ -24,9 +25,22 @@ fetch('{{ url }}')
   .then(response => response.json())
   .then(data => {
     myData = data;
-    console.log(myData.key);
+    console.log(myData.nodes);
     // выводим данные на страницу
-    document.getElementById("result").innerHTML = myData['my_key'];
+    document.getElementById("result").innerHTML = myData['nodes'];
+  });
+</script>
+
+        <script>
+var myData = {};
+{% url 'my_view_edges' as url %}
+fetch('{{ url }}')
+  .then(response => response.json())
+  .then(data => {
+    myData = data;
+    console.log(myData.edges);
+    // выводим данные на страницу
+    document.getElementById("result2").innerHTML = myData['edges'];
   });
 </script>
 

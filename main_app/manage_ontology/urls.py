@@ -11,4 +11,5 @@ urlpatterns = [
     path('manage-del_one/', delete_one_element, name='manage_ontology_del_one'),
     path('ontology_visualization/', visual, name='ontology_visualization'),
     path('my_view/', my_view, name='my_view'),
+    path('my_view_edges/', my_view_edges, name='my_view_edges'),
 ]
