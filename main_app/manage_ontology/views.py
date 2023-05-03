@@ -130,7 +130,7 @@ from django.http import JsonResponse
 
 def my_view(request):
     # генерируем новые данные
-    data = {'nodes': 'my_value'}
+    data = {'nodes': ['my_value', 1, 6, 'aaa']}
     # возвращаем данные в формате JSON
     return JsonResponse(data)
 
