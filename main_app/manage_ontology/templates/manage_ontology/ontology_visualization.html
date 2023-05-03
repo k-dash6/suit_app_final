@@ -25,19 +25,15 @@ fetch('{{ url }}')
   .then(response => response.json())
   .then(data => {
     myData = data;
-  })
-  .then(
-  var nodes = MyData['nodes'];
-  var edges = MyData['edges'];
-  )
-  .then(
-  var container = document.getElementById("mynetwork");
-  var data = {
-    nodes: nodes,
-    edges: edges,
-  };)
-  .then(
-  var options = {edges:{
+    var nodes = myData['nodes'];
+    var edges = myData['edges'];
+
+    var container = document.getElementById("mynetwork");
+    var data = {
+      nodes: nodes,
+      edges: edges,
+    };
+    var options = {edges:{
     arrows: {
         to: {
           enabled: true,
@@ -45,15 +41,16 @@ fetch('{{ url }}')
         },
       },
   },
-  };)
-  .then(
-  var network = new vis.Network(container, data, options);)
-  .then(
+  };
+
+  var network = new vis.Network(container, data, options);
+
   network.on("click", function (params) {
     params.event = "[original event]";
 
-  });)
-  ;
+  });
+
+  });
 
 
 
