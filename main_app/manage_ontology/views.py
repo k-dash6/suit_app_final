@@ -126,6 +126,8 @@ def test_return_random(a):
 
 from django.http import JsonResponse
 
+
+
 def my_view(request):
     # генерируем новые данные
     data = {'key': 'value'}

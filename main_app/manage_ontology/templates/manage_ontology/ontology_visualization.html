@@ -24,9 +24,7 @@ var myData = {};
 fetch('{{ url }}')
   .then(response => response.json())
   .then(data => myData = data);
-</script>
 
-    <script>
 // используем данные, которые были переданы из питона
 console.log(myData.key);
 // выводим данные на страницу
