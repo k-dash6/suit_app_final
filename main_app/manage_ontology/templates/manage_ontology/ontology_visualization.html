@@ -1,18 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <script src='https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js'></script>
-    <meta charset="UTF-8">
-    <style>
-#mynetwork {
-  width: 1000px;
-  height: 1000px;
-  border: 1px solid lightgray;
-}
-    </style>
-</head>
-<body>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <script src='https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js'></script>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <style>-->
+<!--#mynetwork {-->
+<!--  width: 1000px;-->
+<!--  height: 1000px;-->
+<!--  border: 1px solid lightgray;-->
+<!--}-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
 
+{% extends "manage_ontology/manage_ontology_base.html" %}
+
+{% block content %}
     <div id="mynetwork"></div>
     <h2>I am working fuck you a</h2>
 
@@ -52,5 +55,4 @@ fetch('{{ url }}')
   });
 
      </script>
-</body>
-</html>
+{% endblock %}
