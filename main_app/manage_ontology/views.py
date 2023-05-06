@@ -14,9 +14,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 def home(request):
     return render(request, 'manage_ontology/home.html')
 
+def info(request):
+    return render(request, 'manage_ontology/info.html')
+
+def my_profile(request):
+    return render(request, 'manage_ontology/my_profile.html')
+
+def manage_ontology(request):
+    return render(request, 'manage_ontology/manage_ontology.html')
 
 def index(request):
-    return render(request, 'manage_ontology/index.html')
+    return render(request, 'manage_ontology/manage_ontology_add.html')
 
 
 def add_elements(request):
@@ -28,7 +36,7 @@ def add_elements(request):
             return redirect('home')
     else:
         form_add = AddElements()
-    return render(request, 'manage_ontology/index.html', {'form_add': form_add})
+    return render(request, 'manage_ontology/manage_ontology_add.html', {'form_add': form_add})
 
 
 def test_add_func(a):
@@ -54,7 +62,7 @@ def delete_elements(request):
             return redirect('home')
     else:
         form_del = DeleteElements()
-    return render(request, 'manage_ontology/index_1.html', {'form_del': form_del})
+    return render(request, 'manage_ontology/manage_ontology_del_all.html', {'form_del': form_del})
 
 
 def test_delete_func(a):
@@ -79,7 +87,7 @@ def delete_one_element(request):
             return redirect('home')
     else:
         form_del_one = DeleteOneElement()
-    return render(request, 'manage_ontology/index_2.html', {'form_del_one': form_del_one})
+    return render(request, 'manage_ontology/manage_ontology_del_one.html', {'form_del_one': form_del_one})
 
 
 def test_delete_one_func(a):
