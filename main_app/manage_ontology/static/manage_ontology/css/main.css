@@ -4,11 +4,19 @@
     background-color: #8dab84;
 }
 
+.carousel-inner {
+    background-color: #8dab84;
+}
+
 .carousel-title {
-    color: #8dab84;
+    color: white;
     text-shadow: 1px 1px 1px #406933;
 }
 
 .subtitle {
     color: white;
+}
+
+.color-base fweight-700 {
+    color: #406933;
 }
