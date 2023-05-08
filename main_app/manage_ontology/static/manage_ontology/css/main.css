@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
 .bg-color-sky-light {
-    background-color: #c0e8a7;
+    background-color: #8dab84;
+}
+
+.carousel-title {
+    color: #8dab84;
+    text-shadow: 1px 1px 1px #406933;
+}
+
+.subtitle {
+    color: white;
 }
