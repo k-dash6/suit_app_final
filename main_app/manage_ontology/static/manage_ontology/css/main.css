@@ -33,6 +33,7 @@
 }
 
 .dropdown-menu {
+  display: none;
   position: relative;
 }
 
