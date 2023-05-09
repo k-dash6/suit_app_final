@@ -41,11 +41,14 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse nav-collapse">
                         <div class="menu-container">
-                            <ul class="navbar-nav navbar-nav-right">
-                                <li><a href="{% url 'home' %}">Home</a></li>
-                                <li><a href="{% url 'my_profile' %}">Личный кабинет</a></li>
-                                <li><a href="{% url 'info' %}">Справка</a></li>
-                            </ul>
+                            <a class="home" href="{% url 'home' %}">Какое-то крутое название</a>
+                            <div class="dropdown">
+                              <button class="dropbtn">Выпадающее</button>
+                              <div class="dropdown-content">
+                                <a href="{% url 'my_profile' %}">Личный кабинет</a>
+                                <a href="{% url 'info' %}">Справка</a>
+                              </div>
+                            </div>
                         </div>
                     </div>
                     <!-- End Navbar Collapse -->
