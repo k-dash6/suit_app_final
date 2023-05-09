@@ -23,7 +23,7 @@
 	font-size: 45px;
 }
 
-.title h2 {
+h2 {
 	color: #FFFFFF;
 }
 
@@ -33,4 +33,8 @@
 
 .subtitle {
     color: #8dab84;
+}
+
+.footer {
+    background-color: #FFFFFF;
 }
