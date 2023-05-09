@@ -33,9 +33,7 @@
 }
 
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  z-index: -1;
+  position: relative;
 }
 
 .dropdown-menu li {
