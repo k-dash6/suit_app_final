@@ -42,12 +42,13 @@
                     <div class="collapse navbar-collapse nav-collapse">
                         <div class="menu-container">
                             <a class="home" href="{% url 'home' %}">Какое-то крутое название</a>
+
                             <div class="dropdown">
-                              <button class="dropbtn">Выпадающее</button>
-                              <div class="dropdown-content">
-                                <a href="{% url 'my_profile' %}">Личный кабинет</a>
-                                <a href="{% url 'info' %}">Справка</a>
-                              </div>
+                              <img src="your_image_url" alt="dropdown image">
+                              <ul class="dropdown-menu">
+                                <li><a href="{% url 'my_profile' %}">Личный кабинет</a></li>
+                                <li><a href="{% url 'info' %}">Справка</a></li>
+                              </ul>
                             </div>
                         </div>
                     </div>
@@ -119,7 +120,12 @@
             </div>
         </footer>
         <!--========== END FOOTER ==========-->
-
+        <script>
+            const dropdown = document.querySelector('.dropdown');
+            dropdown.addEventListener('click', function() {
+              this.classList.toggle('active');
+            });
+        </script>
         <!-- Back To Top -->
         <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
 
