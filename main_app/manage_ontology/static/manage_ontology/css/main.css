@@ -4,8 +4,8 @@
     background-color: #8dab84;
 }
 
-.swiper-slider swiper-testimonials {
-    color: white;
+.swiper-wrapper {
+    background-color: white;
 }
 
 .title {
