@@ -33,8 +33,7 @@
 }
 
 .dropdown-menu {
-  display: none;
-  position: relative;
+  position: static;
 }
 
 .dropdown-menu li {
