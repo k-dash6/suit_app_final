@@ -23,14 +23,14 @@
 	font-size: 45px;
 }
 
+.title h2 {
+	color: white;
+}
+
+.margin-b-20 {
+    color: white;
+}
+
 .subtitle {
     color: #8dab84;
-}
-
-.color-base fweight-700 {
-    color: #406933;
-}
-
-.subpages_titles {
-
 }
