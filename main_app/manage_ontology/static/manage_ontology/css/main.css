@@ -4,10 +4,6 @@
     background-color: #8dab84;
 }
 
-.sw_cont {
-    background-color: white;
-}
-
 .title {
 	font-size: 50px;
 	color: #000;
@@ -23,18 +19,6 @@
 	font-size: 45px;
 }
 
-h2 {
-	color: #FFFFFF;
-}
-
-.margin-b-20 div{
-    color: #FFFFFF;
-}
-
 .subtitle {
     color: #8dab84;
-}
-
-.footer {
-    background-color: #FFFFFF;
 }
