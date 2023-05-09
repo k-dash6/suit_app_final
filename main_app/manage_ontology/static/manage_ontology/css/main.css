@@ -33,7 +33,8 @@
 }
 
 .dropdown-menu {
-  position: fixed;
+  position: relative;
+  margin: 0 0 0 auto;
 }
 
 .dropdown-menu li {
