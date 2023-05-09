@@ -28,7 +28,8 @@
 .dropdown {
   position: relative;
   display: inline-block;
-  left: 1000px;
+  left: 1050px;
+  top: 5px;
 }
 
 .dropdown-menu {
