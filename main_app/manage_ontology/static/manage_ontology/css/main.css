@@ -34,7 +34,7 @@
 
 .dropdown-menu {
   position: relative;
-  margin-left: auto;
+  float: right;
 }
 
 .dropdown-menu li {
