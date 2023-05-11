@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'manage_ontology.apps.ManageOntologyConfig',
 ]
 
+AUTH_USER_MODEL = 'manage_ontology.User'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
