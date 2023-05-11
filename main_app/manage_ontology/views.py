@@ -684,6 +684,9 @@ def register(request):
     return render(request, 'manage_ontology/register.html', {'form': form})
 
 
+from django.contrib import messages
+
+
 def user_login(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
@@ -693,7 +696,15 @@ def user_login(request):
             user = authenticate(request, email=email, password=password)
             if user is not None:
                 login(request, user)
-                return render(request, 'manage_ontology/login.html', {'form': form})
+                return redirect('home')
+            else:
+                messages.error(request, 'Invalid email or password.')
+        else:
+            messages.error(request, 'Invalid form data.')
+    else:
+        form = LoginForm()
+
+    return render(request, 'manage_ontology/login.html', {'form': form})
 
 
 def user_logout(request):
