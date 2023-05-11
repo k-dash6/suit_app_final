@@ -694,3 +694,8 @@ def user_login(request):
             if user is not None:
                 login(request, user)
                 return redirect
+
+
+def user_logout(request):
+    logout(request)
+    return render(request, 'logout.html')
