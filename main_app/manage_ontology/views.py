@@ -699,8 +699,6 @@ def user_login(request):
                 return redirect('home')
             else:
                 messages.error(request, 'Invalid email or password.')
-        else:
-            messages.error(request, 'Invalid form data.')
     else:
         form = LoginForm()
 
