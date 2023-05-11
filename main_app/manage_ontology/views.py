@@ -701,6 +701,7 @@ def user_login(request):
                 messages.error(request, 'Invalid email or password.')
     else:
         form = LoginForm()
+
     return render(request, 'manage_ontology/login.html', {'form': form})
 
 
