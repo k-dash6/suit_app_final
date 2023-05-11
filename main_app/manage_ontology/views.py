@@ -681,7 +681,7 @@ def register(request):
             return redirect('login')
     else:
         form = RegistrationForm()
-    return render(request, 'register.html', {'form': form})
+    return render(request, 'manage_ontology/register.html', {'form': form})
 
 
 def user_login(request):
@@ -693,9 +693,9 @@ def user_login(request):
             user = authenticate(request, email=email, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('home')
+                return render(request, 'manage_ontology/login.html', {'form': form})
 
 
 def user_logout(request):
     logout(request)
-    return render(request, 'logout.html')
+    return render(request, 'manage_ontology/logout.html')
