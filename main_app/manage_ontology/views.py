@@ -18,7 +18,7 @@ def info(request):
     return render(request, 'manage_ontology/info.html')
 
 def my_profile(request):
-    return render(request, 'manage_ontology/my_profile.html')
+    return render(request, 'manage_ontology/my_profile.html', {'name': 'Dasha', 'user': request.user})
 
 def manage_ontology(request):
     return render(request, 'manage_ontology/manage_ontology.html')
@@ -670,8 +670,8 @@ def visual(request):
 
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
-from .forms import RegistrationForm, LoginForm
-
+from .forms import LoginForm, RegistrationForm
+from django.contrib.auth.forms import UserCreationForm
 
 def register(request):
     if request.method == 'POST':

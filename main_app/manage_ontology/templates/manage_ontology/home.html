@@ -100,6 +100,7 @@
                             </div>
                         </div>
                     </div>
+                    {% if request.user.is_admin %}
                     <div class="col-sm-4">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <div class="service" data-height="height">
@@ -114,6 +115,7 @@
                             </div>
                         </div>
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </div>

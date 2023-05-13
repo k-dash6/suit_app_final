@@ -16,17 +16,21 @@ class UserManager(BaseUserManager):
     def create_superuser(self, email, password):
         user = self.create_user(email=email, password=password)
         user.is_admin = True
+        user.is_staff = True
         user.save(using=self._db)
         return user
 
 
 class User(AbstractBaseUser):
     email = models.EmailField(unique=True)
-    is_admin = models.BooleanField(default=False)
+    username = models.CharField(unique=True, max_length=30)
 
+    is_admin = models.BooleanField(default=False)
+    is_staff = models.BooleanField(default=False)
     objects = UserManager()
 
     USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username']
 
     def __str__(self):
         return self.email
