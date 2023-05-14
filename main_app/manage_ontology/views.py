@@ -737,4 +737,4 @@ def choose_stylization(request):
     else:
         form = ChooseStylization(request.POST)
 
-    return render(request, 'choose_stylization.html', {'form': form})
+    return render(request, 'manage_ontology/choose_stylization.html', {'form': form})
