@@ -65,6 +65,7 @@
                 <h1 class="carousel-title">Сгенерировать костюм</h1>
             </div>
         </div>
+
         <form action="{% url 'choose_stylization' %}" method="post">
                 {% csrf_token %}
                 {{ form_choose_stylization.as_p }}

@@ -715,11 +715,20 @@ def choose_stylization(request):
                   {'form_choose_stylization': form_choose_stylization})
 
 
+from googletrans import Translator
+
+
 def get_stylizations():
     stylizations = []
     g = Graph()
     g.parse("CostumesRDF.owl")
     for ind, (sub, pred, obj) in enumerate(g):
         if 'subClassOf' in pred and 'STYLIZATION' in obj:
-            stylizations.append(sub.split('#')[1])
+            stylization = sub.split('#')[1]
+            stylization_to_translate = stylization.replace('_', ' ')
+            print(type(stylization_to_translate))
+            translator = Translator()
+            stylization_translated = translator.translate(stylization_to_translate, dest='ru')
+            mini = (stylization, stylization_translated.text)
+            stylizations.append(mini)
     return stylizations
