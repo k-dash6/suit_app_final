@@ -2,6 +2,9 @@ from django import forms
 from .models import *
 from django.contrib.auth.forms import UserCreationForm
 
+from .views import get_stylizations
+
+
 class RegistrationForm(UserCreationForm):
 
     class Meta(UserCreationForm.Meta):
@@ -33,6 +36,7 @@ class DeleteOneElement(forms.Form):
     subject_name = forms.CharField(max_length=100, required=False)
     predicat_name = forms.CharField(max_length=100, required=False)
     object_name = forms.CharField(max_length=100, required=False)
+
 
 class ChooseStylization(forms.Form):
     stylizations = forms.MultipleChoiceField(
