@@ -707,19 +707,3 @@ def user_login(request):
 def user_logout(request):
     logout(request)
     return render(request, 'manage_ontology/logout.html')
-
-
-def choose_stylization(request):
-    form_choose_stylization = ChooseStylization()
-    return render(request, 'manage_ontology/choose_stylization.html',
-                  {'form_choose_stylization': form_choose_stylization})
-
-
-def get_stylizations():
-    stylizations = []
-    g = Graph()
-    g.parse("CostumesRDF.owl")
-    for ind, (sub, pred, obj) in enumerate(g):
-        if 'subClassOf' in pred and 'STYLIZATION' in obj:
-            stylizations.append(sub.split('#')[1])
-    return stylizations
