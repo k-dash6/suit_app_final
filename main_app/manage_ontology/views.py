@@ -710,9 +710,16 @@ def user_logout(request):
 
 
 def choose_stylization(request):
-    form_choose_stylization = ChooseStylization()
-    return render(request, 'manage_ontology/choose_stylization.html',
-                  {'form_choose_stylization': form_choose_stylization})
+    if request.method == 'POST':
+        form = ChooseStylization(request.POST)
+        if form.is_valid():
+            # Обработка действий при валидной форме
+            stylizations = form.cleaned_data['stylizations']
+            # Дополнительные действия
+    else:
+        form = ChooseStylization()
+
+    return render(request, 'choose_stylization.html', {'form': form})
 
 
 from googletrans import Translator
