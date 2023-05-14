@@ -709,24 +709,6 @@ def user_logout(request):
     return render(request, 'manage_ontology/logout.html')
 
 
-from googletrans import Translator
-
-
-def get_stylizations():
-    stylizations = []
-    g = Graph()
-    g.parse(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
-    for ind, (sub, pred, obj) in enumerate(g):
-        if 'subClassOf' in pred and 'STYLIZATION' in obj:
-            stylization = sub.split('#')[1]
-            stylization_to_translate = stylization.replace('_', ' ')
-            translator = Translator()
-            stylization_translated = translator.translate(stylization_to_translate, dest='ru')
-            mini = (stylization, stylization_translated.text)
-            stylizations.append(mini)
-    return stylizations
-
-
 def choose_stylization(request):
     if request.method == 'POST':
         form = ChooseStylization(request.POST)
@@ -738,3 +720,22 @@ def choose_stylization(request):
         form = ChooseStylization()
 
     return render(request, 'choose_stylization.html', {'form': form})
+
+
+from googletrans import Translator
+
+
+def get_stylizations():
+    stylizations = []
+    g = Graph()
+    g.parse("CostumesRDF.owl")
+    for ind, (sub, pred, obj) in enumerate(g):
+        if 'subClassOf' in pred and 'STYLIZATION' in obj:
+            stylization = sub.split('#')[1]
+            stylization_to_translate = stylization.replace('_', ' ')
+            print(type(stylization_to_translate))
+            translator = Translator()
+            stylization_translated = translator.translate(stylization_to_translate, dest='ru')
+            mini = (stylization, stylization_translated.text)
+            stylizations.append(mini)
+    return stylizations
