@@ -729,12 +729,12 @@ def get_stylizations():
 
 def choose_stylization(request):
     if request.method == 'POST':
-        form = ChooseStylization(request.POST)
+        form = ChooseStylization(request.POST or None)
         if form.is_valid():
             # Обработка действий при валидной форме
             stylizations = form.cleaned_data['stylizations']
             # Дополнительные действия
     else:
-        form = ChooseStylization(request.POST)
+        form = ChooseStylization(request.POST or None)
 
     return render(request, 'manage_ontology/choose_stylization.html', {'form': form})
