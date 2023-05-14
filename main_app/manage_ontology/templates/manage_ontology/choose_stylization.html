@@ -65,12 +65,11 @@
                 <h1 class="carousel-title">Сгенерировать костюм</h1>
             </div>
         </div>
-        <form action="{% url 'manage_return_random' %}" method="post">
+        <form action="{% url 'choose_stylization' %}" method="post">
                 {% csrf_token %}
-                {{ form_return_random.as_p }}
-                {{ form_return_random.path }}
-                <button type="submit">Get element</button>
-                <p>{{ subj }}</p>
+                {{ form_choose_stylization.as_p }}
+                {{ form_choose_stylization.path }}
+            <button type="submit">Далее</button>
         </form>
 
         <footer class="footer">
