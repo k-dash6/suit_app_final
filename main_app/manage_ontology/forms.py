@@ -38,9 +38,12 @@ class DeleteOneElement(forms.Form):
     object_name = forms.CharField(max_length=100, required=False)
 
 
-class ChooseStylization(forms.Form):
+class ChooseStylizationForm(forms.Form):
     stylizations = forms.MultipleChoiceField(
         required=False,
         widget=forms.CheckboxSelectMultiple,
-        choices=get_stylizations(),
     )
+
+    def __init__(self, *args, **kwargs):
+        super(ChooseStylizationForm, self).__init__(*args, **kwargs)
+        self.fields['stylizations'].choices = get_stylizations()
