@@ -17,5 +17,4 @@ urlpatterns = [
     path('register/', register, name='register'),
     path('login/', user_login, name='login'),
     path('logout/', user_logout, name='logout'),
-    path('choose_stylization/', choose_stylization, name='choose_stylization'),
 ]
