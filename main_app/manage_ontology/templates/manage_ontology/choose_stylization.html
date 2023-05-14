@@ -68,8 +68,8 @@
 
         <form action="{% url 'choose_stylization' %}" method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        {{ form.path }}
+        {{ form_add.as_p }}
+        {{ form_add.path }}
         <button type="submit">Далее</button>
         </form>
 
