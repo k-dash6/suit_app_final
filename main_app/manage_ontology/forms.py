@@ -37,7 +37,7 @@ class DeleteOneElement(forms.Form):
     object_name = forms.CharField(max_length=100, required=False)
 
 
-class ChooseStylization(forms.Form):
+class ChooseStylization(forms.ChoiceField):
     stylizations = forms.MultipleChoiceField(
         required=False,
         widget=forms.CheckboxSelectMultiple,

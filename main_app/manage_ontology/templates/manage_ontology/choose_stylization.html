@@ -66,10 +66,11 @@
             </div>
         </div>
 
-        <form method="post">
-          {% csrf_token %}
-          {{ form.as_p }}
-          <button type="submit">Далее</button>
+        <form action="{% url 'choose_stylization' %}" method="post">
+                {% csrf_token %}
+                {{ form_choose_stylization.as_p }}
+                {{ form_choose_stylization.path }}
+            <button type="submit">Далее</button>
         </form>
 
         <footer class="footer">
