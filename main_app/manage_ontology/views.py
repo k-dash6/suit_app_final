@@ -735,6 +735,6 @@ def choose_stylization(request):
             stylizations = form.cleaned_data['stylizations']
             # Дополнительные действия
     else:
-        form = ChooseStylization()
+        form = ChooseStylization(request.POST)
 
     return render(request, 'choose_stylization.html', {'form': form})
