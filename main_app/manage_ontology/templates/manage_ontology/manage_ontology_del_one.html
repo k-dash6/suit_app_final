@@ -1,10 +1,131 @@
-{% extends "manage_ontology/manage_ontology_base.html" %}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <!-- BEGIN HEAD -->
+        <head>
+        <meta charset="utf-8"/>
+        <title>Info</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="" name="description"/>
+        <meta content="" name="author"/>
 
-{% block content %}
-        <form action="{% url 'manage_ontology_del_one' %}" method="post">
+        <!-- GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="../../static/manage_ontology/vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../../static/manage_ontology/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+        <link href="../../static/manage_ontology/css/animate.css" rel="stylesheet">
+        <link href="../../static/manage_ontology/vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- THEME STYLES -->
+        <link href="../../static/manage_ontology/css/layout.min.css" rel="stylesheet" type="text/css"/>
+            <link href="../../static/manage_ontology/css/main.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico"/>
+    </head>
+    <!-- END HEAD -->
+
+    <!-- BODY -->
+    <body>
+
+        <!--========== HEADER ==========-->
+                <header class="header navbar-fixed-top">
+            <!-- Navbar -->
+            <nav class="navbar" role="navigation">
+                                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+<!--                            <a class="home" href="{% url 'home' %}">Какое-то крутое название</a>-->
+                            <a class="home" href="{% url 'home' %}">
+                                <img src="../../static/manage_ontology/images/icons/home.png" width="40" height="40">
+                            </a>
+
+                            <div class="dropdown">
+                            <img onclick="myFunction()" class="dropbtn" src="../../static/manage_ontology/images/icons/setting.png" width="40" height="40">
+                              <div id="myDropdown" class="dropdown-content">
+                                <a href="{% url 'my_profile' %}">Личный кабинет</a>
+                                <a href="{% url 'info' %}">Справка</a>
+                              </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </nav>
+        </header>
+        <!--========== END HEADER ==========-->
+
+        <!--========== PARALLAX ==========-->
+        <div class="parallax-window" data-parallax="scroll" data-image-src="../../static/manage_ontology/images/1920x1080/04.jpg">
+            <div class="parallax-content container">
+                <h1 class="carousel-title">Добавить новый элемент</h1>
+            </div>
+        </div>
+
+        <div>
+                <form action="{% url 'manage_ontology_del_one' %}" method="post">
         {% csrf_token %}
         {{ form_del_one.as_p }}
         {{ form_del_one.path }}
-        <button type="submit">Delete</button>
+        <button type="submit" class="our_button">Delete</button>
     </form>
-{% endblock %}
+            </div>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-xs-6 text-right">
+                        <p class="margin-b-0"><a class="color-base fweight-700" href="http://keenthemes.com/preview/asentus/">tg git</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--========== END FOOTER ==========-->
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- CORE PLUGINS -->
+        <script src="../../static/manage_ontology/vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL PLUGINS -->
+        <script src="../../static/manage_ontology/vendor/jquery.easing.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/jquery.back-to-top.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/jquery.wow.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/jquery.parallax.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="../../static/manage_ontology/js/layout.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/js/components/wow.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/js/components/swiper.min.js" type="text/javascript"></script>
+
+    </body>
+</html>

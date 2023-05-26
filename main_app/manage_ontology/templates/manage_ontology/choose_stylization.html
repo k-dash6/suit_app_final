@@ -34,17 +34,15 @@
                 <header class="header navbar-fixed-top">
             <!-- Navbar -->
             <nav class="navbar" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse nav-collapse">
                         <div class="menu-container">
-                            <a class="home" href="{% url 'home' %}">Какое-то крутое название</a>
+<!--                            <a class="home" href="{% url 'home' %}">Какое-то крутое название</a>-->
+                            <a class="home" href="{% url 'home' %}">
+                                <img src="../../static/manage_ontology/images/icons/home.png" width="40" height="40">
+                            </a>
 
                             <div class="dropdown">
-                            <img onclick="myFunction()" class="dropbtn" src="../../static/manage_ontology/images/icons/settings.png" width="30" height="30">
+                            <img onclick="myFunction()" class="dropbtn" src="../../static/manage_ontology/images/icons/setting.png" width="40" height="40">
                               <div id="myDropdown" class="dropdown-content">
                                 <a href="{% url 'my_profile' %}">Личный кабинет</a>
                                 <a href="{% url 'info' %}">Справка</a>
@@ -53,8 +51,6 @@
 
                         </div>
                     </div>
-                    <!-- End Navbar Collapse -->
-                </div>
             </nav>
         </header>
         <!--========== END HEADER ==========-->
@@ -65,12 +61,12 @@
                 <h1 class="carousel-title">Сгенерировать костюм</h1>
             </div>
         </div>
-
+        <h1>Выбери стиль</h1>
         <form action="{% url 'choose_stylization' %}" method="post">
         {% csrf_token %}
         {{ form.as_p }}
         {{ form.path }}
-        <button type="submit">Далее</button>
+        <button type="submit" class="our_button">Далее</button>
         </form>
 
 

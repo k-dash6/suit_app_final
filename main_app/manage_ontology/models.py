@@ -41,3 +41,9 @@ class User(AbstractBaseUser):
 
     def has_module_perms(self, app_label):
         return self.is_admin
+
+
+class Collection(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    image_path = models.CharField(max_length=256)
+    # description = models.TextField()

@@ -30,22 +30,23 @@
         <header class="header navbar-fixed-top">
             <!-- Navbar -->
             <nav class="navbar" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse nav-collapse">
+                                    <div class="collapse navbar-collapse nav-collapse">
                         <div class="menu-container">
-                            <ul class="navbar-nav navbar-nav-right">
-                                <li><a href="{% url 'home' %}">Home</a></li>
-                                <li><a href="{% url 'my_profile' %}">Личный кабинет</a></li>
-                                <li><a href="{% url 'info' %}">Справка</a></li>
-                            </ul>
+<!--                            <a class="home" href="{% url 'home' %}">Какое-то крутое название</a>-->
+                            <a class="home" href="{% url 'home' %}">
+                                <img src="../../static/manage_ontology/images/icons/home.png" width="40" height="40">
+                            </a>
+
+                            <div class="dropdown">
+                            <img onclick="myFunction()" class="dropbtn" src="../../static/manage_ontology/images/icons/setting.png" width="40" height="40">
+                              <div id="myDropdown" class="dropdown-content">
+                                <a href="{% url 'my_profile' %}">Личный кабинет</a>
+                                <a href="{% url 'info' %}">Справка</a>
+                              </div>
+                            </div>
+
                         </div>
                     </div>
-                    <!-- End Navbar Collapse -->
-                </div>
             </nav>
             <!-- Navbar -->
         </header>
@@ -59,7 +60,7 @@
                         <div class="carousel-centered">
                             <div class="margin-b-40">
                                 <div class="title">
-                                <h1 class="carousel-title">Какое-то крутое название</h1>
+                                <h1 class="carousel-title">Costume generator</h1>
                                     </div>
                                 <p class="subtitle">Ну типо тут можно всякое делать ага <br/> всё ок дай бог здоровья что-нибудь потом добавим</p>
                             </div>
@@ -68,7 +69,6 @@
                     </div>
                 </div>
 
-
         <div class="bg-color-sky-light" data-auto-height="true">
             <div class="content-lg container">
                 <div class="row row-space-1 margin-b-2">
@@ -76,7 +76,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
                             <div class="service" data-height="height">
                                 <div class="service-element">
-                                    <i class="service-icon icon-chemistry"></i>
+                                    <i class="service-icon icon-magic-wand"></i>
                                 </div>
                                 <div class="service-info">
                                     <h3>Сгенерировать костюм</h3>
@@ -90,7 +90,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
                             <div class="service" data-height="height">
                                 <div class="service-element">
-                                    <i class="service-icon icon-screen-tablet"></i>
+                                    <i class="service-icon icon-graph"></i>
                                 </div>
                                 <div class="service-info">
                                     <h3>Онтология</h3>
@@ -100,12 +100,12 @@
                             </div>
                         </div>
                     </div>
-                    {% if request.user.is_admin %}
+
                     <div class="col-sm-4">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <div class="service" data-height="height">
                                 <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
+                                    <i class="service-icon icon-wrench"></i>
                                 </div>
                                 <div class="service-info">
                                     <h3>Редактировать онтологию</h3>
@@ -115,25 +115,47 @@
                             </div>
                         </div>
                     </div>
-                    {% endif %}
+
                 </div>
             </div>
         </div>
 
-
-
         <footer class="footer">
             <div class="content container">
                 <div class="row">
-                    <div class="col-xs-6 text-right">
-                        <p class="margin-b-0"><a class="color-base fweight-700" href="http://keenthemes.com/preview/asentus/">tg git</a></p>
-                    </div>
+                    <ul class="footer_links">
+                        <li class="margin-b-0"><a class="footer_link" href="https://t.me/kdash6/">tg</a></li>
+                        <li class="margin-b-0"><a class="footer_link" href="https://github.com/k-dash6/suits-app">git</a></li>
+                    </ul>
                 </div>
             </div>
         </footer>
+        <!--========== END FOOTER ==========-->
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
 
         <!-- Back To Top -->
-        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+                <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
 
         <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
         <!-- CORE PLUGINS -->

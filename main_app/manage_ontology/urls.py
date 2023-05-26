@@ -18,4 +18,9 @@ urlpatterns = [
     path('login/', user_login, name='login'),
     path('logout/', user_logout, name='logout'),
     path('choose_stylization/', choose_stylization, name='choose_stylization'),
+    path('choose_sub_style/', choose_sub_style, name='choose_sub_style'),
+    path('choose_size/', choose_size, name='choose_size'),
+    path('choose_color/', choose_color, name='choose_color'),
+    path('result/', result, name='result'),
+    path('add_to_collection', add_to_collection, name='add_to_collection')
 ]
