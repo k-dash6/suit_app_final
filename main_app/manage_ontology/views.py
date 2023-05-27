@@ -463,6 +463,7 @@ def generate_outfit_img(request, outfits_dict):
 
     device = "cuda" if torch.cuda.is_available() else torch.device('cpu')
 
+
     model = get_kandinsky2(device, task_type='text2img', cache_dir='/img', model_version='2.1',
                            use_flash_attention=False)
 
