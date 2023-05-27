@@ -10,4 +10,3 @@ tzdata==2022.5
 googletrans~=4.0.0rc1
 ontor~=0.4.11
 Pillow~=9.5.0
-torch
