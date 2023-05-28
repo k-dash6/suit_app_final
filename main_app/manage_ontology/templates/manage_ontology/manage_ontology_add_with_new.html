@@ -59,17 +59,17 @@
         <!--========== PARALLAX ==========-->
         <div class="parallax-window" data-parallax="scroll" data-image-src="../../static/manage_ontology/images/1920x1080/04.jpg">
             <div class="parallax-content container">
-                <h1 class="carousel-title">Добавить новый элемент</h1>
+                <h1 class="carousel-title">Добавить новую тройку элементов</h1>
             </div>
         </div>
 
         <div>
-                <form action="{% url 'manage_ontology_del_one' %}" method="post">
+        <form action="{% url 'manage_ontology_add_with_new' %}" method="post">
         {% csrf_token %}
-        {{ form_del_one.as_p }}
-        {{ form_del_one.path }}
-        <button type="submit" class="our_button">Delete</button>
-    </form>
+        {{ form_add.as_p }}
+        {{ form_add.path }}
+        <button type="submit" class="our_button">Add</button>
+        </form>
             </div>
 
         <!--========== FOOTER ==========-->

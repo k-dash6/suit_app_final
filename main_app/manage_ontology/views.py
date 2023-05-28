@@ -15,7 +15,7 @@ from googletrans import Translator
 from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
-from .forms import LoginForm, RegistrationForm
+from .forms import *
 from django.contrib.auth.forms import UserCreationForm
 from django.http import JsonResponse
 from rdflib import URIRef, BNode, Literal, Namespace, Graph, RDF
@@ -23,12 +23,19 @@ from rdflib.namespace import FOAF, DCTERMS, XSD
 from pathlib import Path
 import json
 import ontor
+import random
+from datetime import datetime
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 def home(request):
+    if not request.user.is_authenticated:
+        return render(request, 'manage_ontology/started.html')
     return render(request, 'manage_ontology/home.html')
+
+def started(request):
+    return render(request, 'manage_ontology/started.html')
 
 def info(request):
     return render(request, 'manage_ontology/info.html')
@@ -48,32 +55,104 @@ def manage_ontology(request):
     return render(request, 'manage_ontology/manage_ontology.html')
 
 def index(request):
-    return render(request, 'manage_ontology/manage_ontology_add.html')
-
+    return render(request, 'manage_ontology/manage_ontology_add_with_old.html')
 
 def add_elements(request):
+    return render(request, 'manage_ontology/manage_ontology_add.html')
+
+def add_elements_new(request):
+    print('Я попал во views')
     if request.method == 'POST':
-        form_add = AddElements(request.POST)
+        form_add = AddNewElements(request.POST)
+        print('Я проверяю форму на валидность')
         if form_add.is_valid():
+            print(form_add.cleaned_data)
+            print()
+            print()
+            test_add_new_func(form_add.cleaned_data)
+    else:
+        form_add = AddNewElements()
+    return render(request, 'manage_ontology/manage_ontology_add_with_new.html', {'form_add': form_add})
+
+
+def add_elements_old(request):
+    if request.method == 'POST':
+        form_add = AddOldElements(request.POST)
+        if form_add.is_valid():
+            print()
+            print('говно')
+            print(form_add.cleaned_data)
+            print()
             test_add_func(form_add.cleaned_data)
         else:
             return redirect('home')
     else:
-        form_add = AddElements()
-    return render(request, 'manage_ontology/manage_ontology_add.html', {'form_add': form_add})
+        form_add = AddOldElements()
+    return render(request, 'manage_ontology/manage_ontology_add_with_old.html', {'form_add': form_add})
+
+def test_add_new_func(a):
+    print('Я зашел в функцию')
+    ontology = Graph()
+    ontology.parse(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
+    subject_name = a['sub']
+    type_value = a['type']
+    predicat_name = a['pred']
+    object_name = a['obj']
+
+
+    s_uid = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + subject_name)
+    type_uid = URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
+    o_uid = URIRef("http://www.w3.org/2002/07/owl#" + object_name)
+    type_value_uid = URIRef("http://www.w3.org/2002/07/owl#" + type_value)
+    if predicat_name == 'subClassOf':
+        p_uid = URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf")
+    elif predicat_name == 'type':
+        p_uid = type_uid
+    else:
+        p_uid = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + predicat_name)
+    ontology.add((s_uid, type_uid, type_value_uid))
+    ontology.serialize(format="xml", destination=os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
+
+    ontology.add((s_uid, p_uid, o_uid))
+    ontology.serialize(format="xml", destination=os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
+
+    inverse_uid = URIRef("http://www.w3.org/2002/07/owl#inverseOf")
+
+    for s, p, o in ontology.triples((None, inverse_uid, None)):
+        inverse_sub = s
+        inverse_obj = o
+    if str(inverse_sub).split('#')[1] == predicat_name:
+        ontology.add((o_uid, inverse_obj, s_uid))
+        ontology.serialize(format="xml", destination=os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
+    elif str(inverse_obj).split('#')[1] == predicat_name:
+        ontology.add((o_uid, inverse_sub, s_uid))
+        ontology.serialize(format="xml", destination=os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
+    for s,p,o in ontology:
+        print(s)
+        print(p)
+        print(o)
+        print()
 
 
 def test_add_func(a):
     ontology = Graph()
     ontology.parse(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
-    object_name = a['object_name']
-    predicat_name = a['predicat_name']
-    subject_name = a['subject_name']
+    object_name = a['obj']
+    predicat_name = a['pred']
+    subject_name = a['sub']
     s_uid = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + subject_name)
-    p_uid = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + predicat_name)
+    if predicat_name == 'subClassOf':
+        p_uid = URIRef("http://www.w3.org/2000/01/rdf-schema#" + predicat_name)
+    else:
+        p_uid = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + predicat_name)
     o_uid = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + object_name)
     ontology.add((s_uid, p_uid, o_uid))
     ontology.serialize(format="xml", destination=os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
+    for s,p,o in ontology:
+        print(s)
+        print(p)
+        print(o)
+        print()
 
 
 def delete_elements(request):
@@ -166,11 +245,11 @@ def my_view(request):
     nodes_classes = [p.name for p in ontor3.get_elems()[0]]
     nodes_properties = [p.name for p in ontor3.get_elems()[1]]
     nodes_individuals = [p.name for p in ontor3.get_elems()[3]]
-
-    print()
-    print('nodes_classes')
-    print(nodes_classes)
-    print()
+    #
+    # print()
+    # print('nodes_classes')
+    # print(nodes_classes)
+    # print()
 
     nodes_dict = {}
     data_nodes_classes = []
@@ -274,7 +353,7 @@ def user_login(request):
 
 def user_logout(request):
     logout(request)
-    return render(request, 'manage_ontology/logout.html')
+    return render(request, 'manage_ontology/started.html')
 
 
 def get_stylizations():
@@ -342,12 +421,11 @@ def check_if_size_exists(substyle):
 def choose_stylization(request):
     if request.method == 'POST':
         form = CostumeForm(request.POST)
-        # form = ChooseStylizationForm(request.POST)
         if form.is_valid():
             print(form.cleaned_data)
-            # 1. create an image from the cleaned_data
-            # 2. save the image to the disk
-            image_path = '/static/manage_ontology/images/clothes/dasha6/outfit_00002_green.jpg'
+            data = [form.cleaned_data['style'], form.cleaned_data['color']]
+            image_path = generate_outfit_img(request, data)
+            # image_path = '/static/manage_ontology/images/clothes/dasha6/outfit_00002_green.jpg'
             # 3. return a template with the path to this image (so it could display it and send it with the "add to collecitons" button)
             return render(request, 'manage_ontology/result.html', { 'image_path': image_path })
     else:
@@ -397,83 +475,63 @@ def save_image(image, filename):
     image_path = os.path.join(folder_path, filename)
     image.save(image_path)
     print(f"Изображение сохранено: {image_path}")
+    return image_path
 
 
-def get_outfits_dict():
+def return_outfit(data):
+    if data[-2] == 'english_style':
+        return 'outfit_000000', data[-1]
+    else:
+        return 'outfit_000001', data[-1]
+
+
+def get_outfits_description(outfit):
     g = Graph()
     g.parse(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
-    ontor3 = ontor.OntoEditor("CostumesRDF.owl", "CostumesRDF.owl")
-    magic_list_3 = [p.name for p in ontor3.get_elems()[3]]
-    ready_elements = []
+    ontor3 = ontor.OntoEditor(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"),
+                              os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
+
+    current_outfit_parts = []
+    all_outfits_parts = [p.name for p in ontor3.get_elems()[3]]
+    outfit_dict = {}
+
     for ind, (sub, pred, obj) in enumerate(g):
         if not '#' in sub or not '#' in pred or not '#' in obj or 'NamedIndividual' in obj:
             continue
-        if 'outfit' in sub.split('#')[1] and obj.split('#')[1] in magic_list_3:
-            ready_elements.append(obj.split('#')[1])
-
-    outfits = set()
-    for ind, (sub, pred, obj) in enumerate(g):
-        if not '#' in sub or not '#' in pred or not '#' in obj or 'NamedIndividual' in obj:
-            continue
-        if 'outfit' in sub.split('#')[1]:
-            outfits.add(sub.split('#')[1])
-        if 'outfit' in obj.split('#')[1]:
-            outfits.add(obj.split('#')[1])
-
-    list_outfits = sorted(list(outfits))
-
-    outfits_dict = {}
-    for outfit in list_outfits:
-        outfits_dict[outfit] = []
-
-    for outfit in outfits:
-        for ind, (sub, pred, obj) in enumerate(g):
-            if not '#' in sub or not '#' in pred or not '#' in obj or 'NamedIndividual' in obj:
-                continue
-            if 'outfit' in sub.split('#')[1] and obj.split('#')[1] in ready_elements:
-                if obj.split('#')[1] not in outfits_dict[sub.split('#')[1]]:
-                    outfits_dict[sub.split('#')[1]].append(obj.split('#')[1])
-    return outfits_dict
+        if outfit in sub.split('#')[1] and obj.split('#')[1] in all_outfits_parts:
+            if obj.split('#')[1] not in current_outfit_parts:
+                element = str(obj).split('#')[1]
+                current_outfit_parts.append(element)
+                outfit_dict[element] = []
+                element_uriref = URIRef("http://www.semanticweb.org/masha/ontologies/2022/9/Сostumes.owl#" + element)
+                for s, p, o in g.triples((element_uriref, None, None)):
+                    if '#' not in str(o) or str(o).split('#')[1] == 'NamedIndividual':
+                        continue
+                    outfit_dict[element].append(str(o).split('#')[1])
+    return outfit_dict
 
 
-def generate_outfit_img(request, outfits_dict):
-    g = Graph()
-    g.parse(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
-    # outfits_dict = get_outfits_dict()
-
-    outfits_description_dict = {}
-
-    for item in outfits_dict.items():
-        if outfits_dict[item[0]]:
-            outfits_description_dict[item[0]] = []
-        for ind, (sub, pred, obj) in enumerate(g):
-            if not '#' in sub or not '#' in pred or not '#' in obj or 'NamedIndividual' in obj:
-                continue
-            if sub.split('#')[1] in item[1]:
-                outfits_description_dict[item[0]].append(obj.split('#')[1].replace('_', ' '))
-
-    # color "green" "red" "blue"
-    # costume "fairy_tales"
+def generate_outfit_img(request, data):
+    outfit, color = return_outfit(data)
+    outfit_dict = get_outfits_description(outfit)
 
     description_prefix = 'On a white background: Costume on mannequin: '
-
-    for item in outfits_description_dict.items():
-        full_description = description_prefix + ' '.join(item[1])
-        outfits_description_dict[item[0]] = full_description
+    description = ''
+    for item in outfit_dict.items():
+        description += ' '.join(item[1]) + ', '
+    full_description = description_prefix + description + f' in {color} color'
 
     device = "cuda" if torch.cuda.is_available() else torch.device('cpu')
-
-
     model = get_kandinsky2(device, task_type='text2img', cache_dir='/img', model_version='2.1',
                            use_flash_attention=False)
-
-    for item in outfits_description_dict.items():
-        images = model.generate_text2img(item[1], num_steps=100,
-                                         batch_size=1, guidance_scale=4,
-                                         h=768, w=768, sampler='p_sampler', prior_cf_scale=4,
-                                         prior_steps="5", )
-        filename = f"{item[0]}.jpg"
-        save_image(images[0], filename)
+    images = model.generate_text2img(full_description, num_steps=100,
+                                                       batch_size=1, guidance_scale=4,
+                                                       h=768, w=768, sampler='p_sampler', prior_cf_scale=4,
+                                                       prior_steps="5", )
+    current_datetime = str(datetime.now())
+    filename = f"{request.user.username}_{current_datetime}.jpg"
+    image_path = save_image(images[0], filename)
+    return image_path
 
 
 def add_to_collection(request):

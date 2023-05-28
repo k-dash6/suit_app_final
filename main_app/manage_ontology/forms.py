@@ -2,6 +2,7 @@ from django import forms
 
 from .models import *
 from django.contrib.auth.forms import UserCreationForm
+import ontor
 
 
 class RegistrationForm(UserCreationForm):
@@ -16,10 +17,53 @@ class LoginForm(forms.Form):
     password = forms.CharField(widget=forms.PasswordInput)
 
 
-class AddElements(forms.Form):
-    subject_name = forms.CharField(max_length=100, required=False)
-    predicat_name = forms.CharField(max_length=100, required=False)
-    object_name = forms.CharField(max_length=100, required=False)
+# class AddElements(forms.Form):
+#     subject_name = forms.CharField(max_length=100, required=False)
+#     predicat_name = forms.CharField(max_length=100, required=False)
+#     object_name = forms.CharField(max_length=100, required=False)
+
+class AddOldElements(forms.Form):
+    sub = forms.ChoiceField()
+    pred = forms.ChoiceField()
+    obj = forms.ChoiceField()
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['sub'].choices = get_existing_sub_obj()
+        self.fields['pred'].choices = get_existing_pred() + [('type', 'type'), ('subClassOf', 'subClassOf')]
+        self.fields['obj'].choices = get_existing_sub_obj()
+
+class AddNewElements(forms.Form):
+    sub = forms.CharField(max_length=100)
+    type = forms.ChoiceField()
+    pred = forms.ChoiceField()
+    obj = forms.ChoiceField()
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['type'].choices = [('Class', 'Class'), ('NamedIndividual', 'NamedIndividual')]
+        self.fields['pred'].choices = get_existing_pred()
+        self.fields['obj'].choices = get_existing_sub_obj()
+
+def get_existing_sub_obj():
+    print('Я попытался получить sub, obj')
+    ontor3 = ontor.OntoEditor(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"),
+                              os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
+    print('Обосрался')
+    result = []
+    for element in [p.name for p in ontor3.get_elems()[0]] + [p.name for p in ontor3.get_elems()[3]]:
+        result.append((element, element))
+    return result
+
+def get_existing_pred():
+    print('Я попытался получить pred')
+    ontor3 = ontor.OntoEditor(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"),
+                              os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
+    print('Обосрался')
+    result = []
+    for element in [p.name for p in ontor3.get_elems()[1]]:
+        result.append((element, element))
+    return result + [('type', 'type'), ('subClassOf', 'subClassOf')]
 
 
 class ReturnRandom(forms.Form):
@@ -154,6 +198,12 @@ def get_style_choices() -> list[tuple[str, str]]:
     # TODO: implement this.
     return [
         ('computer_games', 'Компьютерные игры'),
+        ('epic_fantasy', 'Эпическая фантастика'),
+        ('fairy_tales', 'Сказки'),
+        ('chinese_style', 'Китайский стиль'),
+        ('japanese_style', ' Японский стиль'),
+        ('korean_style', ' Корейский стиль'),
         ('english_style', ' Английский стиль'),
+        ('scandinavian_style', ' Скандинавский стиль'),
     ]
 

@@ -4,8 +4,11 @@ from .views import *
 from django.urls import path
 
 urlpatterns = [
-    path('', home, name='home'),
+    path('', started, name='started'),
+    path('home/', home, name='home'),
     path('manage-ontology/', manage_ontology, name='manage_ontology'),
+    path('manage-add-old/', add_elements_old, name='manage_ontology_add_with_old'),
+    path('manage-add-new/', add_elements_new, name='manage_ontology_add_with_new'),
     path('manage-add/', add_elements, name='manage_ontology_add'),
     path('manage-random/', return_random_element, name='manage_return_random'),
     path('manage-del_all/', delete_elements, name='manage_ontology_del_all'),

@@ -1,26 +1,153 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Login</title>
-</head>
-<body>
-  <h2>Login</h2>
-  {% if messages %}
-    <ul class="messages">
-      {% for message in messages %}
-        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-  <form method="post">
-    {% csrf_token %}
-    <label for="id_email">Email:</label>
-    {{ form.email }}
-    <br>
-    <label for="id_password">Password:</label>
-    {{ form.password }}
-    <br>
-    <button type="submit" class="our_button">Log in</button>
-  </form>
-</body>
+<html lang="en" class="no-js">
+    <!-- BEGIN HEAD -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>Home</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="" name="description"/>
+        <meta content="" name="author"/>
+
+        <!-- GLOBAL MANDATORY STYLES -->
+        <link href="../../static/manage_ontology/vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../../static/manage_ontology/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+        <link href="../../static/manage_ontology/css/animate.css" rel="stylesheet">
+
+        <!-- THEME STYLES -->
+        <link href="../../static/manage_ontology/css/layout.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../../static/manage_ontology/css/main.css" rel="stylesheet" type="text/css"/>
+        <style>
+        .log_reg h2{
+            margin-left: 50px
+        }
+
+        .log_reg label{
+            margin-top: 10px;
+            font-family:Hind,sans-serif;
+            color:#515769;
+        }
+
+.action-button {
+	width: 100px;
+	background: #8dab84;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 10px 50px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+        </style>
+
+    </head>
+    <!-- END HEAD -->
+
+    <!-- BODY -->
+    <body>
+                <div class="item active">
+                    <img class="img-responsive" src="../../static/manage_ontology/images/1920x1080/04.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <div class="title_form_1">
+                                      {% if messages %}
+                                        <ul class="messages">
+                                          {% for message in messages %}
+                                            <li>{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                                          {% endfor %}
+                                        </ul>
+                                      {% endif %}
+                                      <form class="log_reg" method="post">
+                                          {% csrf_token %}
+
+                                            <h2 class="fs-title">Вход</h2>
+                                              <label for="id_email">почта</label>
+                                              <br>
+                                                {{ form.email }}
+                                              <br>
+                                              <label for="id_password">пароль</label>
+                                              <br>
+                                                {{ form.password }}
+                                              <br>
+                                              <br>
+                                              <button type="submit" class="action-button">Войти</button>
+                                              <br>
+                                              <br>
+                                              <p>Еще нет аккаунта?</p>
+                                              <a href="{% url 'register' %}">Зарегистрироваться</a>
+
+
+                                      </form>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <footer class="footer">
+            <div class="content container">
+                <div class="row">
+                    <ul class="footer_links">
+                        <li class="margin-b-0"><a class="footer_link" href="https://t.me/kdash6/">tg</a></li>
+                        <li class="margin-b-0"><a class="footer_link" href="https://github.com/k-dash6/suits-app">git</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!--========== END FOOTER ==========-->
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+
+        <!-- Back To Top -->
+                <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- CORE PLUGINS -->
+        <script src="../../static/manage_ontology/vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL PLUGINS -->
+        <script src="../../static/manage_ontology/vendor/jquery.easing.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/jquery.back-to-top.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/jquery.wow.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="../../static/manage_ontology/js/layout.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/js/components/wow.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/js/components/swiper.min.js" type="text/javascript"></script>
+        <script src="../../static/manage_ontology/js/components/masonry.min.js" type="text/javascript"></script>
+
+    </body>
 </html>
