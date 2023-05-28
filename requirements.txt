@@ -9,3 +9,4 @@ tzdata==2022.5
 ontor~=0.4.11
 googletrans~=4.0.0rc1
 Pillow~=9.5.0
+kandinsky2==0.0.0
