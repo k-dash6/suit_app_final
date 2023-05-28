@@ -79,10 +79,10 @@
                                     <i class="service-icon icon-plus"></i>
                                 </div>
                                 <div class="service-info">
-                                    <h3>Добавить</h3>
+                                    <h3>Добавить тройку с существующими элементами</h3>
                                     <p class="margin-b-5">ля ля ля подбери себе клевый лук</p>
                                 </div>
-                                <a href="{% url 'manage_ontology_add' %}" class="content-wrapper-link"></a>
+                                <a href="{% url 'manage_ontology_del_one' %}" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
@@ -93,25 +93,10 @@
                                     <i class="service-icon icon-trash"></i>
                                 </div>
                                 <div class="service-info">
-                                    <h3>Удалить</h3>
+                                    <h3>Добавить новый элемент</h3>
                                     <p class="margin-b-5">тыщу лет убила на эту сраную визуализацию</p>
                                 </div>
-                                <a href="{% url 'manage_ontology_del' %}" class="content-wrapper-link"></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-trash"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Обновить базу изображений</h3>
-                                    <p class="margin-b-5">хочу умереть, надеюсь, оно работает</p>
-                                </div>
-                                <a href="{% url 'manage_update_img' %}" class="content-wrapper-link"></a>
+                                <a href="{% url 'manage_ontology_del_all' %}" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>

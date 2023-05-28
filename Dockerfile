@@ -12,5 +12,7 @@ COPY requirements.txt ./
 
 RUN pip install -r requirements.txt
 RUN pip install "git+https://github.com/ai-forever/Kandinsky-2.git"
+RUN pip install "git+https://github.com/openai/CLIP.git"
+
 COPY . .
 CMD ["python", "main_app/manage.py", "runserver", "0.0.0.0:8000"]

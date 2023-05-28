@@ -60,6 +60,12 @@ def index(request):
 def add_elements(request):
     return render(request, 'manage_ontology/manage_ontology_add.html')
 
+def delete(request):
+    return render(request, 'manage_ontology/manage_ontology_del.html')
+
+def manage_update_img(request):
+    return render(request, 'manage_ontology/manage_ontology_update_img.html')
+
 def add_elements_new(request):
     print('Я попал во views')
     if request.method == 'POST':
