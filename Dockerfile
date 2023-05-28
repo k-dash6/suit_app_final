@@ -11,5 +11,6 @@ EXPOSE 8000
 COPY requirements.txt ./
 
 RUN pip install -r requirements.txt
+RUN pip install "git+https://github.com/ai-forever/Kandinsky-2.git"
 COPY . .
 CMD ["python", "main_app/manage.py", "runserver", "0.0.0.0:8000"]
