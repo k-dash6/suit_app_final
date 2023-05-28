@@ -7,3 +7,5 @@ six==1.16.0
 sqlparse==0.4.3
 tzdata==2022.5
 ontor~=0.4.11
+googletrans~=4.0.0rc1
+Pillow~=9.5.0
