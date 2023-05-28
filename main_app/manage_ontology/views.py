@@ -127,6 +127,7 @@ def test_add_new_func(a):
     elif str(inverse_obj).split('#')[1] == predicat_name:
         ontology.add((o_uid, inverse_sub, s_uid))
         ontology.serialize(format="xml", destination=os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
+
     for s,p,o in ontology:
         print(s)
         print(p)
