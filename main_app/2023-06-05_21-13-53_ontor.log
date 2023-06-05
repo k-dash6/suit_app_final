@@ -1,0 +1,651 @@
+DEBUG:hpack.hpack:HPACK encoding <generator object _check_path_header.<locals>.inner at 0x00000189C5A49A80>
+DEBUG:hpack.hpack:Adding (b':method', b'POST') to the header table
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b':authority', b'translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 1 with 6 bits
+DEBUG:hpack.hpack:Encoding 14 with 7 bits
+DEBUG:hpack.hpack:Adding (b':scheme', b'https') to the header table
+DEBUG:hpack.hpack:Encoding 7 with 7 bits
+DEBUG:hpack.hpack:Adding (b':path', b'/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c') to the header table
+DEBUG:hpack.hpack:Encoding 4 with 6 bits
+DEBUG:hpack.hpack:Encoding 101 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept', b'*/*') to the header table
+DEBUG:hpack.hpack:Encoding 19 with 6 bits
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept-encoding', b'gzip, deflate') to the header table
+DEBUG:hpack.hpack:Encoding 16 with 7 bits
+DEBUG:hpack.hpack:Adding (b'user-agent', b'Mozilla/5.0 (Windows NT 10.0; Win64; x64)') to the header table
+DEBUG:hpack.hpack:Encoding 58 with 6 bits
+DEBUG:hpack.hpack:Encoding 32 with 7 bits
+DEBUG:hpack.hpack:Adding (b'referer', b'https://translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 51 with 6 bits
+DEBUG:hpack.hpack:Encoding 20 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-length', b'173') to the header table
+DEBUG:hpack.hpack:Encoding 28 with 6 bits
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-type', b'application/x-www-form-urlencoded') to the header table
+DEBUG:hpack.hpack:Encoding 31 with 6 bits
+DEBUG:hpack.hpack:Encoding 24 with 7 bits
+DEBUG:hpack.hpack:Encoded header block to b"\x83A\x8eM\x83\xa9\x14\r%^c\x9ej\n\xb9\x0fO\x87D\xe5b&7\xd8:\x91@\xd2^E\x8d\x05\xb3\xb9l\xe0f$\x1aF\xc4cI'/\x92\x92\xd4\x97\xfc\xb2\xb2\x1aDA\xa3\xae\x0eWI\xf1\x1d\x10F~\xd1&\xc1\xd4\x8a\x06\x92\xad\xe0\xb1\xa0\xb6w-\x91\x08\x02\x00D\x07W\x0b1V\x0f\x84\x1c\x8b\x0e\xba\xe0\x0f\xc2\x0eE\xab\xa0i\x94\xf6S\x00~\x10r-!{\x98\x85\x80?\x16&\x02\x7fS\x83\xf9c\xe7\x90z\xa0\xd0\x7ff\xa2\x81\xb0\xda\xe0S\xfa\xe4j\xa4?\x84)\xa7z\x81\x02\xe0\xfbS\x91\xaaq\xaf\xb5<\xb8\xd7\xf7s\x94\x9d)\xad\x17\x18a6\x0e\xa4P4\x95y\x8ey\xa8*\xe4=?\\\x83\x0b\xac\xff_\x98\x1du\xd0b\r&=Ly[\xc7\x8f\x0bJ{)Z\xdb(-D<\x85\x93"
+DEBUG:hpack.hpack:Decoding b'\x88_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{X\xa1\xa8\xeb\x10d\x9c\xbfJTu\x90\x93\xd8_\xa5)\x1f\x95\x871`\x07\xd2\x94\xda\x84\xada{\x8e\x83H4\x97@\x85\xae\xc1\xcdH\xff\x86\xa8\xeb\x10d\x9c\xbfd\x96\xd0z\xbe\x94\x00T\xca:\x94\x0b\xef\x81@\x02\xe0\x01p\x00S\x16\x8d\xff\x0f\x12\x96\xd0z\xbe\x94\x03je\xb6\xa5\x04\x012\xa0^\xb8\x16\xae\x08Jb\xd1\xbfY\xb2\x1aR2OIjO\xda\x92\x9a\x82\xd4:K\x07\xf3aQY\xeaAW\x8c\xd5\x7f?jJj\x0bP\xe9/\xcc\x1c7\xe1Y\xef\xf5\xfe\xac*+=H*\xf1\x9a\xaf@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x03p3p\xaf\xbd\xae\x0f\xe7|\xe6B\x86B\x95\x1d*\rMl\xebR\xb3\xd0bz\xfe\x14\xdcR\xa92\xe4;\x15\xb3\\\xe5\xa2\xb5%=\x8aR{\n\xa1\xaa\x94\xeb\xff?@\x86\x19\x08Z\xd2\xb1\'\xff\x12\xdcR-{\x1a\xdc!Z\x1b\t?\xd2\x9b\x8aE\xafc[\x84+]2j*\x11\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xd8m\xa2\x85\xb8\x96\xc4\x18\xf5})\xb8\xa4Z\xf65\xb8B\xb6\x1bh\xa1n%\xb1\x06=Kg2\x13\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xda\x0f!h\xfaSqH\xb5\xeckp\x85nG\xe4\xe3_Jn)\x16\xbd\x8dn\x10\xad\x84\xf6R\xb6\x11\x91\'\xb3\xe9M\xc5"\xd7\xb1\xad\xc2\x15\xb5\xd04\xca{)\xfaSqH\xb5\xeckp\x85mt\r2\x9e\xcaV\xe2[\x10c\xd5@\x92%\x87B\x16=\x86\x98\xd5,z\xcbQlZ\xb3\xd0bz\x91@\xe9*\xc7\xb0\xd3\x1a\xa5\x87E\x07\xf0\xb5g\xae\xda\xd1@\x8d\xac\xb6Rd \xc7\xa9\x0bVz\x0cO_\xff\x01$\xebZ5\x87a\'\x83\xe7\xe9BN\xb5\xa3Z3&\xa2\xa1\x10|\xfd(I\xd6\xb4kKm\x14-\xdc\xb6 \xc7\xaa\x0f\x9f\xa5\t:\xd6\x8dim\xa2\x85\xbb\x96\xc4\x18\xf5-A\x90\x98>~\x94$\xebZ5\xa9<\x85\xa2\x0f\x9f\xa5\t:\xd6\x8do\x07\xf0\xe3P|\xfd(I\xd6\xb4kJ{)ZQ\x91\'\xb2\x0f\x9f\xa5\t:\xd6\x8dj\xe8\x1ae=\x94\xc1\xf3\xf4\xa1\'Z\xd1\xad]\x03L\xa7\xb2\x95\xbb\x96\xc4\x18\xf5A\xf3@\x94%\x87B\x16=\x86\x98\xd5-aP{l!V\xac\xf4\x18\x9e\xbf\x86@\xe9*\xc82K@\x90!\xeaIjJ\xc8)-\xb0\xc9\xf4\xb5g\xa0\xc4\xf5\xba\xb0\xbd\xad5\x85Y6Z\x84\x96E\x93\xea\xb2\xa1iOb\x9f\xe9\x04\xb0\xd5\xa7\xfd}\xd8Z\xcfbV\xb6\xc3(\xc4Lo\xb0u"\x81\xa4\xbc\x8b\x1a\x0bgr\xd9\xc0\xcc\x11\x15\xd8Z\xcfb\x7fv\x03ESF@\x8c\xf2\xb7\x94!j\xec:JD\x98\xf5\x7f\x010@\x8b\xf2\xb4\xb6\x0e\x92\xacz\xd2c\xd4\x8f\x89\xdd\x0e\x8c\x1a\xb6\xe4\xc5\x93O\x0f(\xffI\xd3\x92\xfc\r\x840M\x13\xd4\x83\xb2\x7f\x03\xd2\x8f4\xad\xe4\xd2B\x1e\'\xa3m\x99e\xc305\xc7\x93\x8a\xd7\xf6\x9c\xf5\xe7\xfc\xc0\xd6K\x1f\x8a@I\xbb\xc7\xb3\xe3\xe0y6\xbf\xd2"\x9fW\xe6\xbd\x1e\x13oI\xb4\xe4\xe2\xe7V\xf8\xf3\xce\xca2\xf5\xab{\x9co~\x97\xc6\x1b\xbb\xad\xbb&fv`\xcaw\xb8^\xb7\xa5\x92j\x92\xedy\tg\x1di\xb1\x9f\'\x1b9\xb1{\xe0?\xdb\xba\xb9p\xf4fG\xa7A\xee\xc7\xa9\xb8\xf7U.@\xf6\x16\xed\xd8e\x1f\xe8\xb7\xd7\xcb\xc7m\x1fj\x17\xcdf\xb0\xa8\x83}\xa5\xfaP\r\xad|\xa4X@\x13*\x05\xeb\x81j\xe0\x84\xa6-\x1b\xfe\xd4\xaci\x9e\x06>\xd4\x90\xf4\x8c\xd5@\xbc\xc7<\xd4\x15r\x1e\x9f\xb51\xa55\xea\xaa\x8f_@\x85\x1d\tY\x1d\xc9\xa4\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x80M\xbe \x00\x1fS\xb2\xb0\x9f\x83\xf9\xb8\xd3L\xff?jR8\x04\xdb\xe2\x00\x01R\x83\xa8\xf5\x17{\xad\xdcR-\x84\xa9$\xeb_*\x13\xf4\xa6\xe2\x91l%I\'[A\xe4/\xd2\x9b\x8aE\xb0\x95$\x9dm\xc6I~\xa1!\x0bZV\xc1Q\x0f!\xaa\x9b'
+DEBUG:hpack.hpack:Decoded 8, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b':status', b'200'), consumed 1
+DEBUG:hpack.hpack:Decoded 31, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 24, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 33, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cache-control', b'no-cache, no-store, max-age=0, must-revalidate'), total consumed 35 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'pragma', b'no-cache'), total consumed 14 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'expires', b'Mon, 01 Jan 1990 00:00:00 GMT'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 33, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'date', b'Mon, 05 Jun 2023 18:14:22 GMT'), total consumed 25 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 25, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 50, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-disposition', b'attachment; filename="response.bin"; filename*=UTF-8\'\'response.bin'), total consumed 52 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 47, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (<memory at 0x00000189C5F193C0>, b'CP="This is not a P3P policy! See g.co/p3phelp for more info."'), total consumed 53 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 145, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ch', b'Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version'), total consumed 155 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 17, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-opener-policy', b'same-origin-allow-popups'), total consumed 38 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 13, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 128, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'permissions-policy', b'ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*'), total consumed 145 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 20, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-resource-policy', b'same-site'), total consumed 29 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 58, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-security-policy', b"require-trusted-types-for 'script';report-uri /_/TranslateWebserverUi/cspreport"), total consumed 77 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 54, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'server', <memory at 0x00000189C5F1B280>), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 12, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 1, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-xss-protection', <memory at 0x00000189C5F19000>), total consumed 16 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 11, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 9, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-frame-options', b'SAMEORIGIN'), total consumed 23 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 55, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 200, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'set-cookie', b'NID=511=g_8m0qtX1jlxm-xidA1VolRrJfFg0PbIV-DRoopLXE4Ir9_d0dSwzoHUodR9j_eoOXPMwtujgNIV6k5VYL3sJknT6VCZewFBSuBdK3QEJo8UCujrdOdBpIcrVPtr3xoa3KGzUaZBOWUyi3aNMoBbO5bSnfI1q2SSFfaZ2TpWwqM; expires=Tue, 05-Dec-2023 18:14:22 GMT; path=/; domain=.google.com; HttpOnly'), total consumed 204 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'alt-svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), total consumed 44 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ranges', b'none'), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 59, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 45, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'vary', b'Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding'), total consumed 47 bytes, indexed True
+DEBUG:httpx._client:HTTP Request: POST https://translate.google.com/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c "HTTP/2 200 OK"
+DEBUG:hpack.hpack:HPACK encoding <generator object _check_path_header.<locals>.inner at 0x00000189C5A49B60>
+DEBUG:hpack.hpack:Adding (b':method', b'POST') to the header table
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b':authority', b'translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 1 with 6 bits
+DEBUG:hpack.hpack:Encoding 14 with 7 bits
+DEBUG:hpack.hpack:Adding (b':scheme', b'https') to the header table
+DEBUG:hpack.hpack:Encoding 7 with 7 bits
+DEBUG:hpack.hpack:Adding (b':path', b'/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c') to the header table
+DEBUG:hpack.hpack:Encoding 4 with 6 bits
+DEBUG:hpack.hpack:Encoding 101 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept', b'*/*') to the header table
+DEBUG:hpack.hpack:Encoding 19 with 6 bits
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept-encoding', b'gzip, deflate') to the header table
+DEBUG:hpack.hpack:Encoding 16 with 7 bits
+DEBUG:hpack.hpack:Adding (b'user-agent', b'Mozilla/5.0 (Windows NT 10.0; Win64; x64)') to the header table
+DEBUG:hpack.hpack:Encoding 58 with 6 bits
+DEBUG:hpack.hpack:Encoding 32 with 7 bits
+DEBUG:hpack.hpack:Adding (b'referer', b'https://translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 51 with 6 bits
+DEBUG:hpack.hpack:Encoding 20 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-length', b'173') to the header table
+DEBUG:hpack.hpack:Encoding 28 with 6 bits
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-type', b'application/x-www-form-urlencoded') to the header table
+DEBUG:hpack.hpack:Encoding 31 with 6 bits
+DEBUG:hpack.hpack:Encoding 24 with 7 bits
+DEBUG:hpack.hpack:Encoded header block to b"\x83A\x8eM\x83\xa9\x14\r%^c\x9ej\n\xb9\x0fO\x87D\xe5b&7\xd8:\x91@\xd2^E\x8d\x05\xb3\xb9l\xe0f$\x1aF\xc4cI'/\x92\x92\xd4\x97\xfc\xb2\xb2\x1aDA\xa3\xae\x0eWI\xf1\x1d\x10F~\xd1&\xc1\xd4\x8a\x06\x92\xad\xe0\xb1\xa0\xb6w-\x91\x08\x02\x00D\x07W\x0b1V\x0f\x84\x1c\x8b\x0e\xba\xe0\x0f\xc2\x0eE\xab\xa0i\x94\xf6S\x00~\x10r-!{\x98\x85\x80?\x16&\x02\x7fS\x83\xf9c\xe7\x90z\xa0\xd0\x7ff\xa2\x81\xb0\xda\xe0S\xfa\xe4j\xa4?\x84)\xa7z\x81\x02\xe0\xfbS\x91\xaaq\xaf\xb5<\xb8\xd7\xf7s\x94\x9d)\xad\x17\x18a6\x0e\xa4P4\x95y\x8ey\xa8*\xe4=?\\\x83\x0b\xac\xff_\x98\x1du\xd0b\r&=Ly[\xc7\x8f\x0bJ{)Z\xdb(-D<\x85\x93"
+DEBUG:hpack.hpack:Decoding b'\x88_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{X\xa1\xa8\xeb\x10d\x9c\xbfJTu\x90\x93\xd8_\xa5)\x1f\x95\x871`\x07\xd2\x94\xda\x84\xada{\x8e\x83H4\x97@\x85\xae\xc1\xcdH\xff\x86\xa8\xeb\x10d\x9c\xbfd\x96\xd0z\xbe\x94\x00T\xca:\x94\x0b\xef\x81@\x02\xe0\x01p\x00S\x16\x8d\xff\x0f\x12\x96\xd0z\xbe\x94\x03je\xb6\xa5\x04\x012\xa0^\xb8\x16\xae\x08Jb\xd1\xbfY\xb2\x1aR2OIjO\xda\x92\x9a\x82\xd4:K\x07\xf3aQY\xeaAW\x8c\xd5\x7f?jJj\x0bP\xe9/\xcc\x1c7\xe1Y\xef\xf5\xfe\xac*+=H*\xf1\x9a\xaf@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x03p3p\xaf\xbd\xae\x0f\xe7|\xe6B\x86B\x95\x1d*\rMl\xebR\xb3\xd0bz\xfe\x14\xdcR\xa92\xe4;\x15\xb3\\\xe5\xa2\xb5%=\x8aR{\n\xa1\xaa\x94\xeb\xff?@\x8d\xac\xb6Rd \xc7\xa9\x0bVz\x0cO_\xff\x01$\xebZ5\x87a\'\x83\xe7\xe9BN\xb5\xa3Z3&\xa2\xa1\x10|\xfd(I\xd6\xb4kKm\x14-\xdc\xb6 \xc7\xaa\x0f\x9f\xa5\t:\xd6\x8dim\xa2\x85\xbb\x96\xc4\x18\xf5-A\x90\x98>~\x94$\xebZ5\xa9<\x85\xa2\x0f\x9f\xa5\t:\xd6\x8do\x07\xf0\xe3P|\xfd(I\xd6\xb4kJ{)ZQ\x91\'\xb2\x0f\x9f\xa5\t:\xd6\x8dj\xe8\x1ae=\x94\xc1\xf3\xf4\xa1\'Z\xd1\xad]\x03L\xa7\xb2\x95\xbb\x96\xc4\x18\xf5A\xf3@\x90!\xeaIjJ\xc8)-\xb0\xc9\xf4\xb5g\xa0\xc4\xf5\xba\xb0\xbd\xad5\x85Y6Z\x84\x96E\x93\xea\xb2\xa1iOb\x9f\xe9\x04\xb0\xd5\xa7\xfd}\xd8Z\xcfbV\xb6\xc3(\xc4Lo\xb0u"\x81\xa4\xbc\x8b\x1a\x0bgr\xd9\xc0\xcc\x11\x15\xd8Z\xcfb\x7f@\x86\x19\x08Z\xd2\xb1\'\xff\x12\xdcR-{\x1a\xdc!Z\x1b\t?\xd2\x9b\x8aE\xafc[\x84+]2j*\x11\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xd8m\xa2\x85\xb8\x96\xc4\x18\xf5})\xb8\xa4Z\xf65\xb8B\xb6\x1bh\xa1n%\xb1\x06=Kg2\x13\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xda\x0f!h\xfaSqH\xb5\xeckp\x85nG\xe4\xe3_Jn)\x16\xbd\x8dn\x10\xad\x84\xf6R\xb6\x11\x91\'\xb3\xe9M\xc5"\xd7\xb1\xad\xc2\x15\xb5\xd04\xca{)\xfaSqH\xb5\xeckp\x85mt\r2\x9e\xcaV\xe2[\x10c\xd5@\x94%\x87B\x16=\x86\x98\xd5-aP{l!V\xac\xf4\x18\x9e\xbf\x86@\xe9*\xc82K@\x92%\x87B\x16=\x86\x98\xd5,z\xcbQlZ\xb3\xd0bz\x91@\xe9*\xc7\xb0\xd3\x1a\xa5\x87E\x07\xf0\xb5g\xae\xda\xd1v\x03ESF@\x8c\xf2\xb7\x94!j\xec:JD\x98\xf5\x7f\x010@\x8b\xf2\xb4\xb6\x0e\x92\xacz\xd2c\xd4\x8f\x89\xdd\x0e\x8c\x1a\xb6\xe4\xc5\x93O\x0f(\xffJ\xd3\x92\xfc\r\x840b\xf3\xef\xab]"0/\xa3n\xdc\x9e\xe3\x9eh\xa6w\x17\xbb\xfc[\xcd\x95\xff;z\xc7\x87\xb36\xcf\xc2\xcf\x7f\x81\x06\\\xb0\xcf\x8el\x9cz\xc3\xfa6\xb6I\x119\x059v\xdd/\xba@k1T]_\xb5\xdfg\x87T-m\x14\xcf\x17.\xdd\xdd\xfc\xc5~\xcc\xf65\xcf\xde\xaa+\xd9i\xa7\xd9\xdf\x7f\x8ap\x90\xad\xf4\xf0\xdd\xad\xf9\x91\xbdxI\xf9\xfbN}\xf9v\x07O7\xdc\xe1\xc6j\xb2bH}\xe6\xab\xf7\xf1\xaa\xb8\r\xf8\xe8i\xad\xf8\xf0\xf9\xe8|\x9fj\x17\xcdf\xb0\xa8\x83}\xa5\xfaP\r\xad|\xa4X@\x13*\x05\xeb\x81j\xe0\x84\xa6-\x1b\xfe\xd4\xaci\x9e\x06>\xd4\x90\xf4\x8c\xd5@\xbc\xc7<\xd4\x15r\x1e\x9f\xb51\xa55\xea\xaa\x8f_@\x85\x1d\tY\x1d\xc9\xa4\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x80M\xbe \x00\x1fS\xb2\xb0\x9f\x83\xf9\xb8\xd3L\xff?jR8\x04\xdb\xe2\x00\x01R\x83\xa8\xf5\x17{\xad\xdcR-\x84\xa9$\xeb_*\x13\xf4\xa6\xe2\x91l%I\'[A\xe4/\xd2\x9b\x8aE\xb0\x95$\x9dm\xc6I~\xa1!\x0bZV\xc1Q\x0f!\xaa\x9b'
+DEBUG:hpack.hpack:Decoded 8, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b':status', b'200'), consumed 1
+DEBUG:hpack.hpack:Decoded 31, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 24, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 33, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cache-control', b'no-cache, no-store, max-age=0, must-revalidate'), total consumed 35 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'pragma', b'no-cache'), total consumed 14 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'expires', b'Mon, 01 Jan 1990 00:00:00 GMT'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 33, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'date', b'Mon, 05 Jun 2023 18:14:22 GMT'), total consumed 25 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 25, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 50, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-disposition', b'attachment; filename="response.bin"; filename*=UTF-8\'\'response.bin'), total consumed 52 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 47, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (<memory at 0x00000189C5F1A740>, b'CP="This is not a P3P policy! See g.co/p3phelp for more info."'), total consumed 53 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 13, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 128, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'permissions-policy', b'ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*'), total consumed 145 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 58, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-security-policy', b"require-trusted-types-for 'script';report-uri /_/TranslateWebserverUi/cspreport"), total consumed 77 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 145, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ch', b'Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version'), total consumed 155 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 20, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-resource-policy', b'same-site'), total consumed 29 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 17, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-opener-policy', b'same-origin-allow-popups'), total consumed 38 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 54, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'server', <memory at 0x00000189C5F1B1C0>), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 12, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 1, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-xss-protection', <memory at 0x00000189C5F199C0>), total consumed 16 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 11, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 9, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-frame-options', b'SAMEORIGIN'), total consumed 23 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 55, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 201, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'set-cookie', b'NID=511=Gxzk4j_i0DsRRIzbhg_g7GzDV5KJ9xRkbFq3uhUrzX10JJAhHgIVkAZa4Qd_cW1tJRBezm0irGneOZpD3Uks-ulmh_Wqv7XGDrLr4YzOlpQuihQvTwmFce5jw5u5xd5PFcXZmLTJQ1NY96UVgnIGt1zKnZX4nUa9bl44THFxjoI; expires=Tue, 05-Dec-2023 18:14:22 GMT; path=/; domain=.google.com; HttpOnly'), total consumed 205 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'alt-svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), total consumed 44 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ranges', b'none'), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 59, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 45, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'vary', b'Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding'), total consumed 47 bytes, indexed True
+DEBUG:httpx._client:HTTP Request: POST https://translate.google.com/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c "HTTP/2 200 OK"
+DEBUG:hpack.hpack:HPACK encoding <generator object _check_path_header.<locals>.inner at 0x00000189C5A49C40>
+DEBUG:hpack.hpack:Adding (b':method', b'POST') to the header table
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b':authority', b'translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 1 with 6 bits
+DEBUG:hpack.hpack:Encoding 14 with 7 bits
+DEBUG:hpack.hpack:Adding (b':scheme', b'https') to the header table
+DEBUG:hpack.hpack:Encoding 7 with 7 bits
+DEBUG:hpack.hpack:Adding (b':path', b'/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c') to the header table
+DEBUG:hpack.hpack:Encoding 4 with 6 bits
+DEBUG:hpack.hpack:Encoding 101 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept', b'*/*') to the header table
+DEBUG:hpack.hpack:Encoding 19 with 6 bits
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept-encoding', b'gzip, deflate') to the header table
+DEBUG:hpack.hpack:Encoding 16 with 7 bits
+DEBUG:hpack.hpack:Adding (b'user-agent', b'Mozilla/5.0 (Windows NT 10.0; Win64; x64)') to the header table
+DEBUG:hpack.hpack:Encoding 58 with 6 bits
+DEBUG:hpack.hpack:Encoding 32 with 7 bits
+DEBUG:hpack.hpack:Adding (b'referer', b'https://translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 51 with 6 bits
+DEBUG:hpack.hpack:Encoding 20 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-length', b'173') to the header table
+DEBUG:hpack.hpack:Encoding 28 with 6 bits
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-type', b'application/x-www-form-urlencoded') to the header table
+DEBUG:hpack.hpack:Encoding 31 with 6 bits
+DEBUG:hpack.hpack:Encoding 24 with 7 bits
+DEBUG:hpack.hpack:Encoded header block to b"\x83A\x8eM\x83\xa9\x14\r%^c\x9ej\n\xb9\x0fO\x87D\xe5b&7\xd8:\x91@\xd2^E\x8d\x05\xb3\xb9l\xe0f$\x1aF\xc4cI'/\x92\x92\xd4\x97\xfc\xb2\xb2\x1aDA\xa3\xae\x0eWI\xf1\x1d\x10F~\xd1&\xc1\xd4\x8a\x06\x92\xad\xe0\xb1\xa0\xb6w-\x91\x08\x02\x00D\x07W\x0b1V\x0f\x84\x1c\x8b\x0e\xba\xe0\x0f\xc2\x0eE\xab\xa0i\x94\xf6S\x00~\x10r-!{\x98\x85\x80?\x16&\x02\x7fS\x83\xf9c\xe7\x90z\xa0\xd0\x7ff\xa2\x81\xb0\xda\xe0S\xfa\xe4j\xa4?\x84)\xa7z\x81\x02\xe0\xfbS\x91\xaaq\xaf\xb5<\xb8\xd7\xf7s\x94\x9d)\xad\x17\x18a6\x0e\xa4P4\x95y\x8ey\xa8*\xe4=?\\\x83\x0b\xac\xff_\x98\x1du\xd0b\r&=Ly[\xc7\x8f\x0bJ{)Z\xdb(-D<\x85\x93"
+DEBUG:hpack.hpack:Decoding b'\x88_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{X\xa1\xa8\xeb\x10d\x9c\xbfJTu\x90\x93\xd8_\xa5)\x1f\x95\x871`\x07\xd2\x94\xda\x84\xada{\x8e\x83H4\x97@\x85\xae\xc1\xcdH\xff\x86\xa8\xeb\x10d\x9c\xbfd\x96\xd0z\xbe\x94\x00T\xca:\x94\x0b\xef\x81@\x02\xe0\x01p\x00S\x16\x8d\xff\x0f\x12\x96\xd0z\xbe\x94\x03je\xb6\xa5\x04\x012\xa0^\xb8\x16\xae\t\x951h\xdfY\xb2\x1aR2OIjO\xda\x92\x9a\x82\xd4:K\x07\xf3aQY\xeaAW\x8c\xd5\x7f?jJj\x0bP\xe9/\xcc\x1c7\xe1Y\xef\xf5\xfe\xac*+=H*\xf1\x9a\xaf@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x03p3p\xaf\xbd\xae\x0f\xe7|\xe6B\x86B\x95\x1d*\rMl\xebR\xb3\xd0bz\xfe\x14\xdcR\xa92\xe4;\x15\xb3\\\xe5\xa2\xb5%=\x8aR{\n\xa1\xaa\x94\xeb\xff?@\x86\x19\x08Z\xd2\xb1\'\xff\x12\xdcR-{\x1a\xdc!Z\x1b\t?\xd2\x9b\x8aE\xafc[\x84+]2j*\x11\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xd8m\xa2\x85\xb8\x96\xc4\x18\xf5})\xb8\xa4Z\xf65\xb8B\xb6\x1bh\xa1n%\xb1\x06=Kg2\x13\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xda\x0f!h\xfaSqH\xb5\xeckp\x85nG\xe4\xe3_Jn)\x16\xbd\x8dn\x10\xad\x84\xf6R\xb6\x11\x91\'\xb3\xe9M\xc5"\xd7\xb1\xad\xc2\x15\xb5\xd04\xca{)\xfaSqH\xb5\xeckp\x85mt\r2\x9e\xcaV\xe2[\x10c\xd5@\x8d\xac\xb6Rd \xc7\xa9\x0bVz\x0cO_\xff\x01$\xebZ5\x87a\'\x83\xe7\xe9BN\xb5\xa3Z3&\xa2\xa1\x10|\xfd(I\xd6\xb4kKm\x14-\xdc\xb6 \xc7\xaa\x0f\x9f\xa5\t:\xd6\x8dim\xa2\x85\xbb\x96\xc4\x18\xf5-A\x90\x98>~\x94$\xebZ5\xa9<\x85\xa2\x0f\x9f\xa5\t:\xd6\x8do\x07\xf0\xe3P|\xfd(I\xd6\xb4kJ{)ZQ\x91\'\xb2\x0f\x9f\xa5\t:\xd6\x8dj\xe8\x1ae=\x94\xc1\xf3\xf4\xa1\'Z\xd1\xad]\x03L\xa7\xb2\x95\xbb\x96\xc4\x18\xf5A\xf3@\x94%\x87B\x16=\x86\x98\xd5-aP{l!V\xac\xf4\x18\x9e\xbf\x86@\xe9*\xc82K@\x90!\xeaIjJ\xc8)-\xb0\xc9\xf4\xb5g\xa0\xc4\xf5\xba\xb0\xbd\xad5\x85Y6Z\x84\x96E\x93\xea\xb2\xa1iOb\x9f\xe9\x04\xb0\xd5\xa7\xfd}\xd8Z\xcfbV\xb6\xc3(\xc4Lo\xb0u"\x81\xa4\xbc\x8b\x1a\x0bgr\xd9\xc0\xcc\x11\x15\xd8Z\xcfb\x7f@\x92%\x87B\x16=\x86\x98\xd5,z\xcbQlZ\xb3\xd0bz\x91@\xe9*\xc7\xb0\xd3\x1a\xa5\x87E\x07\xf0\xb5g\xae\xda\xd1v\x03ESF@\x8c\xf2\xb7\x94!j\xec:JD\x98\xf5\x7f\x010@\x8b\xf2\xb4\xb6\x0e\x92\xacz\xd2c\xd4\x8f\x89\xdd\x0e\x8c\x1a\xb6\xe4\xc5\x93O\x0f(\xffG\xd3\x92\xfc\r\x840K\x1c[c&\xf0\xcbK\xd2:9\xb0\xa5\x9c\xae\x05\xbc\x19\xda\xcd\x92\x8d\x8fCT\xf4\xbd\xa3\xf0y\xa8\xca\xd6\xf9x_\xdd\x1e\xeb6v\xbd\x84\xa7k?0\xa6}Vj\xc5\xb3N\x97<YvXb\xdc%\xb3\xd3\x96\xfeC\x1e\xd6\xf6y\x9fp\xdf\'n8?{\x9d<\xa2\xeciG.\xae\xb4\xb3n\xbf\x05\xc6\xfb\xf8"\xe5tv\xf2\xec\xce\xa7\xdf\x17-M\xb5\x9b8/\xc9\xceX\xa8\x97\xa5Y\xc0\xf8\x11\xbfE\x99Q\xec.\xf0\xe0\xff\x1d\x81\x9b\x8a>\xd4/\x9a\xcdaQ\x06\xfbK\xf4\xa0\x1bZ\xf9H\xb0\x80&T\x0b\xd7\x02\xd5\xc12\xa6-\x1b\xfe\xd4\xaci\x9e\x06>\xd4\x90\xf4\x8c\xd5@\xbc\xc7<\xd4\x15r\x1e\x9f\xb51\xa55\xea\xaa\x8f_@\x85\x1d\tY\x1d\xc9\xa4\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x80M\xbe \x00\x1fS\xb2\xb0\x9f\x83\xf9\xb8\xd3L\xff?jR8\x04\xdb\xe2\x00\x01R\x83\xa8\xf5\x17{\xad\xdcR-\x84\xa9$\xeb_*\x13\xf4\xa6\xe2\x91l%I\'[A\xe4/\xd2\x9b\x8aE\xb0\x95$\x9dm\xc6I~\xa1!\x0bZV\xc1Q\x0f!\xaa\x9b'
+DEBUG:hpack.hpack:Decoded 8, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b':status', b'200'), consumed 1
+DEBUG:hpack.hpack:Decoded 31, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 24, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 33, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cache-control', b'no-cache, no-store, max-age=0, must-revalidate'), total consumed 35 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'pragma', b'no-cache'), total consumed 14 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'expires', b'Mon, 01 Jan 1990 00:00:00 GMT'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 33, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'date', b'Mon, 05 Jun 2023 18:14:23 GMT'), total consumed 25 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 25, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 50, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-disposition', b'attachment; filename="response.bin"; filename*=UTF-8\'\'response.bin'), total consumed 52 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 47, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (<memory at 0x00000189C5F193C0>, b'CP="This is not a P3P policy! See g.co/p3phelp for more info."'), total consumed 53 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 145, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ch', b'Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version'), total consumed 155 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 13, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 128, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'permissions-policy', b'ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*'), total consumed 145 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 20, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-resource-policy', b'same-site'), total consumed 29 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 58, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-security-policy', b"require-trusted-types-for 'script';report-uri /_/TranslateWebserverUi/cspreport"), total consumed 77 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 17, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-opener-policy', b'same-origin-allow-popups'), total consumed 38 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 54, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'server', <memory at 0x00000189C5F1B280>), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 12, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 1, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-xss-protection', <memory at 0x00000189C5F199C0>), total consumed 16 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 11, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 9, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-frame-options', b'SAMEORIGIN'), total consumed 23 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 55, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 198, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'set-cookie', b'NID=511=fb_RbcT1fm8d7agFt3J615EL4KIlQ8Anhm8MXaKlJ4TfUDSbSrQqCFeo4LY1thOrOGQNN6wrBfA_S2-LmJDIiou5QxhSa9cqVEZvotW_qifafOkm3uPweH99E_WBauWq3O992WO54KL0DdYf_lfjnL090sTMrJsz17UU9VQ1gVs; expires=Tue, 05-Dec-2023 18:14:23 GMT; path=/; domain=.google.com; HttpOnly'), total consumed 202 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'alt-svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), total consumed 44 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ranges', b'none'), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 59, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 45, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'vary', b'Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding'), total consumed 47 bytes, indexed True
+DEBUG:httpx._client:HTTP Request: POST https://translate.google.com/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c "HTTP/2 200 OK"
+DEBUG:hpack.hpack:HPACK encoding <generator object _check_path_header.<locals>.inner at 0x00000189C5A4B1B0>
+DEBUG:hpack.hpack:Adding (b':method', b'POST') to the header table
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b':authority', b'translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 1 with 6 bits
+DEBUG:hpack.hpack:Encoding 14 with 7 bits
+DEBUG:hpack.hpack:Adding (b':scheme', b'https') to the header table
+DEBUG:hpack.hpack:Encoding 7 with 7 bits
+DEBUG:hpack.hpack:Adding (b':path', b'/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c') to the header table
+DEBUG:hpack.hpack:Encoding 4 with 6 bits
+DEBUG:hpack.hpack:Encoding 101 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept', b'*/*') to the header table
+DEBUG:hpack.hpack:Encoding 19 with 6 bits
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept-encoding', b'gzip, deflate') to the header table
+DEBUG:hpack.hpack:Encoding 16 with 7 bits
+DEBUG:hpack.hpack:Adding (b'user-agent', b'Mozilla/5.0 (Windows NT 10.0; Win64; x64)') to the header table
+DEBUG:hpack.hpack:Encoding 58 with 6 bits
+DEBUG:hpack.hpack:Encoding 32 with 7 bits
+DEBUG:hpack.hpack:Adding (b'referer', b'https://translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 51 with 6 bits
+DEBUG:hpack.hpack:Encoding 20 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-length', b'161') to the header table
+DEBUG:hpack.hpack:Encoding 28 with 6 bits
+DEBUG:hpack.hpack:Encoding 2 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-type', b'application/x-www-form-urlencoded') to the header table
+DEBUG:hpack.hpack:Encoding 31 with 6 bits
+DEBUG:hpack.hpack:Encoding 24 with 7 bits
+DEBUG:hpack.hpack:Encoded header block to b"\x83A\x8eM\x83\xa9\x14\r%^c\x9ej\n\xb9\x0fO\x87D\xe5b&7\xd8:\x91@\xd2^E\x8d\x05\xb3\xb9l\xe0f$\x1aF\xc4cI'/\x92\x92\xd4\x97\xfc\xb2\xb2\x1aDA\xa3\xae\x0eWI\xf1\x1d\x10F~\xd1&\xc1\xd4\x8a\x06\x92\xad\xe0\xb1\xa0\xb6w-\x91\x08\x02\x00D\x07W\x0b1V\x0f\x84\x1c\x8b\x0e\xba\xe0\x0f\xc2\x0eE\xab\xa0i\x94\xf6S\x00~\x10r-!{\x98\x85\x80?\x16&\x02\x7fS\x83\xf9c\xe7\x90z\xa0\xd0\x7ff\xa2\x81\xb0\xda\xe0S\xfa\xe4j\xa4?\x84)\xa7z\x81\x02\xe0\xfbS\x91\xaaq\xaf\xb5<\xb8\xd7\xf7s\x94\x9d)\xad\x17\x18a6\x0e\xa4P4\x95y\x8ey\xa8*\xe4=?\\\x82\x0b\x81_\x98\x1du\xd0b\r&=Ly[\xc7\x8f\x0bJ{)Z\xdb(-D<\x85\x93"
+DEBUG:hpack.hpack:Decoding b'\x88_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{X\xa1\xa8\xeb\x10d\x9c\xbfJTu\x90\x93\xd8_\xa5)\x1f\x95\x871`\x07\xd2\x94\xda\x84\xada{\x8e\x83H4\x97@\x85\xae\xc1\xcdH\xff\x86\xa8\xeb\x10d\x9c\xbfd\x96\xd0z\xbe\x94\x00T\xca:\x94\x0b\xef\x81@\x02\xe0\x01p\x00S\x16\x8d\xff\x0f\x12\x96\xd0z\xbe\x94\x03je\xb6\xa5\x04\x012\xa0^\xb8\x16\xae\t\x951h\xdfY\xb2\x1aR2OIjO\xda\x92\x9a\x82\xd4:K\x07\xf3aQY\xeaAW\x8c\xd5\x7f?jJj\x0bP\xe9/\xcc\x1c7\xe1Y\xef\xf5\xfe\xac*+=H*\xf1\x9a\xaf@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x03p3p\xaf\xbd\xae\x0f\xe7|\xe6B\x86B\x95\x1d*\rMl\xebR\xb3\xd0bz\xfe\x14\xdcR\xa92\xe4;\x15\xb3\\\xe5\xa2\xb5%=\x8aR{\n\xa1\xaa\x94\xeb\xff?@\x94%\x87B\x16=\x86\x98\xd5-aP{l!V\xac\xf4\x18\x9e\xbf\x86@\xe9*\xc82K@\x8d\xac\xb6Rd \xc7\xa9\x0bVz\x0cO_\xff\x01$\xebZ5\x87a\'\x83\xe7\xe9BN\xb5\xa3Z3&\xa2\xa1\x10|\xfd(I\xd6\xb4kKm\x14-\xdc\xb6 \xc7\xaa\x0f\x9f\xa5\t:\xd6\x8dim\xa2\x85\xbb\x96\xc4\x18\xf5-A\x90\x98>~\x94$\xebZ5\xa9<\x85\xa2\x0f\x9f\xa5\t:\xd6\x8do\x07\xf0\xe3P|\xfd(I\xd6\xb4kJ{)ZQ\x91\'\xb2\x0f\x9f\xa5\t:\xd6\x8dj\xe8\x1ae=\x94\xc1\xf3\xf4\xa1\'Z\xd1\xad]\x03L\xa7\xb2\x95\xbb\x96\xc4\x18\xf5A\xf3@\x86\x19\x08Z\xd2\xb1\'\xff\x12\xdcR-{\x1a\xdc!Z\x1b\t?\xd2\x9b\x8aE\xafc[\x84+]2j*\x11\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xd8m\xa2\x85\xb8\x96\xc4\x18\xf5})\xb8\xa4Z\xf65\xb8B\xb6\x1bh\xa1n%\xb1\x06=Kg2\x13\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xda\x0f!h\xfaSqH\xb5\xeckp\x85nG\xe4\xe3_Jn)\x16\xbd\x8dn\x10\xad\x84\xf6R\xb6\x11\x91\'\xb3\xe9M\xc5"\xd7\xb1\xad\xc2\x15\xb5\xd04\xca{)\xfaSqH\xb5\xeckp\x85mt\r2\x9e\xcaV\xe2[\x10c\xd5@\x92%\x87B\x16=\x86\x98\xd5,z\xcbQlZ\xb3\xd0bz\x91@\xe9*\xc7\xb0\xd3\x1a\xa5\x87E\x07\xf0\xb5g\xae\xda\xd1@\x90!\xeaIjJ\xc8)-\xb0\xc9\xf4\xb5g\xa0\xc4\xf5\xba\xb0\xbd\xad5\x85Y6Z\x84\x96E\x93\xea\xb2\xa1iOb\x9f\xe9\x04\xb0\xd5\xa7\xfd}\xd8Z\xcfbV\xb6\xc3(\xc4Lo\xb0u"\x81\xa4\xbc\x8b\x1a\x0bgr\xd9\xc0\xcc\x11\x15\xd8Z\xcfb\x7fv\x03ESF@\x8c\xf2\xb7\x94!j\xec:JD\x98\xf5\x7f\x010@\x8b\xf2\xb4\xb6\x0e\x92\xacz\xd2c\xd4\x8f\x89\xdd\x0e\x8c\x1a\xb6\xe4\xc5\x93O\x0f(\xffI\xd3\x92\xfc\r\x840~\xc5{Zl\x92\x8f,\x82\x8d\xc0\xf0\x1d\xeeH\x10\xbfG\xe9e\xe2\xc8\x1b\xb5i\xb8\xcb\xfb{}\xffH\xf1\x1f\x8f\x1d\xd1\xc3\xde\xf1\x07\xb4X6z\xfc\x1d\xa4\xd4\xf7^\xd2\xd9w6,S\x9a<\x04o\xd9I\xba+\xac\xf3\xd7\xaf\x7f\xed\xf747\xd7\xd1e\xc5W\x08\xb2n\xbadb\xe3\xc7\xdfy\xa7\xd9\xd3\xaa\xd7p\xd5\xa1\x0e\x00\xfetq\xa3\x8e\x08\xfft\x85\x19\xabo&\x90\xfe\xf6\xfcE|m\xacE\xf5|d\xe2\xd6\xccu7\xfa:\xfd9\xdd\xe78}\xa8_5\x9a\xc2\xa2\r\xf6\x97\xe9@6\xb5\xf2\x91a\x00L\xa8\x17\xae\x05\xab\x82eLZ7\xfd\xa9X\xd3<\x0c}\xa9!\xe9\x19\xaa\x81y\x8ey\xa8*\xe4=?jcJk\xd5U\x1e\xbf@\x85\x1d\tY\x1d\xc9\xa4\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x80M\xbe \x00\x1fS\xb2\xb0\x9f\x83\xf9\xb8\xd3L\xff?jR8\x04\xdb\xe2\x00\x01R\x83\xa8\xf5\x17{\xad\xdcR-\x84\xa9$\xeb_*\x13\xf4\xa6\xe2\x91l%I\'[A\xe4/\xd2\x9b\x8aE\xb0\x95$\x9dm\xc6I~\xa1!\x0bZV\xc1Q\x0f!\xaa\x9b'
+DEBUG:hpack.hpack:Decoded 8, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b':status', b'200'), consumed 1
+DEBUG:hpack.hpack:Decoded 31, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 24, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 33, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cache-control', b'no-cache, no-store, max-age=0, must-revalidate'), total consumed 35 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'pragma', b'no-cache'), total consumed 14 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'expires', b'Mon, 01 Jan 1990 00:00:00 GMT'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 33, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'date', b'Mon, 05 Jun 2023 18:14:23 GMT'), total consumed 25 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 25, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 50, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-disposition', b'attachment; filename="response.bin"; filename*=UTF-8\'\'response.bin'), total consumed 52 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 47, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (<memory at 0x00000189C584B640>, b'CP="This is not a P3P policy! See g.co/p3phelp for more info."'), total consumed 53 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 20, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-resource-policy', b'same-site'), total consumed 29 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 13, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 128, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'permissions-policy', b'ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*'), total consumed 145 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 145, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ch', b'Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version'), total consumed 155 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 17, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-opener-policy', b'same-origin-allow-popups'), total consumed 38 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 58, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-security-policy', b"require-trusted-types-for 'script';report-uri /_/TranslateWebserverUi/cspreport"), total consumed 77 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 54, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'server', <memory at 0x00000189C584BAC0>), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 12, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 1, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-xss-protection', <memory at 0x00000189C584A8C0>), total consumed 16 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 11, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 9, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-frame-options', b'SAMEORIGIN'), total consumed 23 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 55, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 200, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'set-cookie', b'NID=511=Z_CPtrdlx30lS0w1T6d119lZefV305u-gVfZCTDyswbwwvsUzT21q_EQyXaucO8kqfrBKGGhibEc5zecS_B3YPPTZD6M5kyefGnU_ISBisGVVzvghQjk-BFnMs60oxMVlVEbZN1sKp5IN1ZqXspVup2eyDacV4QHn5Zapy6v86U; expires=Tue, 05-Dec-2023 18:14:23 GMT; path=/; domain=.google.com; HttpOnly'), total consumed 204 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'alt-svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), total consumed 44 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ranges', b'none'), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 59, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 45, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'vary', b'Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding'), total consumed 47 bytes, indexed True
+DEBUG:httpx._client:HTTP Request: POST https://translate.google.com/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c "HTTP/2 200 OK"
+DEBUG:hpack.hpack:HPACK encoding <generator object _check_path_header.<locals>.inner at 0x00000189C5FA4900>
+DEBUG:hpack.hpack:Adding (b':method', b'POST') to the header table
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b':authority', b'translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 1 with 6 bits
+DEBUG:hpack.hpack:Encoding 14 with 7 bits
+DEBUG:hpack.hpack:Adding (b':scheme', b'https') to the header table
+DEBUG:hpack.hpack:Encoding 7 with 7 bits
+DEBUG:hpack.hpack:Adding (b':path', b'/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c') to the header table
+DEBUG:hpack.hpack:Encoding 4 with 6 bits
+DEBUG:hpack.hpack:Encoding 101 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept', b'*/*') to the header table
+DEBUG:hpack.hpack:Encoding 19 with 6 bits
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept-encoding', b'gzip, deflate') to the header table
+DEBUG:hpack.hpack:Encoding 16 with 7 bits
+DEBUG:hpack.hpack:Adding (b'user-agent', b'Mozilla/5.0 (Windows NT 10.0; Win64; x64)') to the header table
+DEBUG:hpack.hpack:Encoding 58 with 6 bits
+DEBUG:hpack.hpack:Encoding 32 with 7 bits
+DEBUG:hpack.hpack:Adding (b'referer', b'https://translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 51 with 6 bits
+DEBUG:hpack.hpack:Encoding 20 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-length', b'161') to the header table
+DEBUG:hpack.hpack:Encoding 28 with 6 bits
+DEBUG:hpack.hpack:Encoding 2 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-type', b'application/x-www-form-urlencoded') to the header table
+DEBUG:hpack.hpack:Encoding 31 with 6 bits
+DEBUG:hpack.hpack:Encoding 24 with 7 bits
+DEBUG:hpack.hpack:Encoded header block to b"\x83A\x8eM\x83\xa9\x14\r%^c\x9ej\n\xb9\x0fO\x87D\xe5b&7\xd8:\x91@\xd2^E\x8d\x05\xb3\xb9l\xe0f$\x1aF\xc4cI'/\x92\x92\xd4\x97\xfc\xb2\xb2\x1aDA\xa3\xae\x0eWI\xf1\x1d\x10F~\xd1&\xc1\xd4\x8a\x06\x92\xad\xe0\xb1\xa0\xb6w-\x91\x08\x02\x00D\x07W\x0b1V\x0f\x84\x1c\x8b\x0e\xba\xe0\x0f\xc2\x0eE\xab\xa0i\x94\xf6S\x00~\x10r-!{\x98\x85\x80?\x16&\x02\x7fS\x83\xf9c\xe7\x90z\xa0\xd0\x7ff\xa2\x81\xb0\xda\xe0S\xfa\xe4j\xa4?\x84)\xa7z\x81\x02\xe0\xfbS\x91\xaaq\xaf\xb5<\xb8\xd7\xf7s\x94\x9d)\xad\x17\x18a6\x0e\xa4P4\x95y\x8ey\xa8*\xe4=?\\\x82\x0b\x81_\x98\x1du\xd0b\r&=Ly[\xc7\x8f\x0bJ{)Z\xdb(-D<\x85\x93"
+DEBUG:hpack.hpack:Decoding b'\x88_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{X\xa1\xa8\xeb\x10d\x9c\xbfJTu\x90\x93\xd8_\xa5)\x1f\x95\x871`\x07\xd2\x94\xda\x84\xada{\x8e\x83H4\x97@\x85\xae\xc1\xcdH\xff\x86\xa8\xeb\x10d\x9c\xbfd\x96\xd0z\xbe\x94\x00T\xca:\x94\x0b\xef\x81@\x02\xe0\x01p\x00S\x16\x8d\xff\x0f\x12\x96\xd0z\xbe\x94\x03je\xb6\xa5\x04\x012\xa0^\xb8\x16\xae\t\x951h\xdfY\xb2\x1aR2OIjO\xda\x92\x9a\x82\xd4:K\x07\xf3aQY\xeaAW\x8c\xd5\x7f?jJj\x0bP\xe9/\xcc\x1c7\xe1Y\xef\xf5\xfe\xac*+=H*\xf1\x9a\xaf@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x03p3p\xaf\xbd\xae\x0f\xe7|\xe6B\x86B\x95\x1d*\rMl\xebR\xb3\xd0bz\xfe\x14\xdcR\xa92\xe4;\x15\xb3\\\xe5\xa2\xb5%=\x8aR{\n\xa1\xaa\x94\xeb\xff?@\x92%\x87B\x16=\x86\x98\xd5,z\xcbQlZ\xb3\xd0bz\x91@\xe9*\xc7\xb0\xd3\x1a\xa5\x87E\x07\xf0\xb5g\xae\xda\xd1@\x94%\x87B\x16=\x86\x98\xd5-aP{l!V\xac\xf4\x18\x9e\xbf\x86@\xe9*\xc82K@\x86\x19\x08Z\xd2\xb1\'\xff\x12\xdcR-{\x1a\xdc!Z\x1b\t?\xd2\x9b\x8aE\xafc[\x84+]2j*\x11\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xd8m\xa2\x85\xb8\x96\xc4\x18\xf5})\xb8\xa4Z\xf65\xb8B\xb6\x1bh\xa1n%\xb1\x06=Kg2\x13\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xda\x0f!h\xfaSqH\xb5\xeckp\x85nG\xe4\xe3_Jn)\x16\xbd\x8dn\x10\xad\x84\xf6R\xb6\x11\x91\'\xb3\xe9M\xc5"\xd7\xb1\xad\xc2\x15\xb5\xd04\xca{)\xfaSqH\xb5\xeckp\x85mt\r2\x9e\xcaV\xe2[\x10c\xd5@\x90!\xeaIjJ\xc8)-\xb0\xc9\xf4\xb5g\xa0\xc4\xf5\xba\xb0\xbd\xad5\x85Y6Z\x84\x96E\x93\xea\xb2\xa1iOb\x9f\xe9\x04\xb0\xd5\xa7\xfd}\xd8Z\xcfbV\xb6\xc3(\xc4Lo\xb0u"\x81\xa4\xbc\x8b\x1a\x0bgr\xd9\xc0\xcc\x11\x15\xd8Z\xcfb\x7f@\x8d\xac\xb6Rd \xc7\xa9\x0bVz\x0cO_\xff\x01$\xebZ5\x87a\'\x83\xe7\xe9BN\xb5\xa3Z3&\xa2\xa1\x10|\xfd(I\xd6\xb4kKm\x14-\xdc\xb6 \xc7\xaa\x0f\x9f\xa5\t:\xd6\x8dim\xa2\x85\xbb\x96\xc4\x18\xf5-A\x90\x98>~\x94$\xebZ5\xa9<\x85\xa2\x0f\x9f\xa5\t:\xd6\x8do\x07\xf0\xe3P|\xfd(I\xd6\xb4kJ{)ZQ\x91\'\xb2\x0f\x9f\xa5\t:\xd6\x8dj\xe8\x1ae=\x94\xc1\xf3\xf4\xa1\'Z\xd1\xad]\x03L\xa7\xb2\x95\xbb\x96\xc4\x18\xf5A\xf3v\x03ESF@\x8c\xf2\xb7\x94!j\xec:JD\x98\xf5\x7f\x010@\x8b\xf2\xb4\xb6\x0e\x92\xacz\xd2c\xd4\x8f\x89\xdd\x0e\x8c\x1a\xb6\xe4\xc5\x93O\x0f(\xffG\xd3\x92\xfc\r\x840i\x93#\xbf\x93\xf1\xae\xc9\x99\xafm\x1ak\xca\x9f\x1b\xb2\xf6|\xee[\x8a\xbd\xfe0\xd9N-`\xa6\xfeO6V\xcb]]\xa2<\xbe\x96\xa9\x02q\xb1\xba)\xa55|\xa1\xf0H\xe2s\x19m\xbd\x1e,$\x01\x9b\x1e\xec\x9d5\xfa\x7f)\xb6\xe4\xed\xa1\xfbK\xbb\xf3\xc1c\xd4\x14\xd9\xfb)\xe1d~\xf3\xb9\xc7\xf7V\xc9\x02=\xf1\xb9UN8O\xcd\xfc0d\xeb\xc7\x07\x8b\xb7\xc9\xc2vp\xf8OC\xc2\x19Sx:\x85\xc8\x7f\xbd\xdb\xd6n{\x8b\xef>\x8f\xb5\x0b\xe6\xb3XTA\xbe\xd2\xfd(\x06\xd6\xbeR, \t\x95\x02\xf5\xc0\xb5pL\xa9\x8bF\xff\xb5+\x1ag\x81\x8f\xb5$=#5P/1\xcf5\x05\\\x87\xa7\xedLiMz\xaa\xa3\xd7@\x85\x1d\tY\x1d\xc9\xa4\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x80M\xbe \x00\x1fS\xb2\xb0\x9f\x83\xf9\xb8\xd3L\xff?jR8\x04\xdb\xe2\x00\x01R\x83\xa8\xf5\x17{\xad\xdcR-\x84\xa9$\xeb_*\x13\xf4\xa6\xe2\x91l%I\'[A\xe4/\xd2\x9b\x8aE\xb0\x95$\x9dm\xc6I~\xa1!\x0bZV\xc1Q\x0f!\xaa\x9b'
+DEBUG:hpack.hpack:Decoded 8, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b':status', b'200'), consumed 1
+DEBUG:hpack.hpack:Decoded 31, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 24, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 33, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cache-control', b'no-cache, no-store, max-age=0, must-revalidate'), total consumed 35 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'pragma', b'no-cache'), total consumed 14 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'expires', b'Mon, 01 Jan 1990 00:00:00 GMT'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 33, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'date', b'Mon, 05 Jun 2023 18:14:23 GMT'), total consumed 25 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 25, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 50, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-disposition', b'attachment; filename="response.bin"; filename*=UTF-8\'\'response.bin'), total consumed 52 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 47, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (<memory at 0x00000189C5B95E40>, b'CP="This is not a P3P policy! See g.co/p3phelp for more info."'), total consumed 53 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 17, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-opener-policy', b'same-origin-allow-popups'), total consumed 38 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 20, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-resource-policy', b'same-site'), total consumed 29 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 145, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ch', b'Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version'), total consumed 155 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 58, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-security-policy', b"require-trusted-types-for 'script';report-uri /_/TranslateWebserverUi/cspreport"), total consumed 77 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 13, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 128, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'permissions-policy', b'ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*'), total consumed 145 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 54, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'server', <memory at 0x00000189C5B95F00>), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 12, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 1, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-xss-protection', <memory at 0x00000189C5B95D80>), total consumed 16 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 11, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 9, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-frame-options', b'SAMEORIGIN'), total consumed 23 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 55, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 198, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'set-cookie', b'NID=511=NdI7XhVprg3pRlNpJtwSJq9o6uGpTwFrmGP0mDIxrp34k7lbJy-ns265a72gfipWAwcb_6HeuCbGFc0i5aSIjPy9JiRIqM9ueSXwebO1trZfoA3azL6VZOQd1aTb6nn66cXTUEIkVEwBDcUh3FwtjoA1ftC1O2WaZv5PiYSezLM; expires=Tue, 05-Dec-2023 18:14:23 GMT; path=/; domain=.google.com; HttpOnly'), total consumed 202 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'alt-svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), total consumed 44 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ranges', b'none'), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 59, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 45, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'vary', b'Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding'), total consumed 47 bytes, indexed True
+DEBUG:httpx._client:HTTP Request: POST https://translate.google.com/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c "HTTP/2 200 OK"
+DEBUG:hpack.hpack:HPACK encoding <generator object _check_path_header.<locals>.inner at 0x00000189C5FA5310>
+DEBUG:hpack.hpack:Adding (b':method', b'POST') to the header table
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b':authority', b'translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 1 with 6 bits
+DEBUG:hpack.hpack:Encoding 14 with 7 bits
+DEBUG:hpack.hpack:Adding (b':scheme', b'https') to the header table
+DEBUG:hpack.hpack:Encoding 7 with 7 bits
+DEBUG:hpack.hpack:Adding (b':path', b'/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c') to the header table
+DEBUG:hpack.hpack:Encoding 4 with 6 bits
+DEBUG:hpack.hpack:Encoding 101 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept', b'*/*') to the header table
+DEBUG:hpack.hpack:Encoding 19 with 6 bits
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept-encoding', b'gzip, deflate') to the header table
+DEBUG:hpack.hpack:Encoding 16 with 7 bits
+DEBUG:hpack.hpack:Adding (b'user-agent', b'Mozilla/5.0 (Windows NT 10.0; Win64; x64)') to the header table
+DEBUG:hpack.hpack:Encoding 58 with 6 bits
+DEBUG:hpack.hpack:Encoding 32 with 7 bits
+DEBUG:hpack.hpack:Adding (b'referer', b'https://translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 51 with 6 bits
+DEBUG:hpack.hpack:Encoding 20 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-length', b'161') to the header table
+DEBUG:hpack.hpack:Encoding 28 with 6 bits
+DEBUG:hpack.hpack:Encoding 2 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-type', b'application/x-www-form-urlencoded') to the header table
+DEBUG:hpack.hpack:Encoding 31 with 6 bits
+DEBUG:hpack.hpack:Encoding 24 with 7 bits
+DEBUG:hpack.hpack:Encoded header block to b"\x83A\x8eM\x83\xa9\x14\r%^c\x9ej\n\xb9\x0fO\x87D\xe5b&7\xd8:\x91@\xd2^E\x8d\x05\xb3\xb9l\xe0f$\x1aF\xc4cI'/\x92\x92\xd4\x97\xfc\xb2\xb2\x1aDA\xa3\xae\x0eWI\xf1\x1d\x10F~\xd1&\xc1\xd4\x8a\x06\x92\xad\xe0\xb1\xa0\xb6w-\x91\x08\x02\x00D\x07W\x0b1V\x0f\x84\x1c\x8b\x0e\xba\xe0\x0f\xc2\x0eE\xab\xa0i\x94\xf6S\x00~\x10r-!{\x98\x85\x80?\x16&\x02\x7fS\x83\xf9c\xe7\x90z\xa0\xd0\x7ff\xa2\x81\xb0\xda\xe0S\xfa\xe4j\xa4?\x84)\xa7z\x81\x02\xe0\xfbS\x91\xaaq\xaf\xb5<\xb8\xd7\xf7s\x94\x9d)\xad\x17\x18a6\x0e\xa4P4\x95y\x8ey\xa8*\xe4=?\\\x82\x0b\x81_\x98\x1du\xd0b\r&=Ly[\xc7\x8f\x0bJ{)Z\xdb(-D<\x85\x93"
+DEBUG:hpack.hpack:Decoding b'\x88_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{X\xa1\xa8\xeb\x10d\x9c\xbfJTu\x90\x93\xd8_\xa5)\x1f\x95\x871`\x07\xd2\x94\xda\x84\xada{\x8e\x83H4\x97@\x85\xae\xc1\xcdH\xff\x86\xa8\xeb\x10d\x9c\xbfd\x96\xd0z\xbe\x94\x00T\xca:\x94\x0b\xef\x81@\x02\xe0\x01p\x00S\x16\x8d\xff\x0f\x12\x96\xd0z\xbe\x94\x03je\xb6\xa5\x04\x012\xa0^\xb8\x16\xae\t\xa51h\xdfY\xb2\x1aR2OIjO\xda\x92\x9a\x82\xd4:K\x07\xf3aQY\xeaAW\x8c\xd5\x7f?jJj\x0bP\xe9/\xcc\x1c7\xe1Y\xef\xf5\xfe\xac*+=H*\xf1\x9a\xaf@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x03p3p\xaf\xbd\xae\x0f\xe7|\xe6B\x86B\x95\x1d*\rMl\xebR\xb3\xd0bz\xfe\x14\xdcR\xa92\xe4;\x15\xb3\\\xe5\xa2\xb5%=\x8aR{\n\xa1\xaa\x94\xeb\xff?@\x94%\x87B\x16=\x86\x98\xd5-aP{l!V\xac\xf4\x18\x9e\xbf\x86@\xe9*\xc82K@\x8d\xac\xb6Rd \xc7\xa9\x0bVz\x0cO_\xff\x01$\xebZ5\x87a\'\x83\xe7\xe9BN\xb5\xa3Z3&\xa2\xa1\x10|\xfd(I\xd6\xb4kKm\x14-\xdc\xb6 \xc7\xaa\x0f\x9f\xa5\t:\xd6\x8dim\xa2\x85\xbb\x96\xc4\x18\xf5-A\x90\x98>~\x94$\xebZ5\xa9<\x85\xa2\x0f\x9f\xa5\t:\xd6\x8do\x07\xf0\xe3P|\xfd(I\xd6\xb4kJ{)ZQ\x91\'\xb2\x0f\x9f\xa5\t:\xd6\x8dj\xe8\x1ae=\x94\xc1\xf3\xf4\xa1\'Z\xd1\xad]\x03L\xa7\xb2\x95\xbb\x96\xc4\x18\xf5A\xf3@\x86\x19\x08Z\xd2\xb1\'\xff\x12\xdcR-{\x1a\xdc!Z\x1b\t?\xd2\x9b\x8aE\xafc[\x84+]2j*\x11\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xd8m\xa2\x85\xb8\x96\xc4\x18\xf5})\xb8\xa4Z\xf65\xb8B\xb6\x1bh\xa1n%\xb1\x06=Kg2\x13\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xda\x0f!h\xfaSqH\xb5\xeckp\x85nG\xe4\xe3_Jn)\x16\xbd\x8dn\x10\xad\x84\xf6R\xb6\x11\x91\'\xb3\xe9M\xc5"\xd7\xb1\xad\xc2\x15\xb5\xd04\xca{)\xfaSqH\xb5\xeckp\x85mt\r2\x9e\xcaV\xe2[\x10c\xd5@\x90!\xeaIjJ\xc8)-\xb0\xc9\xf4\xb5g\xa0\xc4\xf5\xba\xb0\xbd\xad5\x85Y6Z\x84\x96E\x93\xea\xb2\xa1iOb\x9f\xe9\x04\xb0\xd5\xa7\xfd}\xd8Z\xcfbV\xb6\xc3(\xc4Lo\xb0u"\x81\xa4\xbc\x8b\x1a\x0bgr\xd9\xc0\xcc\x11\x15\xd8Z\xcfb\x7f@\x92%\x87B\x16=\x86\x98\xd5,z\xcbQlZ\xb3\xd0bz\x91@\xe9*\xc7\xb0\xd3\x1a\xa5\x87E\x07\xf0\xb5g\xae\xda\xd1v\x03ESF@\x8c\xf2\xb7\x94!j\xec:JD\x98\xf5\x7f\x010@\x8b\xf2\xb4\xb6\x0e\x92\xacz\xd2c\xd4\x8f\x89\xdd\x0e\x8c\x1a\xb6\xe4\xc5\x93O\x0f(\xffG\xd3\x92\xfc\r\x840o\xc3\xe8\x8e\xc7\xad\xfc\x99r\xb6Iw\x93\xce\xbe\x9e3\x8a\xfb5Y\xb3\xf6[\xf4\x9bIvB>\xdc\xb9nw\xb6\xe6B\xb4\x87F\xbd\x19\x9f\xf7z\x8bB\xe64a\xbe\x0b\'\xed\xdb(C\xbeK\xb9\xe57\x8a\xdd<\xf9\x8e?z\x9c\xee\xd8\x1a\x9b\x1e?\xcf\xc3O3\xcd;\xe7\x07\xbc\xfd\x1c\xdf\x14h\x14E\xca\xd6o\x1d\xb4\x9d=\x83\xb0\xd4\xdb\r\xba\xff{\xd5\x82\xfb\xd6\xc9\xef u\xc8\x1dx:\xec\xf1\xa4\xfe\xabD\x9bi\xf5\x8c\xda3b%\x83G\xda\x85\xf3Y\xac* \xdfi~\x94\x03k_)\x16\x10\x04\xca\x81z\xe0Z\xb8&T\xc5\xa3\x7f\xda\x95\x8d3\xc0\xc7\xda\x92\x1e\x91\x9a\xa8\x17\x98\xe7\x9a\x82\xaeC\xd3\xf6\xa64\xa6\xbdUQ\xeb@\x85\x1d\tY\x1d\xc9\xa4\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x80M\xbe \x00\x1fS\xb2\xb0\x9f\x83\xf9\xb8\xd3L\xff?jR8\x04\xdb\xe2\x00\x01R\x83\xa8\xf5\x17{\xad\xdcR-\x84\xa9$\xeb_*\x13\xf4\xa6\xe2\x91l%I\'[A\xe4/\xd2\x9b\x8aE\xb0\x95$\x9dm\xc6I~\xa1!\x0bZV\xc1Q\x0f!\xaa\x9b'
+DEBUG:hpack.hpack:Decoded 8, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b':status', b'200'), consumed 1
+DEBUG:hpack.hpack:Decoded 31, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 24, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 33, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cache-control', b'no-cache, no-store, max-age=0, must-revalidate'), total consumed 35 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'pragma', b'no-cache'), total consumed 14 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'expires', b'Mon, 01 Jan 1990 00:00:00 GMT'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 33, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'date', b'Mon, 05 Jun 2023 18:14:24 GMT'), total consumed 25 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 25, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 50, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-disposition', b'attachment; filename="response.bin"; filename*=UTF-8\'\'response.bin'), total consumed 52 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 47, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (<memory at 0x00000189C5E04B80>, b'CP="This is not a P3P policy! See g.co/p3phelp for more info."'), total consumed 53 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 20, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-resource-policy', b'same-site'), total consumed 29 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 13, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 128, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'permissions-policy', b'ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*'), total consumed 145 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 145, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ch', b'Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version'), total consumed 155 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 58, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-security-policy', b"require-trusted-types-for 'script';report-uri /_/TranslateWebserverUi/cspreport"), total consumed 77 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 17, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-opener-policy', b'same-origin-allow-popups'), total consumed 38 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 54, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'server', <memory at 0x00000189C5E04C40>), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 12, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 1, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-xss-protection', <memory at 0x00000189C5E04AC0>), total consumed 16 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 11, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 9, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-frame-options', b'SAMEORIGIN'), total consumed 23 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 55, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 198, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'set-cookie', b'NID=511=TFyc7bP9IJJ5cfTcxPjwL2D3nrQZfDmiNeQAaqWWS7qS31-dosPMK9zClu16HsFD0rhqqJ11TdBLfiwp7ohKoazO6v504gHHXXihg847xEzLj6T_bs2_eJ4KwqNotq1QimuAuPZvnED8udzI1Pd1PEkQwNoypsdRmyHiMKGcras; expires=Tue, 05-Dec-2023 18:14:23 GMT; path=/; domain=.google.com; HttpOnly'), total consumed 202 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'alt-svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), total consumed 44 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ranges', b'none'), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 59, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 45, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'vary', b'Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding'), total consumed 47 bytes, indexed True
+DEBUG:httpx._client:HTTP Request: POST https://translate.google.com/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c "HTTP/2 200 OK"
+DEBUG:hpack.hpack:HPACK encoding <generator object _check_path_header.<locals>.inner at 0x00000189C5FA5B60>
+DEBUG:hpack.hpack:Adding (b':method', b'POST') to the header table
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b':authority', b'translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 1 with 6 bits
+DEBUG:hpack.hpack:Encoding 14 with 7 bits
+DEBUG:hpack.hpack:Adding (b':scheme', b'https') to the header table
+DEBUG:hpack.hpack:Encoding 7 with 7 bits
+DEBUG:hpack.hpack:Adding (b':path', b'/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c') to the header table
+DEBUG:hpack.hpack:Encoding 4 with 6 bits
+DEBUG:hpack.hpack:Encoding 101 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept', b'*/*') to the header table
+DEBUG:hpack.hpack:Encoding 19 with 6 bits
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept-encoding', b'gzip, deflate') to the header table
+DEBUG:hpack.hpack:Encoding 16 with 7 bits
+DEBUG:hpack.hpack:Adding (b'user-agent', b'Mozilla/5.0 (Windows NT 10.0; Win64; x64)') to the header table
+DEBUG:hpack.hpack:Encoding 58 with 6 bits
+DEBUG:hpack.hpack:Encoding 32 with 7 bits
+DEBUG:hpack.hpack:Adding (b'referer', b'https://translate.google.com') to the header table
+DEBUG:hpack.hpack:Encoding 51 with 6 bits
+DEBUG:hpack.hpack:Encoding 20 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-length', b'161') to the header table
+DEBUG:hpack.hpack:Encoding 28 with 6 bits
+DEBUG:hpack.hpack:Encoding 2 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-type', b'application/x-www-form-urlencoded') to the header table
+DEBUG:hpack.hpack:Encoding 31 with 6 bits
+DEBUG:hpack.hpack:Encoding 24 with 7 bits
+DEBUG:hpack.hpack:Encoded header block to b"\x83A\x8eM\x83\xa9\x14\r%^c\x9ej\n\xb9\x0fO\x87D\xe5b&7\xd8:\x91@\xd2^E\x8d\x05\xb3\xb9l\xe0f$\x1aF\xc4cI'/\x92\x92\xd4\x97\xfc\xb2\xb2\x1aDA\xa3\xae\x0eWI\xf1\x1d\x10F~\xd1&\xc1\xd4\x8a\x06\x92\xad\xe0\xb1\xa0\xb6w-\x91\x08\x02\x00D\x07W\x0b1V\x0f\x84\x1c\x8b\x0e\xba\xe0\x0f\xc2\x0eE\xab\xa0i\x94\xf6S\x00~\x10r-!{\x98\x85\x80?\x16&\x02\x7fS\x83\xf9c\xe7\x90z\xa0\xd0\x7ff\xa2\x81\xb0\xda\xe0S\xfa\xe4j\xa4?\x84)\xa7z\x81\x02\xe0\xfbS\x91\xaaq\xaf\xb5<\xb8\xd7\xf7s\x94\x9d)\xad\x17\x18a6\x0e\xa4P4\x95y\x8ey\xa8*\xe4=?\\\x82\x0b\x81_\x98\x1du\xd0b\r&=Ly[\xc7\x8f\x0bJ{)Z\xdb(-D<\x85\x93"
+DEBUG:hpack.hpack:Decoding b'\x88_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{X\xa1\xa8\xeb\x10d\x9c\xbfJTu\x90\x93\xd8_\xa5)\x1f\x95\x871`\x07\xd2\x94\xda\x84\xada{\x8e\x83H4\x97@\x85\xae\xc1\xcdH\xff\x86\xa8\xeb\x10d\x9c\xbfd\x96\xd0z\xbe\x94\x00T\xca:\x94\x0b\xef\x81@\x02\xe0\x01p\x00S\x16\x8d\xff\x0f\x12\x96\xd0z\xbe\x94\x03je\xb6\xa5\x04\x012\xa0^\xb8\x16\xae\t\xa51h\xdfY\xb2\x1aR2OIjO\xda\x92\x9a\x82\xd4:K\x07\xf3aQY\xeaAW\x8c\xd5\x7f?jJj\x0bP\xe9/\xcc\x1c7\xe1Y\xef\xf5\xfe\xac*+=H*\xf1\x9a\xaf@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x03p3p\xaf\xbd\xae\x0f\xe7|\xe6B\x86B\x95\x1d*\rMl\xebR\xb3\xd0bz\xfe\x14\xdcR\xa92\xe4;\x15\xb3\\\xe5\xa2\xb5%=\x8aR{\n\xa1\xaa\x94\xeb\xff?@\x92%\x87B\x16=\x86\x98\xd5,z\xcbQlZ\xb3\xd0bz\x91@\xe9*\xc7\xb0\xd3\x1a\xa5\x87E\x07\xf0\xb5g\xae\xda\xd1@\x86\x19\x08Z\xd2\xb1\'\xff\x12\xdcR-{\x1a\xdc!Z\x1b\t?\xd2\x9b\x8aE\xafc[\x84+]2j*\x11\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xd8m\xa2\x85\xb8\x96\xc4\x18\xf5})\xb8\xa4Z\xf65\xb8B\xb6\x1bh\xa1n%\xb1\x06=Kg2\x13\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xda\x0f!h\xfaSqH\xb5\xeckp\x85nG\xe4\xe3_Jn)\x16\xbd\x8dn\x10\xad\x84\xf6R\xb6\x11\x91\'\xb3\xe9M\xc5"\xd7\xb1\xad\xc2\x15\xb5\xd04\xca{)\xfaSqH\xb5\xeckp\x85mt\r2\x9e\xcaV\xe2[\x10c\xd5@\x94%\x87B\x16=\x86\x98\xd5-aP{l!V\xac\xf4\x18\x9e\xbf\x86@\xe9*\xc82K@\x8d\xac\xb6Rd \xc7\xa9\x0bVz\x0cO_\xff\x01$\xebZ5\x87a\'\x83\xe7\xe9BN\xb5\xa3Z3&\xa2\xa1\x10|\xfd(I\xd6\xb4kKm\x14-\xdc\xb6 \xc7\xaa\x0f\x9f\xa5\t:\xd6\x8dim\xa2\x85\xbb\x96\xc4\x18\xf5-A\x90\x98>~\x94$\xebZ5\xa9<\x85\xa2\x0f\x9f\xa5\t:\xd6\x8do\x07\xf0\xe3P|\xfd(I\xd6\xb4kJ{)ZQ\x91\'\xb2\x0f\x9f\xa5\t:\xd6\x8dj\xe8\x1ae=\x94\xc1\xf3\xf4\xa1\'Z\xd1\xad]\x03L\xa7\xb2\x95\xbb\x96\xc4\x18\xf5A\xf3@\x90!\xeaIjJ\xc8)-\xb0\xc9\xf4\xb5g\xa0\xc4\xf5\xba\xb0\xbd\xad5\x85Y6Z\x84\x96E\x93\xea\xb2\xa1iOb\x9f\xe9\x04\xb0\xd5\xa7\xfd}\xd8Z\xcfbV\xb6\xc3(\xc4Lo\xb0u"\x81\xa4\xbc\x8b\x1a\x0bgr\xd9\xc0\xcc\x11\x15\xd8Z\xcfb\x7fv\x03ESF@\x8c\xf2\xb7\x94!j\xec:JD\x98\xf5\x7f\x010@\x8b\xf2\xb4\xb6\x0e\x92\xacz\xd2c\xd4\x8f\x89\xdd\x0e\x8c\x1a\xb6\xe4\xc5\x93O\x0f(\xffJ\xd3\x92\xfc\r\x840#\xae\x0fN\xef\xbf\xa6_\xca\xe6\xee\x1e\xcdu\xfd\xd8,\xc6\xd2\\Mw|g\xa76\x9fH\xf7;7\x7fzz~\x89\xb3Oz"\xf3\x7f\x8f}\xdb\xb8\xed\xd6\t*\xac\xb6\xf4\xeb\xd4rn\xed\x17\xeeI\xd9X^k\xabn;\xae\xf3jj\x83\xdd\x15\xf7\x88\xbe\xda\xef\xbd\xcc#\xf3\x9b,\xfd\xe1\xb5\xa0\xfex\x89\x17\xbdn\x85\xec;\xfc\xf0\xbfuo\x13\xf3\xf4\x1f4\xf6\xa3^+"\xfc\xf6T\xcb\xa3f\xae>\xbf\x05\xf8\xeb\xba\xe1\x8eZo\xee\xc8\xf4\xcfh\xf17\xda\x85\xf3Y\xac* \xdfi~\x94\x03k_)\x16\x10\x04\xca\x81z\xe0Z\xb8&\x94\xc5\xa3\x7f\xda\x95\x8d3\xc0\xc7\xda\x92\x1e\x91\x9a\xa8\x17\x98\xe7\x9a\x82\xaeC\xd3\xf6\xa64\xa6\xbdUQ\xeb@\x85\x1d\tY\x1d\xc9\xa4\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x80M\xbe \x00\x1fS\xb2\xb0\x9f\x83\xf9\xb8\xd3L\xff?jR8\x04\xdb\xe2\x00\x01R\x83\xa8\xf5\x17{\xad\xdcR-\x84\xa9$\xeb_*\x13\xf4\xa6\xe2\x91l%I\'[A\xe4/\xd2\x9b\x8aE\xb0\x95$\x9dm\xc6I~\xa1!\x0bZV\xc1Q\x0f!\xaa\x9b'
+DEBUG:hpack.hpack:Decoded 8, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b':status', b'200'), consumed 1
+DEBUG:hpack.hpack:Decoded 31, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 24, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 33, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cache-control', b'no-cache, no-store, max-age=0, must-revalidate'), total consumed 35 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'pragma', b'no-cache'), total consumed 14 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'expires', b'Mon, 01 Jan 1990 00:00:00 GMT'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 33, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'date', b'Mon, 05 Jun 2023 18:14:24 GMT'), total consumed 25 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 25, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 50, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-disposition', b'attachment; filename="response.bin"; filename*=UTF-8\'\'response.bin'), total consumed 52 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 47, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (<memory at 0x00000189C5C30700>, b'CP="This is not a P3P policy! See g.co/p3phelp for more info."'), total consumed 53 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 17, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-opener-policy', b'same-origin-allow-popups'), total consumed 38 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 145, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ch', b'Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version'), total consumed 155 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 20, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cross-origin-resource-policy', b'same-site'), total consumed 29 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 13, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 128, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'permissions-policy', b'ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*'), total consumed 145 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 58, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-security-policy', b"require-trusted-types-for 'script';report-uri /_/TranslateWebserverUi/cspreport"), total consumed 77 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 54, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'server', <memory at 0x00000189C5C307C0>), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 12, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 1, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-xss-protection', <memory at 0x00000189C5C30640>), total consumed 16 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 11, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 9, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-frame-options', b'SAMEORIGIN'), total consumed 23 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 55, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded 201, consumed 2 bytes
+DEBUG:hpack.hpack:Decoded (b'set-cookie', b'NID=511=skEy7TDNfXpgv1q4kZQ2KiNeG4v9aomKNyszh3BZjy9lgKhC_eY9VvSSVRP0dnpeujkkadSq_ZIh3-2xpnRHB7Y4gn1vspv_ez4vT6FaxKJhvAu41Xw_sCySA8FTxUDB-whYy1xmqlPGr_XzetfMQOVyX2X77PAbfmDSI8g8Mwg; expires=Tue, 05-Dec-2023 18:14:24 GMT; path=/; domain=.google.com; HttpOnly'), total consumed 205 bytes, indexed False
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 36, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'alt-svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), total consumed 44 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 18, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'accept-ranges', b'none'), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 59, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 45, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'vary', b'Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding'), total consumed 47 bytes, indexed True
+DEBUG:httpx._client:HTTP Request: POST https://translate.google.com/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c "HTTP/2 200 OK"
