@@ -2,6 +2,7 @@ from googletrans import Translator
 import os
 from rdflib import Graph
 from pathlib import Path
+import ontor
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -56,17 +57,20 @@ def get_sub_stylizations():
     return res
 
 def get_current_sub_style(style):
-    print(style)
     sub_styles_dict = get_sub_stylizations()
-    print(sub_styles_dict[style][0])
     return sub_styles_dict[style][0]
 
 def check_if_size_exists(substyle):
     size_stylizations = []
     g = Graph()
     g.parse(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
+    ontology = ontor.OntoEditor(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"),
+                                os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
+    classes_list = [p.name for p in ontology.get_elems()[0]]
     for ind, (sub, pred, obj) in enumerate(g):
-        if substyle in obj:
+        if not '#' in sub:
+            continue
+        if substyle in obj and sub.split('#')[1] in classes_list:
             stylization = sub.split('#')[1]
             stylization_to_translate = stylization.replace('_', ' ')
             substyle_ = sub.split('#')[1]
