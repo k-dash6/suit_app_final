@@ -1,42 +1,77 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-    <!-- BEGIN HEAD -->
         <head>
         <meta charset="utf-8"/>
-        <title>Info</title>
+        <title>Add new element</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="" name="description"/>
         <meta content="" name="author"/>
 
-        <!-- GLOBAL MANDATORY STYLES -->
         <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
         <link href="../../static/manage_ontology/vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
         <link href="../../static/manage_ontology/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-
-        <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="../../static/manage_ontology/css/animate.css" rel="stylesheet">
         <link href="../../static/manage_ontology/vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
-
-        <!-- THEME STYLES -->
         <link href="../../static/manage_ontology/css/layout.min.css" rel="stylesheet" type="text/css"/>
             <link href="../../static/manage_ontology/css/main.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
-    </head>
-    <!-- END HEAD -->
 
-    <!-- BODY -->
+            <style>
+                .btn {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0 24px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	height: 37px;
+	line-height: 37px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-decoration: none;
+	color: white;
+	background-color: #bae0c2;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;
+	transition: box-shadow .18s ease-out,background .18s ease-out,color .18s ease-out;
+}
+.btn:focus-visible {
+	box-shadow: 0 0 0 3px lightskyblue;
+}
+.btn:hover {
+	box-shadow: 0 1px 1px 0  #cfcfcf, 0 2px 5px 0  #cfcfcf;
+}
+.btn:active {
+	background-color: #efefef !important;
+}
+.btn:disabled {
+	background-color: #eee;
+	color: #444;
+	pointer-events: none;
+}
+
+.form_st{
+    background-color: white;
+    padding: 40px;
+    width: 500px;
+    display: block;
+  margin-right: auto;
+  margin-left: auto
+}
+            </style>
+    </head>
+
     <body>
 
-        <!--========== HEADER ==========-->
-                <header class="header navbar-fixed-top">
-            <!-- Navbar -->
+        <header class="header navbar-fixed-top">
             <nav class="navbar" role="navigation">
-                                    <div class="collapse navbar-collapse nav-collapse">
+                <div class="collapse navbar-collapse nav-collapse">
                         <div class="menu-container">
-<!--                            <a class="home" href="{% url 'home' %}">Какое-то крутое название</a>-->
                             <a class="home" href="{% url 'home' %}">
                                 <img src="../../static/manage_ontology/images/icons/home.png" width="40" height="40">
                             </a>
@@ -54,25 +89,25 @@
                     </div>
             </nav>
         </header>
-        <!--========== END HEADER ==========-->
 
-        <!--========== PARALLAX ==========-->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="../../static/manage_ontology/images/1920x1080/04.jpg">
+                <div class="parallax-window" data-parallax="scroll" data-image-src="../../static/manage_ontology/images/1920x1080/04.jpg">
             <div class="parallax-content container">
-                <h1 class="carousel-title">Добавить новую тройку элементов</h1>
+                <div class="form_st">
+                <h2>Добавить новый элемент</h2>
+            <form action="{% url 'manage_ontology_add_with_new' %}" method="post">
+                    {% csrf_token %}
+                    {{ form_add.as_p }}
+                    {{ form_add.path }}
+                <br>
+                <br>
+                <br>
+                    <button type="submit" class="btn">Add</button>
+                    </form>
+                    </div>
             </div>
         </div>
 
-        <div>
-        <form action="{% url 'manage_ontology_add_with_new' %}" method="post">
-        {% csrf_token %}
-        {{ form_add.as_p }}
-        {{ form_add.path }}
-        <button type="submit" class="our_button">Add</button>
-        </form>
-            </div>
 
-        <!--========== FOOTER ==========-->
         <footer class="footer">
             <div class="content container">
                 <div class="row">
@@ -82,7 +117,6 @@
                 </div>
             </div>
         </footer>
-        <!--========== END FOOTER ==========-->
     <script>
         /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
@@ -106,24 +140,17 @@
         }
     </script>
 
-        <!-- Back To Top -->
         <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
 
-        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-        <!-- CORE PLUGINS -->
         <script src="../../static/manage_ontology/vendor/jquery.min.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/vendor/jquery-migrate.min.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-
-        <!-- PAGE LEVEL PLUGINS -->
         <script src="../../static/manage_ontology/vendor/jquery.easing.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/vendor/jquery.back-to-top.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/vendor/jquery.wow.min.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/vendor/jquery.parallax.min.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
-
-        <!-- PAGE LEVEL SCRIPTS -->
         <script src="../../static/manage_ontology/js/layout.min.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/js/components/wow.min.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/js/components/swiper.min.js" type="text/javascript"></script>

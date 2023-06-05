@@ -2,10 +2,12 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+# from views
 
 def main():
     """Run administrative tasks."""
+    # views.model = get_kandinsky2('cuda', task_type='text2img', cache_dir='/img', model_version='2.1',
+    #                        use_flash_attention=False)
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'main_app.settings')
     try:
         from django.core.management import execute_from_command_line

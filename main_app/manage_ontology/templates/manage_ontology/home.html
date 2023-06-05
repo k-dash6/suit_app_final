@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-    <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8"/>
         <title>Home</title>
@@ -9,30 +8,25 @@
         <meta content="" name="description"/>
         <meta content="" name="author"/>
 
-        <!-- GLOBAL MANDATORY STYLES -->
         <link href="../../static/manage_ontology/vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
         <link href="../../static/manage_ontology/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-
-        <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="../../static/manage_ontology/css/animate.css" rel="stylesheet">
-
-        <!-- THEME STYLES -->
         <link href="../../static/manage_ontology/css/layout.min.css" rel="stylesheet" type="text/css"/>
         <link href="../../static/manage_ontology/css/main.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .carousel-centered__{
+                position:absolute;
+                left:20%;
+                top:40%;
+            }
+        </style>
 
     </head>
-    <!-- END HEAD -->
-
-    <!-- BODY -->
     <body>
-
-        <!--========== HEADER ==========-->
         <header class="header navbar-fixed-top">
-            <!-- Navbar -->
             <nav class="navbar" role="navigation">
-                                    <div class="collapse navbar-collapse nav-collapse">
+                <div class="collapse navbar-collapse nav-collapse">
                         <div class="menu-container">
-<!--                            <a class="home" href="{% url 'home' %}">Какое-то крутое название</a>-->
                             <a class="home" href="{% url 'home' %}">
                                 <img src="../../static/manage_ontology/images/icons/home.png" width="40" height="40">
                             </a>
@@ -49,21 +43,16 @@
                         </div>
                     </div>
             </nav>
-            <!-- Navbar -->
         </header>
-        <!--========== END HEADER ==========-->
-
-        <!--========== SLIDER ==========-->
-
                 <div class="item active">
                     <img class="img-responsive" src="../../static/manage_ontology/images/1920x1080/04.jpg" alt="Slider Image">
                     <div class="container">
-                        <div class="carousel-centered">
+                        <div class="carousel-centered__">
                             <div class="margin-b-40">
                                 <div class="title">
                                 <h1 class="carousel-title">Costume generator</h1>
                                     </div>
-                                <p class="subtitle">Ну типо тут можно всякое делать ага <br/> всё ок дай бог здоровья что-нибудь потом добавим</p>
+                                <p class="subtitle"> Добро пожаловать на сервис <br/> для генерации костюмов с помощью графа знаний</p>
                             </div>
                             <a href="{% url 'choose_stylization' %}" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Сгенерировать костюм</a>
                         </div>
@@ -81,7 +70,7 @@
                                 </div>
                                 <div class="service-info">
                                     <h3>Сгенерировать костюм</h3>
-                                    <p class="margin-b-5">ля ля ля подбери себе клевый лук</p>
+                                    <p class="margin-b-5">подобрать костюм по собственным предпочтениям</p>
                                 </div>
                                 <a href="{% url 'choose_stylization' %}" class="content-wrapper-link"></a>
                             </div>
@@ -95,27 +84,29 @@
                                 </div>
                                 <div class="service-info">
                                     <h3>Онтология</h3>
-                                    <p class="margin-b-5">тыщу лет убила на эту сраную визуализацию</p>
+                                    <p class="margin-b-5">познакомиться со структурой онтологии</p>
                                 </div>
                                 <a href="{% url 'ontology_visualization' %}" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-4">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-wrench"></i>
+                    {% if user.is_admin %}
+                        <div class="col-sm-4">
+                            <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                                <div class="service" data-height="height">
+                                    <div class="service-element">
+                                        <i class="service-icon icon-wrench"></i>
+                                    </div>
+                                    <div class="service-info">
+                                        <h3>Редактировать онтологию</h3>
+                                        <p class="margin-b-5">добавить/удалить элементы/тройки, обновить базу изображений</p>
+                                    </div>
+                                    <a href="{% url 'manage_ontology' %}" class="content-wrapper-link"></a>
                                 </div>
-                                <div class="service-info">
-                                    <h3>Редактировать онтологию</h3>
-                                    <p class="margin-b-5">хочу умереть, надеюсь, оно работает</p>
-                                </div>
-                                <a href="{% url 'manage_ontology' %}" class="content-wrapper-link"></a>
                             </div>
                         </div>
-                    </div>
+                    {% endif %}
 
                 </div>
             </div>
@@ -131,7 +122,6 @@
                 </div>
             </div>
         </footer>
-        <!--========== END FOOTER ==========-->
     <script>
         /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
@@ -155,16 +145,11 @@
         }
     </script>
 
-        <!-- Back To Top -->
-                <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
 
-        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-        <!-- CORE PLUGINS -->
         <script src="../../static/manage_ontology/vendor/jquery.min.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/vendor/jquery-migrate.min.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-
-        <!-- PAGE LEVEL PLUGINS -->
         <script src="../../static/manage_ontology/vendor/jquery.easing.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/vendor/jquery.back-to-top.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
@@ -172,8 +157,6 @@
         <script src="../../static/manage_ontology/vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-
-        <!-- PAGE LEVEL SCRIPTS -->
         <script src="../../static/manage_ontology/js/layout.min.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/js/components/wow.min.js" type="text/javascript"></script>
         <script src="../../static/manage_ontology/js/components/swiper.min.js" type="text/javascript"></script>

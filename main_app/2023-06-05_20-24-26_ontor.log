@@ -1,0 +1,23 @@
+INFO:C:\Users\kdash\suit_app_final\CostumesRDF:successfully loaded ontology specified
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/decoder_fp16.ckpt HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/decoder_fp16.ckpt HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/prior_fp16.ckpt HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/prior_fp16.ckpt HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/text_encoder/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/text_encoder/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/text_encoder/pytorch_model.bin HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/text_encoder/pytorch_model.bin HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/text_encoder/sentencepiece.bpe.model HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/text_encoder/sentencepiece.bpe.model HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/text_encoder/special_tokens_map.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/text_encoder/special_tokens_map.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/text_encoder/tokenizer.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/text_encoder/tokenizer.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/text_encoder/tokenizer_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/text_encoder/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/movq_final.ckpt HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/movq_final.ckpt HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/ViT-L-14_stats.th HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/ViT-L-14_stats.th HTTP/1.1" 200 0
+INFO:django.utils.autoreload:C:\Users\kdash\suit_app_final\main_app\manage_ontology\views.py changed, reloading.

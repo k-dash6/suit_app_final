@@ -24,8 +24,8 @@ SECRET_KEY = 'django-insecure-0@&+6(j05*f9hs@o86h!#==g9o#a(ut@_o#0!s$0xg4w1)10os
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["51.250.73.255"]
-# ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ["51.250.73.255"]
+ALLOWED_HOSTS = []
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 # admin@yandex.ru
@@ -41,9 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'manage_ontology.apps.ManageOntologyConfig',
+    'custom_auth.apps.CustomAuthConfig',
 ]
 
-AUTH_USER_MODEL = 'manage_ontology.User'
+AUTH_USER_MODEL = 'custom_auth.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -129,3 +130,5 @@ STATICFILES = []
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_URL = "login"

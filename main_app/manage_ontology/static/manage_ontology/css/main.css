@@ -7,9 +7,8 @@
 }
 
 .title_form_1 {
+    margin-left: 0px;
     background-color: white;
-	margin-left: 320px;
-	margin-top: 10%;
 	height: 600px;
 	width: 500px;
 	padding-top: 150px;
@@ -96,19 +95,12 @@
 .show {display: block;}
 
 .our_button {
-    border-radius: 10px;
-    color: white;
-    transition: .2s linear;
-    background: #3e7d41;
+    background: white;
     position: relative;
-    top: 0;
-    left: 0;
 }
 
 .our_button:hover {
-    box-shadow: 2px 2px white, 4px 4px #3e7d41;
-    top: -4px;
-    left: -4px;
+    background: #3e7d41;
 }
 
 .footer_links{

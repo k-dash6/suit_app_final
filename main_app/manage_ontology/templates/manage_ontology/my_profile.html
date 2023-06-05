@@ -24,6 +24,19 @@
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
+
+            <style>
+                .col_img{
+                    margin: 50px;
+                }
+
+                ul.inline_class li {
+                    display: inline;
+                    font-family:Hind,sans-serif;
+                    color: white;
+	                font-size: 16px;
+                   }
+            </style>
     </head>
     <!-- END HEAD -->
 
@@ -60,18 +73,20 @@
         <div class="parallax-window" data-parallax="scroll" data-image-src="../../static/manage_ontology/images/1920x1080/04.jpg">
             <div class="parallax-content container">
                 <h1 class="carousel-title">Личный кабинет</h1>
+                <ul class="inline_class">
+                    <li>Имя пользователя: </li>
+                    <li> {{ request.user.username }}</li>
+                </ul>
+                <ul class="inline_class">
+                    <li>Почта: </li>
+                    <li> {{ request.user.email }}</li>
+                    </ul>
             </div>
         </div>
-        <div>
-            <h1>Моя коллекция</h1>
-        </div>
-        <div>
-          <p> {{ request.user.username }}</p>
-          <p> {{ request.user.email }}</p>
-        </div>
+
 
         {% for collection in collections %}
-            <img src="{{ collection.image_path }}" alt="" width="400" height="600" />
+            <img class="col_img" src="{{ collection.image_path }}" alt="" width="400" height="400" />
         {% endfor %}
 
         <!--========== FOOTER ==========-->

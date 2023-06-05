@@ -1,0 +1,75 @@
+{% extends 'custom_auth/layout.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block styles %}
+    <style>
+        .log_reg h2 {
+            margin-left: 50px
+        }
+
+        .log_reg label {
+            margin-top: 10px;
+            font-family:Hind,sans-serif;
+            color:#515769;
+        }
+
+        .action-button {
+            width: 100px;
+            background: #8dab84;
+            font-weight: bold;
+            color: white;
+            border: 0 none;
+            border-radius: 1px;
+            cursor: pointer;
+            padding: 10px;
+            margin: 10px 50px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .carousel-centered_login {
+            position:absolute;
+            left:35%;
+            top:10%;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <div class="item active">
+        <img class="img-responsive" src="../../static/manage_ontology/images/1920x1080/04.jpg" alt="Slider Image">
+        <div class="container">
+            <div class="carousel-centered_login">
+                <div class="title_form_1">
+                      {% if messages %}
+                            <ul class="messages">
+                              {% for message in messages %}
+                                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                              {% endfor %}
+                            </ul>
+                          {% endif %}
+                          <form class="log_reg" method="post">
+                              {% csrf_token %}
+
+                                <h2 class="fs-title">Вход</h2>
+                                  <label for="id_email">почта</label>
+                                  <br>
+                                    {{ form.email }}
+                                  <br>
+                                  <label for="id_password">пароль</label>
+                                  <br>
+                                    {{ form.password }}
+                                  <br>
+                                  <br>
+                                  <button type="submit" class="action-button">Войти</button>
+                                  <br>
+                                  <br>
+                                  <p>Еще нет аккаунта?</p>
+                                  <a href="{% url 'register' %}">Зарегистрироваться</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

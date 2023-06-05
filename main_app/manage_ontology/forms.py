@@ -1,26 +1,8 @@
 from django import forms
 
-from .models import *
-from django.contrib.auth.forms import UserCreationForm
+from .styles_funcs import get_stylizations
 import ontor
 
-
-class RegistrationForm(UserCreationForm):
-
-    class Meta(UserCreationForm.Meta):
-        model = User
-        fields = ('email', 'username',)
-
-
-class LoginForm(forms.Form):
-    email = forms.EmailField()
-    password = forms.CharField(widget=forms.PasswordInput)
-
-
-# class AddElements(forms.Form):
-#     subject_name = forms.CharField(max_length=100, required=False)
-#     predicat_name = forms.CharField(max_length=100, required=False)
-#     object_name = forms.CharField(max_length=100, required=False)
 
 class AddOldElements(forms.Form):
     sub = forms.ChoiceField()
@@ -70,15 +52,35 @@ class ReturnRandom(forms.Form):
     property = forms.CharField(max_length=100, required=False)
     obj = forms.CharField(max_length=100, required=False)
 
+# class AddOldElements(forms.Form):
+#     sub = forms.ChoiceField()
+#     pred = forms.ChoiceField()
+#     obj = forms.ChoiceField()
+#
+#     def __init__(self, *args, **kwargs):
+#         super().__init__(*args, **kwargs)
+#         self.fields['sub'].choices = get_existing_sub_obj()
+#         self.fields['pred'].choices = get_existing_pred() + [('type', 'type'), ('subClassOf', 'subClassOf')]
+#         self.fields['obj'].choices = get_existing_sub_obj()
+
 
 class DeleteElements(forms.Form):
-    element_name = forms.CharField(max_length=100, required=False)
+    element_name = forms.ChoiceField()
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['element_name'].choices = get_existing_sub_obj() + get_existing_pred()
 
 class DeleteOneElement(forms.Form):
-    subject_name = forms.CharField(max_length=100, required=False)
-    predicat_name = forms.CharField(max_length=100, required=False)
-    object_name = forms.CharField(max_length=100, required=False)
+    subject_name = forms.ChoiceField()
+    predicat_name = forms.ChoiceField()
+    object_name = forms.ChoiceField()
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['subject_name'].choices = get_existing_sub_obj()
+        self.fields['predicat_name'].choices = get_existing_pred() + [('type', 'type'), ('subClassOf', 'subClassOf')]
+        self.fields['object_name'].choices = get_existing_sub_obj()
 
 from googletrans import Translator
 import os
@@ -86,115 +88,92 @@ from rdflib import Graph
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-def get_stylizations():
-    stylizations = []
-    g = Graph()
-    g.parse(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
-    for ind, (sub, pred, obj) in enumerate(g):
-        if 'subClassOf' in pred and 'STYLIZATION' in obj:
-            stylization = sub.split('#')[1]
-            stylization_to_translate = stylization.replace('_', ' ')
-            while True:
-                try:
-                    translator = Translator()
-                    stylization_translated = translator.translate(stylization_to_translate, dest='ru')
-                except:
-                    continue
-                else:
-                    break
-            mini = (stylization, stylization_translated.text)
-            stylizations.append(mini)
-    return stylizations
+
+# class ChooseStylizationForm(forms.Form):
+#     stylizations = forms.ChoiceField(
+#         widget=forms.RadioSelect,
+#     )
+#
+#     def __init__(self, *args, **kwargs):
+#         super(ChooseStylizationForm, self).__init__(*args, **kwargs)
+#         self.fields['stylizations'].choices = get_stylizations()
 
 
-def get_sub_stylizations(stylization):
-    sub_stylizations = []
-    g = Graph()
-    g.parse(os.path.join(os.path.dirname(BASE_DIR), "CostumesRDF.owl"))
-    for ind, (sub, pred, obj) in enumerate(g):
-        if stylization in obj:
-            print()
-            print('Я пытаюсь найти подстили для стиля', stylization)
-            print('*')
-            print(sub.split('#')[1], pred.split('#')[1], obj.split('#')[1])
-            print('*')
-            print()
-            stylization_ = sub.split('#')[1]
-            stylization_to_translate = stylization_.replace('_', ' ')
-            while True:
-                try:
-                    translator = Translator()
-                    stylization_translated = translator.translate(stylization_to_translate, dest='ru')
-                except:
-                    continue
-                else:
-                    break
-            mini = (stylization_, stylization_translated.text)
-            sub_stylizations.append(mini)
-    return sub_stylizations
+# class ChooseSubstyleForm(forms.Form):
+#     substyles = forms.ChoiceField(
+#         widget=forms.RadioSelect,
+#     )
+#
+#     def __init__(self, stylizations, *args, **kwargs):
+#         super(ChooseSubstyleForm, self).__init__(*args, **kwargs)
+#         a = get_sub_stylizations(stylizations)
+#         self.fields['substyles'].choices = a
+#         print(a)
+#
+#
+# class ChooseSizeForm(forms.Form):
+#     size = forms.ChoiceField(
+#         required=False,
+#         widget=forms.RadioSelect,
+#     )
+#
+#     def __init__(self, size_stylizations, *args, **kwargs):
+#         super(ChooseSizeForm, self).__init__(*args, **kwargs)
+#         self.fields['size'].choices = size_stylizations
 
 
+# class CostumeForm(forms.Form):
+#     COLOR_CHOICES = [
+#         ('red', 'Красный'),
+#         ('orange', 'Оранжевый'),
+#         ('yellow', 'Жёлтый'),
+#         ('green', 'Зеленый'),
+#         ('light blue', 'Голубой'),
+#         ('blue', 'Синий'),
+#         ('purple', 'Фиолетовый'),
+#         ('pink', 'Розовый'),
+#         ('white', 'Белый'),
+#         ('black', 'Чёрный'),
+#         ('gray', 'Серый'),
+#         ('brown', 'Коричневый'),
+#         ('beige', 'Бежевый'),
+#     ]
+#
+#     style = forms.ChoiceField()
+#     color = forms.ChoiceField(choices=COLOR_CHOICES)
+#
+#     def __init__(self, *args, **kwargs):
+#         super().__init__(*args, **kwargs)
+#         self.fields['style'].choices = get_style_choices()
 
-class ChooseStylizationForm(forms.Form):
-    stylizations = forms.ChoiceField(
-        required=False,
-        widget=forms.RadioSelect,
-    )
-
-    def __init__(self, *args, **kwargs):
-        super(ChooseStylizationForm, self).__init__(*args, **kwargs)
-        self.fields['stylizations'].choices = get_stylizations()
-
-
-class ChooseSubstyleForm(forms.Form):
-    substyles = forms.ChoiceField(
-        required=False,
-        widget=forms.RadioSelect,
-    )
-
-    def __init__(self, stylization, *args, **kwargs):
-        super(ChooseSubstyleForm, self).__init__(*args, **kwargs)
-        self.fields['substyles'].choices = get_sub_stylizations(stylization)
-
-
-class ChooseSizeForm(forms.Form):
-    size = forms.ChoiceField(
-        required=False,
-        widget=forms.RadioSelect,
-    )
-
-    def __init__(self, size_stylizations, *args, **kwargs):
-        super(ChooseSizeForm, self).__init__(*args, **kwargs)
-        self.fields['size'].choices = size_stylizations
-
-
-class ChooseColorForm(forms.Form):
-    color = forms.ChoiceField(
-        required=False,
-        widget=forms.RadioSelect,
-    )
-
-    def __init__(self, *args, **kwargs):
-        super(ChooseColorForm, self).__init__(*args, **kwargs)
-        self.fields['color'].choices = [('green', 'Зеленый'), ('red', 'Красный'), ('blue', 'Голубой')]
-
-
-class CostumeForm(forms.Form):
-    COLOR_CHOICES = [
-        ('green', 'Зеленый'),
-        ('red', 'Красный'),
-        ('blue', 'Голубой'),
-    ]
-
+class StyleForm(forms.Form):
     style = forms.ChoiceField()
-    color = forms.ChoiceField(choices=COLOR_CHOICES)
+
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['style'].choices = get_style_choices()
+        self.fields['style'].choices = get_stylizations()
+        # self.fields['style'].choices = [('historical_reconstruction', 'Историческая реконструкция'), ('fantasy_style', 'фэнтезийный стиль')]
 
 
-def get_style_choices() -> list[tuple[str, str]]:
+class CostumeForm(forms.Form):
+    style = forms.ChoiceField(choices=[], widget=forms.Select)
+
+    def __init__(self, *args, **kwargs):
+        choices = kwargs.pop('choices', [])
+        super().__init__(*args, **kwargs)
+        self.fields['style'].choices = choices
+
+class SubSubStyleForm(forms.Form):
+    style = forms.ChoiceField(choices=[], widget=forms.Select)
+
+    def __init__(self, *args, **kwargs):
+        choices = kwargs.pop('choices', [])
+        super().__init__(*args, **kwargs)
+        self.fields['style'].choices = choices
+
+
+def get_sub_sub_style_choices() -> list[tuple[str, str]]:
     # TODO: implement this.
     return [
         ('computer_games', 'Компьютерные игры'),
@@ -206,4 +185,24 @@ def get_style_choices() -> list[tuple[str, str]]:
         ('english_style', ' Английский стиль'),
         ('scandinavian_style', ' Скандинавский стиль'),
     ]
+
+
+class ChooseColorForm(forms.Form):
+    COLOR_CHOICES = [
+        ('red', 'Красный'),
+        ('orange', 'Оранжевый'),
+        ('yellow', 'Жёлтый'),
+        ('green', 'Зеленый'),
+        ('light blue', 'Голубой'),
+        ('blue', 'Синий'),
+        ('purple', 'Фиолетовый'),
+        ('pink', 'Розовый'),
+        ('white', 'Белый'),
+        ('black', 'Чёрный'),
+        ('gray', 'Серый'),
+        ('brown', 'Коричневый'),
+        ('beige', 'Бежевый'),
+    ]
+    color = forms.ChoiceField(choices=COLOR_CHOICES)
+
 

@@ -1,0 +1,90 @@
+{% extends 'custom_auth/layout.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block styles %}
+    <style>
+         .log_reg h2{
+            margin-left: 0px
+        }
+
+        .log_reg label{
+            margin-top: 10px;
+            font-family:Hind,sans-serif;
+            color:#515769;
+        }
+
+        .action-button {
+            width: 200px;
+            background: #8dab84;
+            font-weight: bold;
+            color: white;
+            border: 0 none;
+            border-radius: 1px;
+            cursor: pointer;
+            padding: 10px;
+            margin: 10px 0px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .carousel-centered_{
+            position:absolute;
+            left:15%;
+            top:1%;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <div class="item active">
+                    <img class="img-responsive" src="../../static/manage_ontology/images/1920x1080/04.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered_">
+                            <div class="margin-b-40">
+                                <div class="title_form_2">
+                                      {% if messages %}
+                                        <ul class="messages">
+                                          {% for message in messages %}
+                                            <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                                          {% endfor %}
+                                        </ul>
+                                      {% endif %}
+                                      <form class="log_reg" method="post">
+                                          {% csrf_token %}
+                                            <h2 class="fs-title">Регистрация</h2>
+                                              <label>почта</label>
+                                              <br>
+                                                {{ form.email }}
+                                                {{ form.email.errors }}
+                                              <br>
+                                              <label>имя пользователя</label>
+                                              <br>
+                                                {{ form.username }}
+                                                {{ form.username.errors }}
+                                              <br>
+                                              <label>пароль</label>
+                                              <br>
+                                                {{ form.password1 }}
+                                                {{ form.password1.errors }}
+                                              <br>
+                                              <label>подтвердите пароль</label>
+                                              <br>
+                                                {{ form.password2 }}
+                                                {{ form.password2.errors }}
+                                              <br>
+                                              <br>
+                                              <button type="submit" class="action-button">Создать аккаунт</button>
+                                              <br>
+                                              <br>
+                                              <p>Уже есть аккаунт?</p>
+                                              <a href="{% url 'login' %}">Войти</a>
+
+
+                                      </form>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{% endblock %}

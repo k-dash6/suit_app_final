@@ -1,0 +1,61 @@
+INFO:C:\Users\kdash\suit_app_final\CostumesRDF:successfully loaded ontology specified
+INFO:C:\Users\kdash\suit_app_final\CostumesRDF:successfully loaded ontology specified
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/decoder_fp16.ckpt HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/decoder_fp16.ckpt HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/prior_fp16.ckpt HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/prior_fp16.ckpt HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/text_encoder/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/text_encoder/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/text_encoder/pytorch_model.bin HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/text_encoder/pytorch_model.bin HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/text_encoder/sentencepiece.bpe.model HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/text_encoder/sentencepiece.bpe.model HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/text_encoder/special_tokens_map.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/text_encoder/special_tokens_map.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/text_encoder/tokenizer.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/text_encoder/tokenizer.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/text_encoder/tokenizer_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/text_encoder/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/movq_final.ckpt HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/movq_final.ckpt HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sberbank-ai/Kandinsky_2.1/resolve/main/ViT-L-14_stats.th HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /ai-forever/Kandinsky_2.1/resolve/main/ViT-L-14_stats.th HTTP/1.1" 200 0
+ERROR:django.request:Internal Server Error: /manage-update-img/
+Traceback (most recent call last):
+  File "C:\Users\kdash\suit_app\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\kdash\suit_app\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\kdash\suit_app\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\kdash\suit_app_final\main_app\manage_ontology\views.py", line 66, in manage_update_img
+    update_images()
+  File "C:\Users\kdash\suit_app_final\main_app\manage_ontology\images_funcs.py", line 24, in update_images
+    model = get_kandinsky2('cuda', task_type='text2img', cache_dir='/img', model_version='2.1',
+  File "C:\Users\kdash\suit_app\venv\lib\site-packages\kandinsky2\__init__.py", line 179, in get_kandinsky2
+    model = get_kandinsky2_1(
+  File "C:\Users\kdash\suit_app\venv\lib\site-packages\kandinsky2\__init__.py", line 159, in get_kandinsky2_1
+    model = Kandinsky2_1(config, cache_model_name, cache_prior_name, device, task_type=task_type)
+  File "C:\Users\kdash\suit_app\venv\lib\site-packages\kandinsky2\kandinsky2_1_model.py", line 57, in __init__
+    self.prior.load_state_dict(torch.load(prior_path), strict=False)
+  File "C:\Users\kdash\suit_app\venv\lib\site-packages\torch\serialization.py", line 809, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "C:\Users\kdash\suit_app\venv\lib\site-packages\torch\serialization.py", line 1172, in _load
+    result = unpickler.load()
+  File "C:\Users\kdash\AppData\Local\Programs\Python\Python310\lib\pickle.py", line 1213, in load
+    dispatch[key[0]](self)
+  File "C:\Users\kdash\AppData\Local\Programs\Python\Python310\lib\pickle.py", line 1254, in load_binpersid
+    self.append(self.persistent_load(pid))
+  File "C:\Users\kdash\suit_app\venv\lib\site-packages\torch\serialization.py", line 1142, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "C:\Users\kdash\suit_app\venv\lib\site-packages\torch\serialization.py", line 1116, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "C:\Users\kdash\suit_app\venv\lib\site-packages\torch\serialization.py", line 217, in default_restore_location
+    result = fn(storage, location)
+  File "C:\Users\kdash\suit_app\venv\lib\site-packages\torch\serialization.py", line 182, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "C:\Users\kdash\suit_app\venv\lib\site-packages\torch\serialization.py", line 166, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on a CUDA '
+RuntimeError: Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.
+INFO:django.utils.autoreload:C:\Users\kdash\suit_app_final\main_app\manage_ontology\images_funcs.py changed, reloading.

@@ -24,12 +24,23 @@
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
+            <style>
+                .img_class{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                #img_class{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            </style>
     </head>
     <!-- END HEAD -->
 
     <!-- BODY -->
     <body>
-
         <!--========== HEADER ==========-->
                 <header class="header navbar-fixed-top">
             <!-- Navbar -->
@@ -64,17 +75,17 @@
         <!--========== PARALLAX ==========-->
         <div class="parallax-window" data-parallax="scroll" data-image-src="../../static/manage_ontology/images/1920x1080/04.jpg">
             <div class="parallax-content container">
-                <h1 class="carousel-title">Результат</h1>
+                <img class="img_class" src="{{ image_path }}" alt="" width="400" height="400"/>
+                 <form action="{% url 'add_to_collection' %}" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="image_path" value="{{ image_path }}" />
+                    <br>
+                    <button id="img_class" type="submit" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Add to Collection</button>
+                </form>
             </div>
         </div>
 
-<h1>Тут должен быть твой сраный результат</h1>
-<img src="{{ image_path }}" alt="" width="400" height="600"/>
-<form action="{% url 'add_to_collection' %}" method="post">
-    {% csrf_token %}
-    <input type="hidden" name="image_path" value="{{ image_path }}" />
-    <button type="submit">Add to Collection</button>
-</form>
+
 
  <footer class="footer">
             <div class="content container">
